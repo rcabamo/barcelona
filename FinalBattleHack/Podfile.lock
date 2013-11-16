@@ -1,0 +1,10 @@
+PODS:
+  - FXBlurView (HEAD based on 1.4.4)
+
+DEPENDENCIES:
+  - FXBlurView (HEAD)
+
+SPEC CHECKSUMS:
+  FXBlurView: bd4c9209f4415ec41138acabaa18cd0f87ecd49e
+
+COCOAPODS: 0.27.1
