@@ -5,3 +5,4 @@ pod 'FXBlurView', :head
 pod 'Typhoon', '~> 1.5.3'
 pod 'Backbeam', '~> 0.10.13'
 pod 'PayPal-iOS-SDK', '~> 1.3.5'
+pod 'MSDynamicsDrawerViewController', '~> 1.0.0'
