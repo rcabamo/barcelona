@@ -1,0 +1,36 @@
+# Xcode
+.DS_Store
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.xcworkspace
+!default.xcworkspace
+xcuserdata
+profile
+*.moved-aside
+DerivedData
+.idea/
+Iconr
+
+# CocoaPods
+Pods/
+
+BattleHack.xcodeproj/project.pbxproj.orig
+BattleHack/102-walk.png
+BattleHack/106-sliders.png
+BattleHack/11-clock.png
+BattleHack/123-id-card.png
+BattleHack/134-viking.png
+BattleHack/179-notepad.png
+BattleHack/19-gear.png
+BattleHack/191-collection.png
+BattleHack/192-credit-card.png
+BattleHack/63-runner.png
+BattleHack/80-shopping-cart.png
+BattleHack/83-calendar.png
