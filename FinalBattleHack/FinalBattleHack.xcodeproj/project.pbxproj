@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A229F6B183824740041724D /* RURCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A229F6A183824740041724D /* RURCommon.m */; };
+		4A229F701838331C0041724D /* RUR_dev.properties in Resources */ = {isa = PBXBuildFile; fileRef = 4A229F6F1838331C0041724D /* RUR_dev.properties */; };
+		4A229F72183833250041724D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A229F71183833250041724D /* Images.xcassets */; };
 		4A8DD68A18381D7100E603E5 /* RURAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8DD68818381D7100E603E5 /* RURAppDelegate.m */; };
 		4A8DD68E18381DD000E603E5 /* RURAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8DD68D18381DD000E603E5 /* RURAssembly.m */; };
 		4A8DD69218381E9100E603E5 /* RURUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8DD69118381E9100E603E5 /* RURUser.m */; };
@@ -17,7 +18,6 @@
 		4AA58D27183818C300B51AEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA58D26183818C300B51AEA /* UIKit.framework */; };
 		4AA58D2D183818C300B51AEA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AA58D2B183818C300B51AEA /* InfoPlist.strings */; };
 		4AA58D2F183818C300B51AEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA58D2E183818C300B51AEA /* main.m */; };
-		4AA58D3B183818C300B51AEA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA58D3A183818C300B51AEA /* Images.xcassets */; };
 		4AA58D42183818C300B51AEA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA58D41183818C300B51AEA /* XCTest.framework */; };
 		4AA58D43183818C300B51AEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA58D22183818C300B51AEA /* Foundation.framework */; };
 		4AA58D44183818C300B51AEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA58D26183818C300B51AEA /* UIKit.framework */; };
@@ -45,8 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4A229F69183824740041724D /* RURCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURCommon.h; sourceTree = "<group>"; };
-		4A229F6A183824740041724D /* RURCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURCommon.m; sourceTree = "<group>"; };
+		4A229F6F1838331C0041724D /* RUR_dev.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RUR_dev.properties; sourceTree = "<group>"; };
+		4A229F71183833250041724D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FinalBattleHack/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		4A8DD68718381D7100E603E5 /* RURAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURAppDelegate.h; sourceTree = "<group>"; };
 		4A8DD68818381D7100E603E5 /* RURAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURAppDelegate.m; sourceTree = "<group>"; };
 		4A8DD68C18381DD000E603E5 /* RURAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURAssembly.h; sourceTree = "<group>"; };
@@ -63,7 +63,6 @@
 		4AA58D2C183818C300B51AEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4AA58D2E183818C300B51AEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4AA58D30183818C300B51AEA /* FinalBattleHack-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FinalBattleHack-Prefix.pch"; sourceTree = "<group>"; };
-		4AA58D3A183818C300B51AEA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4AA58D40183818C300B51AEA /* FinalBattleHackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinalBattleHackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA58D41183818C300B51AEA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4AA58D49183818C300B51AEA /* FinalBattleHackTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FinalBattleHackTests-Info.plist"; sourceTree = "<group>"; };
@@ -110,13 +109,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4A229F681838244D0041724D /* PayPalUtils */ = {
+		4A229F6D183832B60041724D /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				4A229F69183824740041724D /* RURCommon.h */,
-				4A229F6A183824740041724D /* RURCommon.m */,
+				4A229F71183833250041724D /* Images.xcassets */,
+				4A229F6E183832C80041724D /* configurations */,
 			);
-			path = PayPalUtils;
+			path = resources;
+			sourceTree = "<group>";
+		};
+		4A229F6E183832C80041724D /* configurations */ = {
+			isa = PBXGroup;
+			children = (
+				4A229F6F1838331C0041724D /* RUR_dev.properties */,
+			);
+			path = configurations;
 			sourceTree = "<group>";
 		};
 		4A8DD68418381D7100E603E5 /* classses */ = {
@@ -146,7 +153,6 @@
 		4A8DD68618381D7100E603E5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4A229F681838244D0041724D /* PayPalUtils */,
 				4A8DD68F18381E7400E603E5 /* Objects */,
 				4A8DD68B18381D9000E603E5 /* Assembly */,
 			);
@@ -223,7 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				4A8DD68418381D7100E603E5 /* classses */,
-				4AA58D3A183818C300B51AEA /* Images.xcassets */,
+				4A229F6D183832B60041724D /* resources */,
 				4AA58D29183818C300B51AEA /* Supporting Files */,
 			);
 			path = FinalBattleHack;
@@ -382,10 +388,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB6F4DEF18382BE400CF2FB8 /* RURProductCatalogVC.xib in Resources */,
-				4AA58D3B183818C300B51AEA /* Images.xcassets in Resources */,
 				BB6F4DE518382B6800CF2FB8 /* RURShopsMapVC.xib in Resources */,
+				4A229F72183833250041724D /* Images.xcassets in Resources */,
 				BB6F4DF418382C1700CF2FB8 /* RURDetailShopVC.xib in Resources */,
 				4AA58D2D183818C300B51AEA /* InfoPlist.strings in Resources */,
+				4A229F701838331C0041724D /* RUR_dev.properties in Resources */,
 				BB6F4DEA18382BAB00CF2FB8 /* RURDetalProductVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,7 +453,6 @@
 				BB6F4DF318382C1700CF2FB8 /* RURDetailShopVC.m in Sources */,
 				4AA58D2F183818C300B51AEA /* main.m in Sources */,
 				4A8DD69618381EDC00E603E5 /* UIViewController+UserAdditions.m in Sources */,
-				4A229F6B183824740041724D /* RURCommon.m in Sources */,
 				4A8DD68E18381DD000E603E5 /* RURAssembly.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

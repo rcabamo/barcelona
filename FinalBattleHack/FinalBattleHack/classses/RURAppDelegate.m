@@ -24,9 +24,17 @@
     // Init VC's
     MSDynamicsDrawerViewController *rootVC = [MSDynamicsDrawerViewController new];
     
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = rootVC;
+    [self.window makeKeyAndVisible];
+    UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"windowBackground"]];
+    [self.window addSubview:backgroundView];
+    [self.window sendSubviewToBack:backgroundView];
+    
     return YES;
 }
+
+#pragma mark - Private Methods
 							
 - (void)setupApp
 {
@@ -39,7 +47,7 @@
     TyphoonComponentFactory *factory = [[TyphoonBlockComponentFactory alloc] initWithAssembly:[RURAssembly assembly]];
     
     TyphoonPropertyPlaceholderConfigurer *configurer = [TyphoonPropertyPlaceholderConfigurer configurer];
-    [configurer usePropertyStyleResource:[TyphoonBundleResource withName:@"woo_dev.properties"]];
+    [configurer usePropertyStyleResource:[TyphoonBundleResource withName:@"RUR_dev.properties"]];
     
     [factory attachPostProcessor:configurer];
     

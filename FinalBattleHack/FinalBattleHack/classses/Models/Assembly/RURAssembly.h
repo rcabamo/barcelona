@@ -10,6 +10,9 @@
 
 @interface RURAssembly : TyphoonAssembly
 
+- (NSString *)clientID;
+- (NSString *)secretID;
+
 - (id)user;
 
 @end
