@@ -24,6 +24,14 @@
 		4AA58D4C183818C300B51AEA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AA58D4A183818C300B51AEA /* InfoPlist.strings */; };
 		4AA58D4E183818C300B51AEA /* FinalBattleHackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA58D4D183818C300B51AEA /* FinalBattleHackTests.m */; };
 		9AA316FBBB354E90908299CA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 979064809C8F41ACAB5BFFE3 /* libPods.a */; };
+		BB6F4DE418382B6800CF2FB8 /* RURShopsMapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6F4DE218382B6800CF2FB8 /* RURShopsMapVC.m */; };
+		BB6F4DE518382B6800CF2FB8 /* RURShopsMapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6F4DE318382B6800CF2FB8 /* RURShopsMapVC.xib */; };
+		BB6F4DE918382BAB00CF2FB8 /* RURDetalProductVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6F4DE718382BAB00CF2FB8 /* RURDetalProductVC.m */; };
+		BB6F4DEA18382BAB00CF2FB8 /* RURDetalProductVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6F4DE818382BAB00CF2FB8 /* RURDetalProductVC.xib */; };
+		BB6F4DEE18382BE400CF2FB8 /* RURProductCatalogVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6F4DEC18382BE400CF2FB8 /* RURProductCatalogVC.m */; };
+		BB6F4DEF18382BE400CF2FB8 /* RURProductCatalogVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6F4DED18382BE400CF2FB8 /* RURProductCatalogVC.xib */; };
+		BB6F4DF318382C1700CF2FB8 /* RURDetailShopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6F4DF118382C1700CF2FB8 /* RURDetailShopVC.m */; };
+		BB6F4DF418382C1700CF2FB8 /* RURDetailShopVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6F4DF218382C1700CF2FB8 /* RURDetailShopVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +71,18 @@
 		4AA58D4D183818C300B51AEA /* FinalBattleHackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinalBattleHackTests.m; sourceTree = "<group>"; };
 		8A274BCFBFD94335944B02E8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		979064809C8F41ACAB5BFFE3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB6F4DE118382B6800CF2FB8 /* RURShopsMapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RURShopsMapVC.h; path = Controllers/MapaTiendas/RURShopsMapVC.h; sourceTree = "<group>"; };
+		BB6F4DE218382B6800CF2FB8 /* RURShopsMapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RURShopsMapVC.m; path = Controllers/MapaTiendas/RURShopsMapVC.m; sourceTree = "<group>"; };
+		BB6F4DE318382B6800CF2FB8 /* RURShopsMapVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RURShopsMapVC.xib; path = Controllers/MapaTiendas/RURShopsMapVC.xib; sourceTree = "<group>"; };
+		BB6F4DE618382BAB00CF2FB8 /* RURDetalProductVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RURDetalProductVC.h; path = Controllers/DetailProduct/RURDetalProductVC.h; sourceTree = "<group>"; };
+		BB6F4DE718382BAB00CF2FB8 /* RURDetalProductVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RURDetalProductVC.m; path = Controllers/DetailProduct/RURDetalProductVC.m; sourceTree = "<group>"; };
+		BB6F4DE818382BAB00CF2FB8 /* RURDetalProductVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RURDetalProductVC.xib; path = Controllers/DetailProduct/RURDetalProductVC.xib; sourceTree = "<group>"; };
+		BB6F4DEB18382BE400CF2FB8 /* RURProductCatalogVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RURProductCatalogVC.h; path = Controllers/CatalogCollectionView/RURProductCatalogVC.h; sourceTree = "<group>"; };
+		BB6F4DEC18382BE400CF2FB8 /* RURProductCatalogVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RURProductCatalogVC.m; path = Controllers/CatalogCollectionView/RURProductCatalogVC.m; sourceTree = "<group>"; };
+		BB6F4DED18382BE400CF2FB8 /* RURProductCatalogVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RURProductCatalogVC.xib; path = Controllers/CatalogCollectionView/RURProductCatalogVC.xib; sourceTree = "<group>"; };
+		BB6F4DF018382C1700CF2FB8 /* RURDetailShopVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RURDetailShopVC.h; path = Controllers/DetailShop/RURDetailShopVC.h; sourceTree = "<group>"; };
+		BB6F4DF118382C1700CF2FB8 /* RURDetailShopVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RURDetailShopVC.m; path = Controllers/DetailShop/RURDetailShopVC.m; sourceTree = "<group>"; };
+		BB6F4DF218382C1700CF2FB8 /* RURDetailShopVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RURDetailShopVC.xib; path = Controllers/DetailShop/RURDetailShopVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +134,10 @@
 		4A8DD68518381D7100E603E5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BB6F4DDD18382A6D00CF2FB8 /* MapaTiendas */,
+				BB6F4DE018382AA100CF2FB8 /* DetailProduct */,
+				BB6F4DDF18382A8D00CF2FB8 /* CatalogCollectionView */,
+				BB6F4DDE18382A7800CF2FB8 /* DetailShop */,
 				4A8DD69318381EAD00E603E5 /* Utils */,
 			);
 			path = Controllers;
@@ -234,6 +258,50 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BB6F4DDD18382A6D00CF2FB8 /* MapaTiendas */ = {
+			isa = PBXGroup;
+			children = (
+				BB6F4DE118382B6800CF2FB8 /* RURShopsMapVC.h */,
+				BB6F4DE218382B6800CF2FB8 /* RURShopsMapVC.m */,
+				BB6F4DE318382B6800CF2FB8 /* RURShopsMapVC.xib */,
+			);
+			name = MapaTiendas;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		BB6F4DDE18382A7800CF2FB8 /* DetailShop */ = {
+			isa = PBXGroup;
+			children = (
+				BB6F4DF018382C1700CF2FB8 /* RURDetailShopVC.h */,
+				BB6F4DF118382C1700CF2FB8 /* RURDetailShopVC.m */,
+				BB6F4DF218382C1700CF2FB8 /* RURDetailShopVC.xib */,
+			);
+			name = DetailShop;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		BB6F4DDF18382A8D00CF2FB8 /* CatalogCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				BB6F4DEB18382BE400CF2FB8 /* RURProductCatalogVC.h */,
+				BB6F4DEC18382BE400CF2FB8 /* RURProductCatalogVC.m */,
+				BB6F4DED18382BE400CF2FB8 /* RURProductCatalogVC.xib */,
+			);
+			name = CatalogCollectionView;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		BB6F4DE018382AA100CF2FB8 /* DetailProduct */ = {
+			isa = PBXGroup;
+			children = (
+				BB6F4DE618382BAB00CF2FB8 /* RURDetalProductVC.h */,
+				BB6F4DE718382BAB00CF2FB8 /* RURDetalProductVC.m */,
+				BB6F4DE818382BAB00CF2FB8 /* RURDetalProductVC.xib */,
+			);
+			name = DetailProduct;
+			path = ..;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -313,8 +381,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB6F4DEF18382BE400CF2FB8 /* RURProductCatalogVC.xib in Resources */,
 				4AA58D3B183818C300B51AEA /* Images.xcassets in Resources */,
+				BB6F4DE518382B6800CF2FB8 /* RURShopsMapVC.xib in Resources */,
+				BB6F4DF418382C1700CF2FB8 /* RURDetailShopVC.xib in Resources */,
 				4AA58D2D183818C300B51AEA /* InfoPlist.strings in Resources */,
+				BB6F4DEA18382BAB00CF2FB8 /* RURDetalProductVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +439,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A8DD69218381E9100E603E5 /* RURUser.m in Sources */,
+				BB6F4DEE18382BE400CF2FB8 /* RURProductCatalogVC.m in Sources */,
+				BB6F4DE418382B6800CF2FB8 /* RURShopsMapVC.m in Sources */,
 				4A8DD68A18381D7100E603E5 /* RURAppDelegate.m in Sources */,
+				BB6F4DE918382BAB00CF2FB8 /* RURDetalProductVC.m in Sources */,
+				BB6F4DF318382C1700CF2FB8 /* RURDetailShopVC.m in Sources */,
 				4AA58D2F183818C300B51AEA /* main.m in Sources */,
 				4A8DD69618381EDC00E603E5 /* UIViewController+UserAdditions.m in Sources */,
 				4A229F6B183824740041724D /* RURCommon.m in Sources */,
