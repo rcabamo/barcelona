@@ -10,4 +10,11 @@
 
 @interface RURUser : NSObject
 
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *phone;
+@property (nonatomic, copy) NSString *email;
+@property (nonatomic, copy) NSString *avatar;
+
+@property (nonatomic, strong) NSArray *checkoutProducts;
+
 @end
