@@ -1,10 +1,13 @@
 PODS:
   - FXBlurView (HEAD based on 1.4.4)
+  - Typhoon (1.5.3)
 
 DEPENDENCIES:
   - FXBlurView (HEAD)
+  - Typhoon (~> 1.5.3)
 
 SPEC CHECKSUMS:
   FXBlurView: bd4c9209f4415ec41138acabaa18cd0f87ecd49e
+  Typhoon: 486a9507a0d7d674e3dc023e77603fefd02aedd3
 
 COCOAPODS: 0.27.1
