@@ -10,13 +10,21 @@
 
 #import "RURAssembly.h"
 
+#import <MSDynamicsDrawerViewController/MSDynamicsDrawerViewController.h>
+
 #import <Typhoon/Typhoon.h>
 
 @implementation RURAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Setup
     [self setupApp];
+    
+    // Init VC's
+    MSDynamicsDrawerViewController *rootVC = [MSDynamicsDrawerViewController new];
+    
+    self.window.rootViewController = rootVC;
     return YES;
 }
 							
