@@ -13,6 +13,7 @@
 		4A229F79183837A60041724D /* RURProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A229F77183837A60041724D /* RURProfileVC.xib */; };
 		4A229F7D183837BB0041724D /* RURPurchasesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A229F7B183837BB0041724D /* RURPurchasesVC.m */; };
 		4A229F7E183837BB0041724D /* RURPurchasesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A229F7C183837BB0041724D /* RURPurchasesVC.xib */; };
+		4A229F801838432E0041724D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A229F7F1838432E0041724D /* MapKit.framework */; };
 		4A8DD68A18381D7100E603E5 /* RURAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8DD68818381D7100E603E5 /* RURAppDelegate.m */; };
 		4A8DD68E18381DD000E603E5 /* RURAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8DD68D18381DD000E603E5 /* RURAssembly.m */; };
 		4A8DD69218381E9100E603E5 /* RURUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8DD69118381E9100E603E5 /* RURUser.m */; };
@@ -57,6 +58,7 @@
 		4A229F7A183837BB0041724D /* RURPurchasesVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RURPurchasesVC.h; path = Purchases/RURPurchasesVC.h; sourceTree = "<group>"; };
 		4A229F7B183837BB0041724D /* RURPurchasesVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RURPurchasesVC.m; path = Purchases/RURPurchasesVC.m; sourceTree = "<group>"; };
 		4A229F7C183837BB0041724D /* RURPurchasesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RURPurchasesVC.xib; path = Purchases/RURPurchasesVC.xib; sourceTree = "<group>"; };
+		4A229F7F1838432E0041724D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4A8DD68718381D7100E603E5 /* RURAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURAppDelegate.h; sourceTree = "<group>"; };
 		4A8DD68818381D7100E603E5 /* RURAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURAppDelegate.m; sourceTree = "<group>"; };
 		4A8DD68C18381DD000E603E5 /* RURAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURAssembly.h; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A229F801838432E0041724D /* MapKit.framework in Frameworks */,
 				4AA58D25183818C300B51AEA /* CoreGraphics.framework in Frameworks */,
 				4AA58D27183818C300B51AEA /* UIKit.framework in Frameworks */,
 				4AA58D23183818C300B51AEA /* Foundation.framework in Frameworks */,
@@ -248,6 +251,7 @@
 		4AA58D21183818C300B51AEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4A229F7F1838432E0041724D /* MapKit.framework */,
 				4AA58D22183818C300B51AEA /* Foundation.framework */,
 				4AA58D24183818C300B51AEA /* CoreGraphics.framework */,
 				4AA58D26183818C300B51AEA /* UIKit.framework */,

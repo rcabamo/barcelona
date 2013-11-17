@@ -27,14 +27,15 @@
     // Init VC's
     RURProfileVC *profileVC = [[RURProfileVC alloc] init];
     RURPurchasesVC *purchasesVC = [[RURPurchasesVC alloc] init];
-    RURShopsMapVC *shopsVC = [[RURShopsMapVC alloc] init];
+    UINavigationController *shopsVC = [[UINavigationController alloc] initWithRootViewController:[[RURShopsMapVC alloc] init]];
+    shopsVC.navigationBar.translucent = NO;
     
     self.dynamicsDrawerViewController = [MSDynamicsDrawerViewController new];
     [self.dynamicsDrawerViewController addStylersFromArray:@[[MSDynamicsDrawerScaleStyler styler], [MSDynamicsDrawerFadeStyler styler]] forDirection:MSDynamicsDrawerDirectionLeft];
     [self.dynamicsDrawerViewController addStylersFromArray:@[[MSDynamicsDrawerParallaxStyler styler]] forDirection:MSDynamicsDrawerDirectionRight];
     
     // Set main controller
-    [self.dynamicsDrawerViewController setPaneViewController:[[UINavigationController alloc] initWithRootViewController:shopsVC] animated:NO completion:nil];
+    [self.dynamicsDrawerViewController setPaneViewController:shopsVC animated:NO completion:nil];
     
     // Set lateral controllers
     [self.dynamicsDrawerViewController setDrawerViewController:purchasesVC forDirection:MSDynamicsDrawerDirectionLeft];
@@ -42,14 +43,14 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = self.dynamicsDrawerViewController;
-    [self.window makeKeyAndVisible];
     UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"windowBackground"]];
     [self.window addSubview:backgroundView];
     [self.window sendSubviewToBack:backgroundView];
     
     NSLog(@"clientID: %@", [[TyphoonComponentFactory defaultFactory] clientID]);
     NSLog(@"secretID: %@", [[TyphoonComponentFactory defaultFactory] secretID]);
-    
+
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
