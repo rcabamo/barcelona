@@ -127,7 +127,7 @@
 
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    [SVProgressHUD showWithStatus:@"Recognized product..."];
+    [SVProgressHUD showWithStatus:@"Recognizing product..."];
     
     _image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
     //save picture
@@ -178,7 +178,9 @@
 #pragma mark - alert delegates
 - (void) alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
-    [self takeCamPicture];
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        [self takeCamPicture];
+    }
 }
 
 @end
