@@ -9,7 +9,6 @@
                 <outlet property="bigImage" destination="dF7-ph-sUQ" id="3UY-zM-nQt"/>
                 <outlet property="descriptionTextView" destination="zIZ-hz-4zq" id="hsp-Gq-nhZ"/>
                 <outlet property="holderView" destination="Q3k-0R-v4c" id="alz-CB-EDK"/>
-                <outlet property="logoImage" destination="Jvm-re-vMx" id="kzB-Zw-efW"/>
                 <outlet property="titleLabel" destination="8l2-wX-f3b" id="qcb-vn-epz"/>
                 <outlet property="titleView" destination="FuY-an-4Zr" id="t30-mG-T74"/>
                 <outlet property="view" destination="1" id="3"/>
@@ -25,28 +24,25 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FuY-an-4Zr" userLabel="blurView" customClass="FXBlurView">
-                            <rect key="frame" x="5" y="10" width="290" height="61"/>
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="155"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8l2-wX-f3b" userLabel="name">
-                                    <rect key="frame" x="73" y="1" width="191" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                    <color key="textColor" red="0.4780273438" green="0.4780273438" blue="0.4780273438" alpha="0.60999999999999999" colorSpace="calibratedRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bth_american_eagle_directory_logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Jvm-re-vMx">
-                                    <rect key="frame" x="5" y="0.0" width="45" height="45"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dF7-ph-sUQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="155"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8l2-wX-f3b" userLabel="name">
+                                    <rect key="frame" x="0.0" y="111" width="300" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="discount2.png" translatesAutoresizingMaskIntoConstraints="NO" id="dF7-ph-sUQ">
-                            <rect key="frame" x="10" y="60" width="290" height="85"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </imageView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 </view>
@@ -97,9 +93,7 @@
         </view>
     </objects>
     <resources>
-        <image name="bth_american_eagle_directory_logo.jpg" width="280" height="210"/>
         <image name="button-blue.png" width="300" height="45"/>
         <image name="button-empty.png" width="300" height="45"/>
-        <image name="discount2.png" width="1891" height="626"/>
     </resources>
 </document>
