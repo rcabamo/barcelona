@@ -9,6 +9,9 @@
 #import "RURProfileVC.h"
 
 @interface RURProfileVC ()
+
+@property (nonatomic, strong) BBObject *user;
+
 @property (nonatomic, strong) IBOutlet UIButton *avatar;
 @property (nonatomic, strong) IBOutlet UITextField *userInfo;
 
@@ -21,6 +24,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        [self reloadProfile];
     }
     return self;
 }
@@ -34,6 +38,17 @@
     self.avatar.layer.masksToBounds = YES;
     self.avatar.backgroundColor = [UIColor lightGrayColor];
     // Do any additional setup after loading the view from its nib.
+}
+
+- (void)reloadProfile
+{
+    BBQuery *query = [Backbeam queryForEntity:@"user"];
+    [query setQuery:@"join avatar"];
+    [query fetch:1 offset:0 success:^(NSArray *objects, NSInteger totalCount, BOOL fromCache) {
+        self.user = [objects firstObject];
+    } failure:^(NSError *err) {
+        NSLog(@"Query error: %@", err);
+    }];
 }
 
 - (void)didReceiveMemoryWarning
