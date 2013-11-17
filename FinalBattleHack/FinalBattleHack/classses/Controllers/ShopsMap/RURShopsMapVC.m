@@ -81,6 +81,7 @@
     static NSInteger MAX_LOCATIONS = 300;
     
     BBQuery *query = [Backbeam queryForEntity:@"shop"];
+    [query setQuery:@"join image"];
     [query bounding:@"position" swlat:swlat swlon:swlon nelat:nelat nelon:nelon limit:MAX_LOCATIONS success:^(NSArray* arr, NSInteger total, BOOL cached) {
         
         NSMutableArray *returned = [[NSMutableArray alloc] initWithArray:arr];
