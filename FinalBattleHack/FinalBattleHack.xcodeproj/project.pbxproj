@@ -11,29 +11,15 @@
 		2D2091031838947000B2FCF9 /* RURConfirmationSendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D2091011838947000B2FCF9 /* RURConfirmationSendViewController.xib */; };
 		2D2091061838A4A000B2FCF9 /* deselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2091041838A4A000B2FCF9 /* deselected.png */; };
 		2D2091071838A4A000B2FCF9 /* backgroundSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2091051838A4A000B2FCF9 /* backgroundSelected.png */; };
-		2D5253DD1838D17D0056C7C3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5253DC1838D17D0056C7C3 /* MobileCoreServices.framework */; };
-		2D5253DF1838D1CC0056C7C3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5253DE1838D1CC0056C7C3 /* SystemConfiguration.framework */; };
-		2D5253E11838D2090056C7C3 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5253E01838D2090056C7C3 /* libstdc++.dylib */; };
-		2D5253E31838D20F0056C7C3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5253E21838D20F0056C7C3 /* libz.dylib */; };
-		2D5253E51838D2A70056C7C3 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5253E41838D2A70056C7C3 /* RestKit.framework */; };
+		2D5253E91838D8310056C7C3 /* RURcaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5253E71838D8310056C7C3 /* RURcaptureViewController.m */; };
+		2D5253EA1838D8310056C7C3 /* RURcaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5253E81838D8310056C7C3 /* RURcaptureViewController.xib */; };
+		2D5253ED1838D9630056C7C3 /* RURRestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5253EC1838D9630056C7C3 /* RURRestManager.m */; };
 		2D7ED99C1838B3F900EF3328 /* sale30.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D7ED99B1838B3F900EF3328 /* sale30.png */; };
 		2D7ED99E1838B5E500EF3328 /* discount.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D7ED99D1838B5E500EF3328 /* discount.png */; };
 		2D7ED9A01838B6DB00EF3328 /* discount2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D7ED99F1838B6DB00EF3328 /* discount2.png */; };
 		2D7ED9A21838B78300EF3328 /* bth_american_eagle_directory_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D7ED9A11838B78300EF3328 /* bth_american_eagle_directory_logo.jpg */; };
 		2D7ED9A41838B86000EF3328 /* gestures_2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D7ED9A31838B86000EF3328 /* gestures_2x.jpg */; };
 		2D7ED9A61838BAFE00EF3328 /* WhiteMugFront.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D7ED9A51838BAFE00EF3328 /* WhiteMugFront.jpg */; };
-		2D7ED9B21838D0BA00EF3328 /* CatchoomSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7ED9B11838D0BA00EF3328 /* CatchoomSDK.framework */; };
-		2D7ED9B41838D10000EF3328 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7ED9B31838D10000EF3328 /* QuartzCore.framework */; };
-		2D7ED9B61838D10700EF3328 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7ED9B51838D10700EF3328 /* AVFoundation.framework */; };
-		2D7ED9B81838D10E00EF3328 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7ED9B71838D10E00EF3328 /* CoreMedia.framework */; };
-		2D7ED9BA1838D11A00EF3328 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7ED9B91838D11A00EF3328 /* CoreVideo.framework */; };
-		2D7ED9BC1838D12000EF3328 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7ED9BB1838D12000EF3328 /* CoreFoundation.framework */; };
-		2D7ED9BE1838D12600EF3328 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7ED9BD1838D12600EF3328 /* GLKit.framework */; };
-		2D7ED9C01838D12C00EF3328 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7ED9BF1838D12C00EF3328 /* OpenGLES.framework */; };
-		2D7ED9C21838D13200EF3328 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7ED9C11838D13200EF3328 /* MediaPlayer.framework */; };
-		2D7ED9C41838D13700EF3328 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7ED9C31838D13700EF3328 /* Security.framework */; };
-		2D7ED9C61838D13D00EF3328 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7ED9C51838D13D00EF3328 /* CFNetwork.framework */; };
-		2D7ED9C81838D15000EF3328 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7ED9C71838D15000EF3328 /* CoreData.framework */; };
 		2DA49C7218384D7000772064 /* RURProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DA49C6F18384D7000772064 /* RURProfileVC.xib */; };
 		2DA49C7318384D7000772064 /* RURProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA49C7118384D7000772064 /* RURProfileVC.m */; };
 		4A229F701838331C0041724D /* RUR_dev.properties in Resources */ = {isa = PBXBuildFile; fileRef = 4A229F6F1838331C0041724D /* RUR_dev.properties */; };
@@ -100,29 +86,17 @@
 		2D2091011838947000B2FCF9 /* RURConfirmationSendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RURConfirmationSendViewController.xib; path = ConfirmationView/RURConfirmationSendViewController.xib; sourceTree = "<group>"; };
 		2D2091041838A4A000B2FCF9 /* deselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deselected.png; sourceTree = "<group>"; };
 		2D2091051838A4A000B2FCF9 /* backgroundSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundSelected.png; sourceTree = "<group>"; };
-		2D5253DC1838D17D0056C7C3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		2D5253DE1838D1CC0056C7C3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		2D5253E01838D2090056C7C3 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
-		2D5253E21838D20F0056C7C3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		2D5253E41838D2A70056C7C3 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RestKit.framework; sourceTree = "<group>"; };
+		2D5253E61838D8310056C7C3 /* RURcaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURcaptureViewController.h; sourceTree = "<group>"; };
+		2D5253E71838D8310056C7C3 /* RURcaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURcaptureViewController.m; sourceTree = "<group>"; };
+		2D5253E81838D8310056C7C3 /* RURcaptureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RURcaptureViewController.xib; sourceTree = "<group>"; };
+		2D5253EB1838D9630056C7C3 /* RURRestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURRestManager.h; sourceTree = "<group>"; };
+		2D5253EC1838D9630056C7C3 /* RURRestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURRestManager.m; sourceTree = "<group>"; };
 		2D7ED99B1838B3F900EF3328 /* sale30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sale30.png; sourceTree = "<group>"; };
 		2D7ED99D1838B5E500EF3328 /* discount.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discount.png; sourceTree = "<group>"; };
 		2D7ED99F1838B6DB00EF3328 /* discount2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discount2.png; sourceTree = "<group>"; };
 		2D7ED9A11838B78300EF3328 /* bth_american_eagle_directory_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bth_american_eagle_directory_logo.jpg; sourceTree = "<group>"; };
 		2D7ED9A31838B86000EF3328 /* gestures_2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gestures_2x.jpg; sourceTree = "<group>"; };
 		2D7ED9A51838BAFE00EF3328 /* WhiteMugFront.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhiteMugFront.jpg; sourceTree = "<group>"; };
-		2D7ED9B11838D0BA00EF3328 /* CatchoomSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CatchoomSDK.framework; sourceTree = "<group>"; };
-		2D7ED9B31838D10000EF3328 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		2D7ED9B51838D10700EF3328 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		2D7ED9B71838D10E00EF3328 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		2D7ED9B91838D11A00EF3328 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		2D7ED9BB1838D12000EF3328 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		2D7ED9BD1838D12600EF3328 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
-		2D7ED9BF1838D12C00EF3328 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		2D7ED9C11838D13200EF3328 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		2D7ED9C31838D13700EF3328 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		2D7ED9C51838D13D00EF3328 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		2D7ED9C71838D15000EF3328 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		2DA49C6F18384D7000772064 /* RURProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RURProfileVC.xib; sourceTree = "<group>"; };
 		2DA49C7018384D7000772064 /* RURProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURProfileVC.h; sourceTree = "<group>"; };
 		2DA49C7118384D7000772064 /* RURProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURProfileVC.m; sourceTree = "<group>"; };
@@ -195,26 +169,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D5253E31838D20F0056C7C3 /* libz.dylib in Frameworks */,
-				2D5253E11838D2090056C7C3 /* libstdc++.dylib in Frameworks */,
-				2D5253DF1838D1CC0056C7C3 /* SystemConfiguration.framework in Frameworks */,
-				2D5253DD1838D17D0056C7C3 /* MobileCoreServices.framework in Frameworks */,
-				2D5253E51838D2A70056C7C3 /* RestKit.framework in Frameworks */,
-				2D7ED9C81838D15000EF3328 /* CoreData.framework in Frameworks */,
-				2D7ED9C61838D13D00EF3328 /* CFNetwork.framework in Frameworks */,
-				2D7ED9C41838D13700EF3328 /* Security.framework in Frameworks */,
-				2D7ED9C21838D13200EF3328 /* MediaPlayer.framework in Frameworks */,
-				2D7ED9C01838D12C00EF3328 /* OpenGLES.framework in Frameworks */,
-				2D7ED9BE1838D12600EF3328 /* GLKit.framework in Frameworks */,
-				2D7ED9BC1838D12000EF3328 /* CoreFoundation.framework in Frameworks */,
-				2D7ED9BA1838D11A00EF3328 /* CoreVideo.framework in Frameworks */,
 				4AA58D25183818C300B51AEA /* CoreGraphics.framework in Frameworks */,
-				2D7ED9B81838D10E00EF3328 /* CoreMedia.framework in Frameworks */,
-				2D7ED9B61838D10700EF3328 /* AVFoundation.framework in Frameworks */,
-				2D7ED9B41838D10000EF3328 /* QuartzCore.framework in Frameworks */,
 				4A78EA681838703000E7933B /* CoreLocation.framework in Frameworks */,
 				4A229F801838432E0041724D /* MapKit.framework in Frameworks */,
-				2D7ED9B21838D0BA00EF3328 /* CatchoomSDK.framework in Frameworks */,
 				4AA58D27183818C300B51AEA /* UIKit.framework in Frameworks */,
 				4AA58D23183818C300B51AEA /* Foundation.framework in Frameworks */,
 				9AA316FBBB354E90908299CA /* libPods.a in Frameworks */,
@@ -363,6 +320,8 @@
 			children = (
 				4A8DD69418381EDC00E603E5 /* UIViewController+UserAdditions.h */,
 				4A8DD69518381EDC00E603E5 /* UIViewController+UserAdditions.m */,
+				2D5253EB1838D9630056C7C3 /* RURRestManager.h */,
+				2D5253EC1838D9630056C7C3 /* RURRestManager.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -390,23 +349,6 @@
 		4AA58D21183818C300B51AEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2D5253E41838D2A70056C7C3 /* RestKit.framework */,
-				2D5253E21838D20F0056C7C3 /* libz.dylib */,
-				2D5253E01838D2090056C7C3 /* libstdc++.dylib */,
-				2D5253DE1838D1CC0056C7C3 /* SystemConfiguration.framework */,
-				2D5253DC1838D17D0056C7C3 /* MobileCoreServices.framework */,
-				2D7ED9C71838D15000EF3328 /* CoreData.framework */,
-				2D7ED9C51838D13D00EF3328 /* CFNetwork.framework */,
-				2D7ED9C31838D13700EF3328 /* Security.framework */,
-				2D7ED9C11838D13200EF3328 /* MediaPlayer.framework */,
-				2D7ED9BF1838D12C00EF3328 /* OpenGLES.framework */,
-				2D7ED9BD1838D12600EF3328 /* GLKit.framework */,
-				2D7ED9BB1838D12000EF3328 /* CoreFoundation.framework */,
-				2D7ED9B91838D11A00EF3328 /* CoreVideo.framework */,
-				2D7ED9B71838D10E00EF3328 /* CoreMedia.framework */,
-				2D7ED9B51838D10700EF3328 /* AVFoundation.framework */,
-				2D7ED9B31838D10000EF3328 /* QuartzCore.framework */,
-				2D7ED9B11838D0BA00EF3328 /* CatchoomSDK.framework */,
 				4A78EA671838703000E7933B /* CoreLocation.framework */,
 				4A229F7F1838432E0041724D /* MapKit.framework */,
 				4AA58D22183818C300B51AEA /* Foundation.framework */,
@@ -489,6 +431,9 @@
 				4A229FAF18384B310041724D /* RURDetailShopVC.h */,
 				4A229FB018384B310041724D /* RURDetailShopVC.m */,
 				4A229FB118384B310041724D /* RURDetailShopVC.xib */,
+				2D5253E61838D8310056C7C3 /* RURcaptureViewController.h */,
+				2D5253E71838D8310056C7C3 /* RURcaptureViewController.m */,
+				2D5253E81838D8310056C7C3 /* RURcaptureViewController.xib */,
 			);
 			path = DetailShop;
 			sourceTree = "<group>";
@@ -611,6 +556,7 @@
 				4A78EA6F183885B000E7933B /* button-empty.png in Resources */,
 				4A229FA918384B1A0041724D /* CollectionViewCell.xib in Resources */,
 				2D2091061838A4A000B2FCF9 /* deselected.png in Resources */,
+				2D5253EA1838D8310056C7C3 /* RURcaptureViewController.xib in Resources */,
 				4A78EA70183885B000E7933B /* button-plain@2x.png in Resources */,
 				4A229FAA18384B1A0041724D /* HeaderView.xib in Resources */,
 				4A229F72183833250041724D /* Images.xcassets in Resources */,
@@ -681,7 +627,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DA49C7318384D7000772064 /* RURProfileVC.m in Sources */,
+				2D5253E91838D8310056C7C3 /* RURcaptureViewController.m in Sources */,
 				4A8DD69218381E9100E603E5 /* RURUser.m in Sources */,
+				2D5253ED1838D9630056C7C3 /* RURRestManager.m in Sources */,
 				4A229F9F18384AEB0041724D /* RURDetalProductVC.m in Sources */,
 				4A229FB218384B310041724D /* RURDetailShopVC.m in Sources */,
 				4A229FAB18384B1A0041724D /* RURHeaderView.m in Sources */,

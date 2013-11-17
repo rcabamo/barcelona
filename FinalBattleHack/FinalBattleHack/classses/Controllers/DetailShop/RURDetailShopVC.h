@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RURDetailShopVC : UIViewController
+@interface RURDetailShopVC : UIViewController <UIImagePickerControllerDelegate>
 
 - (id)initWithShop:(PFObject *)shop;
 
+- (IBAction)takePicture:(id)sender;
 @end

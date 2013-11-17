@@ -8,7 +8,7 @@
 
 #import "RURConfirmationSendViewController.h"
 
-#import <sendgrid/sendgrid.h>
+//#import <sendgrid/sendgrid.h>
 
 @interface RURConfirmationSendViewController ()
 
@@ -52,14 +52,14 @@
 
 - (void)sendShopEmail:(NSString *)shopEmail userEmail:(NSString *)userEmail body:(NSString *)body subject:(NSString *)subject
 {
-    sendgrid *msg = [sendgrid user:@"rcabamo" andPass:@"pepito"];
-    
-    msg.to = userEmail;
-    msg.subject = subject;
-    msg.from = shopEmail;
-    msg.text = body;
-    
-    [msg sendWithWeb];
+//    sendgrid *msg = [sendgrid user:@"rcabamo" andPass:@"pepito"];
+//    
+//    msg.to = userEmail;
+//    msg.subject = subject;
+//    msg.from = shopEmail;
+//    msg.text = body;
+//    
+//    [msg sendWithWeb];
 }
 
 - (IBAction)pickUpClick:(id)sender {

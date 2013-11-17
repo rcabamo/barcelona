@@ -9,6 +9,7 @@
 #import "RURDetailShopVC.h"
 #import "RUR_Shop.h"
 #import "RURProductCatalogVC.h"
+#import "RURRestManager.h"
 
 @interface RURDetailShopVC ()
 
@@ -20,6 +21,8 @@
 @property (nonatomic, weak) IBOutlet UIImageView *logoImage;
 
 @property (nonatomic, weak) IBOutlet UITextView *descriptionTextView;
+
+@property UIImage *image;
 
 @end
 
@@ -42,6 +45,9 @@
     }
     
     return self;
+}
+
+- (IBAction)takePicture:(id)sender {
 }
 
 - (void)viewDidLoad
@@ -77,5 +83,72 @@
     //Get array products & create catalog controller
 }
 
+#pragma mark - camera Delegate
+
+- (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    [self dismissViewControllerAnimated:YES completion:^{
+        //
+    }];
+    _image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
+    //save picture
+    [[RURRestManager sharedInstance] setDel:self];
+    [[RURRestManager sharedInstance] sendImage:_image];
+}
+
+- (void)takeCamPicture {
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        UIImagePickerController *camera = [[UIImagePickerController alloc]init];
+        camera.sourceType = UIImagePickerControllerSourceTypeCamera;
+        //camera.cameraCaptureMode = UIImagePickerControllerCameraDeviceFront;
+        camera.delegate = self;
+        
+        [self presentViewController:camera animated:YES completion:^{
+            //
+        }];
+    } else {
+        
+    }
+}
+
+#pragma mark - private Image helpers
+
++(UIImage*)imageWithImage: (UIImage*) sourceImage scaledToWidth: (float) i_width
+{
+    float oldWidth = sourceImage.size.width;
+    float scaleFactor = i_width / oldWidth;
+    
+    float newHeight = sourceImage.size.height * scaleFactor;
+    float newWidth = oldWidth * scaleFactor;
+    
+    UIGraphicsBeginImageContext(CGSizeMake(newWidth, newHeight));
+    [sourceImage drawInRect:CGRectMake(0, 0, newWidth, newHeight)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
+
++(UIImage *)imageWithFixedSmallSixe: (UIImage *) sourceImage
+{
+    float newWidth = 0.0;
+    float newHeight = 0.0;
+    float scaleFactor = 0.0;
+    if (sourceImage.size.width < sourceImage.size.height) {
+        float i_height = 500.0f;
+        scaleFactor = i_height / sourceImage.size.height;
+    } else {
+        float i_width = 500.0f;
+        scaleFactor = i_width / sourceImage.size.width;
+    }
+    
+    newHeight = sourceImage.size.height * scaleFactor;
+    newWidth = sourceImage.size.width * scaleFactor;
+    
+    UIGraphicsBeginImageContext(CGSizeMake(newWidth, newHeight));
+    [sourceImage drawInRect:CGRectMake(0, 0, newWidth, newHeight)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
 
 @end
