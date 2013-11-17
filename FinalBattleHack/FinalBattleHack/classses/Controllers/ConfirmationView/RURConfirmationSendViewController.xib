@@ -68,6 +68,5 @@
     </objects>
     <resources>
         <image name="deselected.png" width="243" height="243"/>
-        <image name="deselected.png" width="243" height="243"/>
     </resources>
 </document>

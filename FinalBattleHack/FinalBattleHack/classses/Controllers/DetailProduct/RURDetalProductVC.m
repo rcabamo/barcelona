@@ -11,7 +11,7 @@
 
 @interface RURDetalProductVC ()
 
-@property BBObject *product;
+@property PFObject *product;
 
 @end
 
@@ -26,7 +26,7 @@
     return self;
 }
 
-- (id) initWithProduct:(BBObject *)info
+- (id) initWithProduct:(PFObject *)info
 {
     self = [super init];
     if (self) {
@@ -41,9 +41,9 @@
     // Do any additional setup after loading the view from its nib.
     [PayPalPaymentViewController setEnvironment:PayPalEnvironmentNoNetwork];
     
-    [self.navigationItem setTitle:[_product stringForField:@"name"]];
-    _productDescription.text = [_product stringForField:@"description"];
-    _productPrice.text = [_product stringForField:@"price"];
+    [self.navigationItem setTitle:[_product objectForKey:@"name"]];
+    _productDescription.text = [_product objectForKey:@"description"];
+    _productPrice.text = [_product objectForKey:@"price"];
 }
 
 - (IBAction)payWithPP:(id)sender {

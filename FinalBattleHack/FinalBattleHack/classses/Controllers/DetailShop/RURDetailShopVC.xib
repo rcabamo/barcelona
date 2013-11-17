@@ -72,6 +72,9 @@
                     <state key="normal" title="product list" backgroundImage="button-empty.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="openProductsVC:" destination="-1" eventType="touchUpInside" id="jRI-gF-mOz"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.47802734375" green="0.47802734375" blue="0.47802734375" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>

@@ -20,57 +20,39 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        [self reloadPurchases];
     }
     return self;
 }
 
-- (void)viewDidLoad
+- (void)viewWillAppear:(BOOL)animated
 {
-    [super viewDidLoad];
-    self.itemsPurchased = [[NSArray alloc] initWithObjects:@"PRODUCT 1", @"PRODUCT 2", @"PRODUCT 3", nil];
-    // Do any additional setup after loading the view from its nib.
+    [super viewWillAppear:animated];
+    
+    [self reloadPurchases];
 }
 
-- (void)didReceiveMemoryWarning
+- (void)reloadPurchases
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    PFQuery *query = [PFQuery queryWithClassName:@"Purchase"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            // The find succeeded.
+            NSLog(@"Successfully retrieved %d scores.", objects.count);
+            // Do something with the found objects
+            for (PFObject *object in objects) {
+                NSLog(@"%@", object.objectId);
+            }
+            self.purchases = objects;
+        } else {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
 }
+
 
 #pragma mark - Table view data source
-
-//- (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-//    switch (section) {
-//        case 0:
-//            return @"";
-//            break;
-//        case 1:
-//            return @"";
-//            break;
-//        case 2:
-//            return @"";
-//        default:
-//            return @"";
-//            break;
-//    }
-//}
-
-//- (NSString*)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
-//    switch (section) {
-//        case 0:
-//            return @"";
-//            break;
-//        case 1:
-//            return @"";
-//            break;
-//        case 2:
-//            return @"";
-//            break;
-//        default:
-//            return @"";
-//            break;
-//    }
-//}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -90,7 +72,9 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CellPurchases"];
     }
-    cell.textLabel.text = [self.itemsPurchased objectAtIndex:indexPath.row];
+    
+    PFObject *purchase = self.itemsPurchased[indexPath.row];
+    cell.textLabel.text = [[purchase objectForKey:@"product"] objectForKey:@"name"];
     return cell;
 }
 

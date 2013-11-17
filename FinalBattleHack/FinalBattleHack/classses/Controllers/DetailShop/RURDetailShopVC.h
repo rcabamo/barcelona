@@ -10,6 +10,6 @@
 
 @interface RURDetailShopVC : UIViewController
 
-- (id)initWithShop:(BBObject *)shop;
+- (id)initWithShop:(PFObject *)shop;
 
 @end

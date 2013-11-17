@@ -24,20 +24,32 @@
     return self;
 }
 
+-(id) initWithItems:(NSArray*)objects {
+    self = [super init];
+    if (self) {
+        self.items = [[NSArray alloc] initWithArray:objects];
+    }
+    return self;
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
+    UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"windowBackground"]];
+    [self.view addSubview:backgroundView];
+    [self.view sendSubviewToBack:backgroundView];
     UINib *cellNib = [UINib nibWithNibName:@"CollectionViewCell" bundle:nil];
     [self.catalogItems registerNib:cellNib forCellWithReuseIdentifier:@"Cell"];
     [self.catalogItems registerClass:[RURHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header"];
     
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    [flowLayout setItemSize:CGSizeMake(140, 100)];
+    [flowLayout setItemSize:CGSizeMake(280, 200)];
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
     flowLayout.sectionInset = UIEdgeInsetsMake(0, 0, 20, 0);
     [self.catalogItems setCollectionViewLayout:flowLayout];
+    NSLog(@"%@", self.items);
     
 }
 
@@ -51,12 +63,12 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 10;
+    return [self.items count];
     
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 3;
+    return 1;
 }
 
 
@@ -65,7 +77,8 @@
 {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     UILabel *lbl = (UILabel*)[cell viewWithTag:102];
-    [lbl setText:[NSString stringWithFormat:@"Label %ld", (long)indexPath.row]];
+    /*BBObject *obj = [self.items objectAtIndex:indexPath.row];
+    [lbl setText:[obj stringForField:@"name"]];*/
     return cell;
     
 }

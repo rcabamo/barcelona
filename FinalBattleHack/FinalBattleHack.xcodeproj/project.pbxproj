@@ -51,6 +51,7 @@
 		4AA58D4C183818C300B51AEA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AA58D4A183818C300B51AEA /* InfoPlist.strings */; };
 		4AA58D4E183818C300B51AEA /* FinalBattleHackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA58D4D183818C300B51AEA /* FinalBattleHackTests.m */; };
 		9AA316FBBB354E90908299CA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 979064809C8F41ACAB5BFFE3 /* libPods.a */; };
+		BB387C7C1838A42500ADB6FE /* RUR_Shop.m in Sources */ = {isa = PBXBuildFile; fileRef = BB387C7B1838A42500ADB6FE /* RUR_Shop.m */; };
 		BB4C31D21838774A00E25BF5 /* TestAvatar.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BB4C31D11838774A00E25BF5 /* TestAvatar.jpeg */; };
 		BB4C31D51838776E00E25BF5 /* activityIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BB4C31D31838776E00E25BF5 /* activityIcon.png */; };
 		BB4C31D61838776E00E25BF5 /* payWithPassIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BB4C31D41838776E00E25BF5 /* payWithPassIcon.png */; };
@@ -128,6 +129,8 @@
 		4AA58D4D183818C300B51AEA /* FinalBattleHackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinalBattleHackTests.m; sourceTree = "<group>"; };
 		8A274BCFBFD94335944B02E8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		979064809C8F41ACAB5BFFE3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB387C7A1838A42500ADB6FE /* RUR_Shop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUR_Shop.h; sourceTree = "<group>"; };
+		BB387C7B1838A42500ADB6FE /* RUR_Shop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUR_Shop.m; sourceTree = "<group>"; };
 		BB4C31D11838774A00E25BF5 /* TestAvatar.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TestAvatar.jpeg; sourceTree = "<group>"; };
 		BB4C31D31838776E00E25BF5 /* activityIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activityIcon.png; sourceTree = "<group>"; };
 		BB4C31D41838776E00E25BF5 /* payWithPassIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = payWithPassIcon.png; sourceTree = "<group>"; };
@@ -278,6 +281,8 @@
 			children = (
 				4A8DD69018381E9100E603E5 /* RURUser.h */,
 				4A8DD69118381E9100E603E5 /* RURUser.m */,
+				BB387C7A1838A42500ADB6FE /* RUR_Shop.h */,
+				BB387C7B1838A42500ADB6FE /* RUR_Shop.m */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -579,6 +584,7 @@
 				4A8DD69618381EDC00E603E5 /* UIViewController+UserAdditions.m in Sources */,
 				4A8DD68E18381DD000E603E5 /* RURAssembly.m in Sources */,
 				4A78EA661838700800E7933B /* RURCustomAnnotation.m in Sources */,
+				BB387C7C1838A42500ADB6FE /* RUR_Shop.m in Sources */,
 				4A229FAC18384B1A0041724D /* RURProductCatalogVC.m in Sources */,
 				4A229F9418384A9C0041724D /* RURPurchasesVC.m in Sources */,
 			);

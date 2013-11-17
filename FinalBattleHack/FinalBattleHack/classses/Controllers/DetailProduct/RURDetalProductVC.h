@@ -17,5 +17,5 @@
 - (IBAction)payWithPP:(id)sender;
 - (IBAction)addToChart:(id)sender;
 
-- (id) initWithProduct:(BBObject *)info;
+- (id) initWithProduct:(PFObject *)info;
 @end

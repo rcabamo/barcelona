@@ -13,6 +13,7 @@
 #import "RURProfileVC.h"
 #import "RURProductCatalogVC.h"
 
+#import "RURDetailShopVC.h"
 #import <MSDynamicsDrawerViewController/MSDynamicsDrawerViewController.h>
 
 @implementation RURAppDelegate
@@ -25,7 +26,8 @@
     // Init VC's
     RURProfileVC *profileVC = [[RURProfileVC alloc] init];
     RURPurchasesVC *purchasesVC = [[RURPurchasesVC alloc] init];
-    UINavigationController *shopsVC = [[UINavigationController alloc] initWithRootViewController:[[RURShopsMapVC alloc] init]];
+    //UINavigationController *shopsVC = [[UINavigationController alloc] initWithRootViewController:[[RURShopsMapVC alloc] init]];
+    UINavigationController *shopsVC = [[UINavigationController alloc] initWithRootViewController:[[RURDetailShopVC alloc] initWithShop:nil]];
     shopsVC.navigationBar.translucent = NO;
     
     self.dynamicsDrawerViewController = [MSDynamicsDrawerViewController new];
@@ -38,10 +40,9 @@
     // Set lateral controllers
     [self.dynamicsDrawerViewController setDrawerViewController:purchasesVC forDirection:MSDynamicsDrawerDirectionLeft];
     [self.dynamicsDrawerViewController setDrawerViewController:profileVC forDirection:MSDynamicsDrawerDirectionRight];
-
-    RURProductCatalogVC *product = [[RURProductCatalogVC alloc] init];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = product;
+    self.window.rootViewController = self.dynamicsDrawerViewController;
     UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"windowBackground"]];
     [self.window addSubview:backgroundView];
     [self.window sendSubviewToBack:backgroundView];
@@ -58,7 +59,7 @@
 - (void)setupApp
 {
     [self setupTyphoon];
-    [self setupBackbeam];
+    [self setupParse];
 }
 
 - (void)setupTyphoon
@@ -74,9 +75,10 @@
     [factory makeDefault];
 }
 
-- (void)setupBackbeam
+- (void)setupParse
 {
-    [Backbeam setProject:[[TyphoonComponentFactory defaultFactory] backbeamAppName] sharedKey:[[TyphoonComponentFactory defaultFactory] backbeamShareKey] secretKey:[[TyphoonComponentFactory defaultFactory] backbeamSecretKey] environment:[[TyphoonComponentFactory defaultFactory] backbeamEnvironment]];
+    [Parse setApplicationId:[[TyphoonComponentFactory defaultFactory] parseAppID]
+                  clientKey:[[TyphoonComponentFactory defaultFactory] parseClientKey]];
 }
 
 @end

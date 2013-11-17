@@ -39,8 +39,8 @@
 {
     MKCoordinateRegion region;
     MKCoordinateSpan span;
-    span.latitudeDelta = 0.005;
-    span.longitudeDelta = 0.005;
+    span.latitudeDelta = 0.05;
+    span.longitudeDelta = 0.05;
     CLLocationCoordinate2D location;
     location.latitude = self.mapView.userLocation.coordinate.latitude;
     location.longitude = self.mapView.userLocation.coordinate.longitude;
@@ -76,53 +76,28 @@
     double nelat = neCoord.latitude;
     double nelon = neCoord.longitude;
     
-    // Make the query
+    PFGeoPoint *geoPoointSouth = [PFGeoPoint geoPointWithLatitude:swlat longitude:swlon];
+    PFGeoPoint *geoPoointNorth = [PFGeoPoint geoPointWithLatitude:nelat longitude:nelon];
     
-    static NSInteger MAX_LOCATIONS = 300;
-    
-    BBQuery *query = [Backbeam queryForEntity:@"shop"];
-    [query setQuery:@"join image"];
-    [query bounding:@"position" swlat:swlat swlon:swlon nelat:nelat nelon:nelon limit:MAX_LOCATIONS success:^(NSArray* arr, NSInteger total, BOOL cached) {
+    PFGeoPoint *geoPoint = [PFGeoPoint geoPointWithLocation:self.mapView.userLocation.location];
+    PFQuery *query = [PFQuery queryWithClassName:@"Shop"];
+    __block NSArray *shops;
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        shops = objects;
         
-        NSMutableArray *returned = [[NSMutableArray alloc] initWithArray:arr];
-        NSMutableArray *annotationsToRemove = [[NSMutableArray alloc] initWithCapacity:MAX_LOCATIONS];
-        NSMutableArray *annotationsToAdd = [[NSMutableArray alloc] initWithCapacity:MAX_LOCATIONS];
-        
-        for (id<MKAnnotation> annotation in self.mapView.annotations) {
-            if ([annotation isKindOfClass:[RURCustomAnnotation class]]) {
-                RURCustomAnnotation *ann = (RURCustomAnnotation*) annotation;
-                BOOL found = NO;
-                for (BBObject *object in arr) {
-                    BBObject *otherObject = (BBObject*) ann.object;
-                    if ([object.identifier isEqualToString:otherObject.identifier]) {
-                        // annotation already visible, do not add result
-                        [returned removeObject:object];
-                        found = YES;
-                        break;
-                    }
-                }
-                if (!found) {
-                    // annotation no longer visible
-                    [annotationsToRemove addObject:ann];
-                }
-            }
-        }
-        [self.mapView removeAnnotations:annotationsToRemove];
-        
-        // add results not visible yet
-        for (BBObject *object in returned) {
-            BBLocation *location = [object locationForField:@"position"];
+        NSMutableArray *annotationsToAdd = [NSMutableArray new];
+        for (PFObject *object in shops) {
+            PFGeoPoint *location = [object objectForKey:@"position"];
             RURCustomAnnotation *ann = [[RURCustomAnnotation alloc] init];
-            ann.title = [object stringForField:@"name"];
+            ann.title = [object objectForKey:@"name"];
             ann.coordinate = CLLocationCoordinate2DMake(location.latitude, location.longitude);
             ann.object = object;
-            [annotationsToAdd addObject:ann];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.mapView addAnnotation:ann];
+            });
+            
         }
         
-        [self.mapView addAnnotations:annotationsToAdd];
-        
-    } failure:^(NSError* err) {
-        NSLog(@"error %@", err);
     }];
 }
 
