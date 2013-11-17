@@ -36,13 +36,28 @@
     payment.currencyCode = @"USD";
     payment.amount = (NSDecimalNumber *) @60;
     payment.shortDescription = @"Nice Apple magic mouse!";
+    
+    if (payment.processable) {
+        PayPalPaymentViewController *paymentScreen = [[PayPalPaymentViewController alloc]initWithClientId:clientId receiverEmail:@"r.lapuente-facilitator@gmail.com" payerId:@"PLAYEDID" payment:payment delegate:self];
+        [self presentViewController:paymentScreen animated:YES completion:nil];
+    } else {
+        NSLog(@"something went wrong");
+    }
+}
+
+- (IBAction)addToChart:(id)sender {
+    //code for add to chart
 }
 
 #pragma mark - PayPal Delegate
 
 - (void)payPalPaymentDidComplete:(PayPalPayment *)completedPayment
 {
-    NSLog(@"payment was completed with info %@",completedPayment);
+    //payment dictionary payment{amount,currency_code,short_description
+    //payment dictionary proof_of_payment{adaptative_payment{app_id,pay_key,payment:exec_status,timestamp}}
+    NSDictionary *payment = completedPayment.confirmation;
+    
+    //dismiss screen to show confirmation paye + sending home/pick-up at shop
 }
 
 - (void)payPalPaymentDidCancel
