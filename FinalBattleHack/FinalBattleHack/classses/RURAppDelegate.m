@@ -14,6 +14,8 @@
 
 #import <Typhoon/Typhoon.h>
 
+#import "RURProductCatalogVC.h"
+
 @implementation RURAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -30,6 +32,11 @@
     UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"windowBackground"]];
     [self.window addSubview:backgroundView];
     [self.window sendSubviewToBack:backgroundView];
+    
+    RURProductCatalogVC *catalog = [[RURProductCatalogVC alloc] initWithNibName:@"RURProductCatalogVC" bundle:nil];
+    UINavigationController *navCatalog = [[UINavigationController alloc] initWithRootViewController:catalog];
+    [navCatalog.navigationBar setTranslucent:NO];
+    self.window.rootViewController = navCatalog;
     
     return YES;
 }
