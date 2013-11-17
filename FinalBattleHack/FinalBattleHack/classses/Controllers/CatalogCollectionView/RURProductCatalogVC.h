@@ -10,4 +10,5 @@
 
 @interface RURProductCatalogVC : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 @property (nonatomic, strong) NSArray *items;
+-(id) initWithItems:(NSArray*)objects;
 @end
