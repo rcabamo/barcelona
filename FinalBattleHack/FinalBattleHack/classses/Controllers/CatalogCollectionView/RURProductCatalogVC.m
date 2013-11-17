@@ -36,6 +36,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Catalog";
     // Do any additional setup after loading the view from its nib.
     UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"windowBackground"]];
     [self.view addSubview:backgroundView];
@@ -78,8 +79,9 @@
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     UILabel *lbl = (UILabel*)[cell viewWithTag:102];
     UIImageView *imageView = (UIImageView*)[cell viewWithTag:103];
-
-    [imageView setImageWithURL:[NSURL URLWithString:[self.items[indexPath.row] objectForKey:@"image"]] placeholderImage:nil];
+    [lbl setText:[self.items[indexPath.row] objectForKey:@"name"]];
+//    [imageView setImageWithURL:[NSURL URLWithString:[self.items[indexPath.row] objectForKey:@"image"]] placeholderImage:nil];
+    [imageView setImage:[UIImage imageNamed:[self.items[indexPath.row] objectForKey:@"image"]]];
     /*BBObject *obj = [self.items objectAtIndex:indexPath.row];
     [lbl setText:[obj stringForField:@"name"]];*/
     return cell;
