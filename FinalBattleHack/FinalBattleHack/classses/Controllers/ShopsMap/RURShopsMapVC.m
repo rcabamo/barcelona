@@ -26,6 +26,12 @@
     [super viewDidLoad];
 
     self.navigationItem.title = @"RURShopsMapVC";
+    
+    UIImageView *rightView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"RightRevealIcon.png"]];
+    UIImageView *leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"LeftRevealIcon.png"]];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightView];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftView];
+    self.navigationItem.leftItemsSupplementBackButton = YES;
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -84,10 +90,12 @@
     __block NSArray *shops;
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         shops = objects;
+        NSLog(@"shops: %@", shops);
         
         NSMutableArray *annotationsToAdd = [NSMutableArray new];
         for (PFObject *object in shops) {
             PFGeoPoint *location = [object objectForKey:@"position"];
+            NSLog(@"GeoLocation: (lat = %d, lon = %d)", location.latitude, location.longitude);
             RURCustomAnnotation *ann = [[RURCustomAnnotation alloc] init];
             ann.title = [object objectForKey:@"name"];
             ann.coordinate = CLLocationCoordinate2DMake(location.latitude, location.longitude);
@@ -103,6 +111,8 @@
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id < MKAnnotation >)annotation
 {
+    NSLog(@"annotation: %@", annotation);
+    
     MKPinAnnotationView *mapPin = nil;
     if(annotation != self.mapView.userLocation)
     {
