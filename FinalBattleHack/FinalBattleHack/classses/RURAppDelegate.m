@@ -12,6 +12,7 @@
 #import "RURPurchasesVC.h"
 #import "RURProfileVC.h"
 
+#import "RURDetailShopVC.h"
 #import <MSDynamicsDrawerViewController/MSDynamicsDrawerViewController.h>
 
 @implementation RURAppDelegate
@@ -24,7 +25,8 @@
     // Init VC's
     RURProfileVC *profileVC = [[RURProfileVC alloc] init];
     RURPurchasesVC *purchasesVC = [[RURPurchasesVC alloc] init];
-    UINavigationController *shopsVC = [[UINavigationController alloc] initWithRootViewController:[[RURShopsMapVC alloc] init]];
+    //UINavigationController *shopsVC = [[UINavigationController alloc] initWithRootViewController:[[RURShopsMapVC alloc] init]];
+    UINavigationController *shopsVC = [[UINavigationController alloc] initWithRootViewController:[[RURDetailShopVC alloc] initWithShop:nil]];
     shopsVC.navigationBar.translucent = NO;
     
     self.dynamicsDrawerViewController = [MSDynamicsDrawerViewController new];
