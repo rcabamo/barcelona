@@ -10,6 +10,7 @@
 #import "RUR_Shop.h"
 #import "RURProductCatalogVC.h"
 #import "RURRestManager.h"
+#import "RURcaptureViewController.h"
 
 @interface RURDetailShopVC ()
 
@@ -22,7 +23,7 @@
 
 @property (nonatomic, weak) IBOutlet UITextView *descriptionTextView;
 
-@property UIImage *image;
+@property (nonatomic,strong) UIImage *image;
 
 @end
 
@@ -48,6 +49,7 @@
 }
 
 - (IBAction)takePicture:(id)sender {
+    [self takeCamPicture];
 }
 
 - (void)viewDidLoad
@@ -80,9 +82,6 @@
 
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    [self dismissViewControllerAnimated:YES completion:^{
-        //
-    }];
     _image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
     //save picture
     [[RURRestManager sharedInstance] setDel:self];
@@ -104,44 +103,30 @@
     }
 }
 
-#pragma mark - private Image helpers
+#pragma mark - API Delegate
 
-+(UIImage*)imageWithImage: (UIImage*) sourceImage scaledToWidth: (float) i_width
+- (void) weGotAnswer:(NSDictionary *)json
 {
-    float oldWidth = sourceImage.size.width;
-    float scaleFactor = i_width / oldWidth;
-    
-    float newHeight = sourceImage.size.height * scaleFactor;
-    float newWidth = oldWidth * scaleFactor;
-    
-    UIGraphicsBeginImageContext(CGSizeMake(newWidth, newHeight));
-    [sourceImage drawInRect:CGRectMake(0, 0, newWidth, newHeight)];
-    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return newImage;
+    NSLog(@"json");
+    if ([json objectForKey:@"results"] && [[json objectForKey:@"results"] count] > 0 ) {
+        [self dismissViewControllerAnimated:YES completion:^{
+            RURcaptureViewController *capture = [[RURcaptureViewController alloc] init];
+            capture.image = _image;
+            capture.serverInfo = json;
+            [self.navigationController pushViewController:capture animated:NO];
+        }];
+        
+    } else {
+        [self dismissViewControllerAnimated:NO completion:nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Product detected" message:@"Please try again" delegate:self cancelButtonTitle:@"I'll be more precise!" otherButtonTitles:nil];
+        [alert show];
+    }
 }
 
-+(UIImage *)imageWithFixedSmallSixe: (UIImage *) sourceImage
+#pragma mark - alert delegates
+- (void) alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
-    float newWidth = 0.0;
-    float newHeight = 0.0;
-    float scaleFactor = 0.0;
-    if (sourceImage.size.width < sourceImage.size.height) {
-        float i_height = 500.0f;
-        scaleFactor = i_height / sourceImage.size.height;
-    } else {
-        float i_width = 500.0f;
-        scaleFactor = i_width / sourceImage.size.width;
-    }
-    
-    newHeight = sourceImage.size.height * scaleFactor;
-    newWidth = sourceImage.size.width * scaleFactor;
-    
-    UIGraphicsBeginImageContext(CGSizeMake(newWidth, newHeight));
-    [sourceImage drawInRect:CGRectMake(0, 0, newWidth, newHeight)];
-    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return newImage;
+    [self takeCamPicture];
 }
 
 @end

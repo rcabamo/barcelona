@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RURcaptureViewController : UIViewController
+@interface RURcaptureViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UIImageView *background;
+@property UIImage *image;
+@property NSDictionary *serverInfo;
+@property (weak, nonatomic) IBOutlet UITableView *table;
 
 @end
