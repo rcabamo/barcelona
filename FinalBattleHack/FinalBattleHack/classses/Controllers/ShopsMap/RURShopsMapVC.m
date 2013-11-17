@@ -79,24 +79,26 @@
     PFGeoPoint *geoPoointSouth = [PFGeoPoint geoPointWithLatitude:swlat longitude:swlon];
     PFGeoPoint *geoPoointNorth = [PFGeoPoint geoPointWithLatitude:nelat longitude:nelon];
     
-    NSMutableArray *annotationsToAdd = [NSMutableArray new];
-    
     PFGeoPoint *geoPoint = [PFGeoPoint geoPointWithLocation:self.mapView.userLocation.location];
     PFQuery *query = [PFQuery queryWithClassName:@"Shop"];
-    [query whereKey:@"position" nearGeoPoint:geoPoint];
-    
-    NSArray *shops = [query findObjects];
-    
-    for (PFObject *object in shops) {
-        PFGeoPoint *location = [object objectForKey:@"position"];
-        RURCustomAnnotation *ann = [[RURCustomAnnotation alloc] init];
-        ann.title = [object objectForKey:@"name"];
-        ann.coordinate = CLLocationCoordinate2DMake(location.latitude, location.longitude);
-        ann.object = object;
-        [annotationsToAdd addObject:ann];
-    }
-    
-    [self.mapView addAnnotations:annotationsToAdd];
+    __block NSArray *shops;
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        shops = objects;
+        
+        NSMutableArray *annotationsToAdd = [NSMutableArray new];
+        for (PFObject *object in shops) {
+            PFGeoPoint *location = [object objectForKey:@"position"];
+            RURCustomAnnotation *ann = [[RURCustomAnnotation alloc] init];
+            ann.title = [object objectForKey:@"name"];
+            ann.coordinate = CLLocationCoordinate2DMake(location.latitude, location.longitude);
+            ann.object = object;
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.mapView addAnnotation:ann];
+            });
+            
+        }
+        
+    }];
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id < MKAnnotation >)annotation
