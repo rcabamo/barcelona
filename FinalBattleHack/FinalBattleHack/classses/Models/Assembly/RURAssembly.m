@@ -12,19 +12,51 @@
 
 @implementation RURAssembly
 
-- (id)clientID {
+- (id)paypalClientID {
     return [TyphoonDefinition withClass:[NSString class] initialization:^(TyphoonInitializer *initializer) {
         initializer.selector = @selector(stringWithString:);
         [initializer injectParameterAtIndex:0 withValueAsText:@"${paypal.clientID}" requiredTypeOrNil:[NSString class]];
     }];
 }
 
-- (id)secretID {
+- (id)paypalSecretID {
     return [TyphoonDefinition withClass:[NSString class] initialization:^(TyphoonInitializer *initializer) {
         initializer.selector = @selector(stringWithString:);
         [initializer injectParameterAtIndex:0 withValueAsText:@"${paypal.secretID}" requiredTypeOrNil:[NSString class]];
     }];
 }
+
+- (id)backbeamAppName {
+    return [TyphoonDefinition withClass:[NSString class] initialization:^(TyphoonInitializer *initializer) {
+        initializer.selector = @selector(stringWithString:);
+        [initializer injectParameterAtIndex:0 withValueAsText:@"${backbeam.appName}" requiredTypeOrNil:[NSString class]];
+    }];
+}
+
+
+- (id)backbeamShareKey {
+    return [TyphoonDefinition withClass:[NSString class] initialization:^(TyphoonInitializer *initializer) {
+        initializer.selector = @selector(stringWithString:);
+        [initializer injectParameterAtIndex:0 withValueAsText:@"${backbeam.shareKey}" requiredTypeOrNil:[NSString class]];
+    }];
+}
+
+
+- (id)backbeamSecretKey {
+    return [TyphoonDefinition withClass:[NSString class] initialization:^(TyphoonInitializer *initializer) {
+        initializer.selector = @selector(stringWithString:);
+        [initializer injectParameterAtIndex:0 withValueAsText:@"${backbeam.secretKey}" requiredTypeOrNil:[NSString class]];
+    }];
+}
+
+
+- (id)backbeamEnvironment {
+    return [TyphoonDefinition withClass:[NSString class] initialization:^(TyphoonInitializer *initializer) {
+        initializer.selector = @selector(stringWithString:);
+        [initializer injectParameterAtIndex:0 withValueAsText:@"${backbeam.environment}" requiredTypeOrNil:[NSString class]];
+    }];
+}
+
 
 - (id)user
 {

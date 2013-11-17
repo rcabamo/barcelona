@@ -47,8 +47,8 @@
     [self.window addSubview:backgroundView];
     [self.window sendSubviewToBack:backgroundView];
     
-    NSLog(@"clientID: %@", [[TyphoonComponentFactory defaultFactory] clientID]);
-    NSLog(@"secretID: %@", [[TyphoonComponentFactory defaultFactory] secretID]);
+    NSLog(@"clientID: %@", [[TyphoonComponentFactory defaultFactory] paypalClientID]);
+    NSLog(@"secretID: %@", [[TyphoonComponentFactory defaultFactory] paypalSecretID]);
 
     [self.window makeKeyAndVisible];
     return YES;
@@ -59,6 +59,7 @@
 - (void)setupApp
 {
     [self setupTyphoon];
+    [self setupBackbeam];
 }
 
 - (void)setupTyphoon
@@ -72,6 +73,11 @@
     [factory attachPostProcessor:configurer];
     
     [factory makeDefault];
+}
+
+- (void)setupBackbeam
+{
+    [Backbeam setProject:[[TyphoonComponentFactory defaultFactory] backbeamAppName] sharedKey:[[TyphoonComponentFactory defaultFactory] backbeamShareKey] secretKey:[[TyphoonComponentFactory defaultFactory] backbeamSecretKey] environment:[[TyphoonComponentFactory defaultFactory] backbeamEnvironment]];
 }
 
 @end
