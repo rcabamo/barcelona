@@ -147,6 +147,9 @@
             //
         }];
     } else {
+        [self dismissViewControllerAnimated:NO completion:nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Wrong device" message:@"Sorry your device can't take pictures, we need the camera." delegate:self cancelButtonTitle:@"I'll check the list!" otherButtonTitles:nil];
+        [alert show];
     }
 }
 
