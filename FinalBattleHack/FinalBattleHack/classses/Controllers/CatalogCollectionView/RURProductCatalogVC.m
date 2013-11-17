@@ -109,7 +109,7 @@
 
 #pragma mark - UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    RURDetalProductVC *detail = [[RURDetalProductVC alloc] initWithNibName:@"RURDetalProductVC" bundle:nil];
+    RURDetalProductVC *detail = [[RURDetalProductVC alloc] initWithDictionary:[self.items objectAtIndex:indexPath.row]];
     //Set Details attibuttes
     [self.navigationController pushViewController:detail animated:YES];
 }

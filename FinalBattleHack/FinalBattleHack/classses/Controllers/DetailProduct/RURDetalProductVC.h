@@ -18,4 +18,5 @@
 - (IBAction)addToChart:(id)sender;
 
 - (id) initWithProduct:(PFObject *)info;
+- (id) initWithDictionary:(NSDictionary*)info;
 @end
