@@ -21,8 +21,13 @@
     if (self) {
         // Custom initialization
         [self reloadPurchases];
+        
     }
     return self;
+}
+
+- (void)viewDidLoad
+{
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -54,15 +59,10 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    // Return the number of sections.
-    return [self.itemsPurchased count];
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+//    return [self.itemsPurchased count];
+    return 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -71,10 +71,14 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CellPurchases"];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CellPurchases"];
+        cell.backgroundColor = [UIColor clearColor];
+        cell.contentView.backgroundColor = [UIColor clearColor];
     }
     
-    PFObject *purchase = self.itemsPurchased[indexPath.row];
-    cell.textLabel.text = [[purchase objectForKey:@"product"] objectForKey:@"name"];
+//    PFObject *purchase = self.itemsPurchased[indexPath.row];
+//    cell.textLabel.text = [[purchase objectForKey:@"product"] objectForKey:@"name"];
+    cell.textLabel.text = @"testing";
+    cell.textLabel.textColor = [UIColor whiteColor];
     return cell;
 }
 
@@ -82,6 +86,24 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 40;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    FXBlurView *view = [[FXBlurView alloc] initWithFrame:CGRectMake(0, 0, 268, 40)];
+    UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 268, 40)];
+    title.textColor = [UIColor whiteColor];
+    title.textAlignment = NSTextAlignmentCenter;
+    title.backgroundColor = [UIColor clearColor];
+    title.text = @"Purchases";
+    
+    [view addSubview:title];
+    return view;
 }
 
 @end
