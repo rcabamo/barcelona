@@ -8,12 +8,16 @@
 
 #import "RURProfileVC.h"
 
+#import <PNChart/PNChart.h>
+
 @interface RURProfileVC ()
 
 @property (nonatomic, strong) PFObject *user;
 
 @property (nonatomic, strong) IBOutlet UIButton *avatar;
 @property (nonatomic, strong) IBOutlet UITextField *userInfo;
+
+@property (nonatomic, weak) IBOutlet UIScrollView *chartView;
 
 @end
 
@@ -36,8 +40,61 @@
     
     self.avatar.layer.cornerRadius = 62;
     self.avatar.layer.masksToBounds = YES;
-    self.avatar.backgroundColor = [UIColor lightGrayColor];
+    self.avatar.layer.borderColor = PNFreshGreen.CGColor;
+    self.avatar.layer.borderWidth = 3;
+    
+    
+    [self createChart];
     // Do any additional setup after loading the view from its nib.
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [self createChart];
+}
+
+- (void)createChart
+{
+    // Remove old views
+    for (UIView *view in self.chartView.subviews) {
+        [view removeFromSuperview];
+    }
+    
+    //Add BarChart
+	UILabel * barChartLabel = [[UILabel alloc] initWithFrame:CGRectMake(248, 0, 248, 30)];
+	barChartLabel.text = @"Bar Chart";
+	barChartLabel.textColor = PNFreshGreen;
+	barChartLabel.font = [UIFont fontWithName:@"Avenir-Medium" size:23.0];
+	barChartLabel.textAlignment = NSTextAlignmentCenter;
+	
+	PNChart * barChart = [[PNChart alloc] initWithFrame:CGRectMake(248, 35, 248, CGRectGetHeight(self.chartView.frame) - 30)];
+	barChart.backgroundColor = [UIColor clearColor];
+	barChart.type = PNBarType;
+	[barChart setXLabels:@[@"SEP 3",@"SEP 4",@"SEP 5",@"SEP 6",@"SEP 7"]];
+	[barChart setYValues:@[@1,@24,@12,@18,@30]];
+	[barChart strokeChart];
+	[self.chartView addSubview:barChartLabel];
+	[self.chartView addSubview:barChart];
+    
+    //Add LineChart
+	UILabel * lineChartLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 248, 30)];
+	lineChartLabel.text = @"Amount";
+	lineChartLabel.textColor = PNFreshGreen;
+	lineChartLabel.font = [UIFont fontWithName:@"Avenir-Medium" size:23.0];
+	lineChartLabel.textAlignment = NSTextAlignmentCenter;
+	
+	PNChart * lineChart = [[PNChart alloc] initWithFrame:CGRectMake(0, 45, 248, CGRectGetHeight(self.chartView.frame) - 30)];
+	lineChart.backgroundColor = [UIColor clearColor];
+	[lineChart setXLabels:@[@"SEP",@"OCT",@"NOV",@"DEC",@"JAN",@"FEB",@"MAR"]];
+	[lineChart setYValues:@[@1,@24,@12,@18,@30,@10,@21]];
+	[lineChart strokeChart];
+	[self.chartView addSubview:lineChartLabel];
+	[self.chartView addSubview:lineChart];
+    
+    [self.chartView setContentSize:CGSizeMake(248*2, CGRectGetHeight(self.chartView.frame))];
+    
 }
 
 - (void)reloadProfile

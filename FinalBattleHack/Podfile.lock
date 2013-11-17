@@ -25,6 +25,7 @@ PODS:
   - Parse-iOS-SDK (1.2.16):
     - Facebook-iOS-SDK (~> 3.7)
   - PayPal-iOS-SDK (1.3.5)
+  - PNChart (0.1.8)
   - SDWebImage (3.5):
     - SDWebImage/Core
   - SDWebImage/Core (3.5)
@@ -37,6 +38,7 @@ DEPENDENCIES:
   - MSDynamicsDrawerViewController (~> 1.0.0)
   - Parse-iOS-SDK (~> 1.2.16)
   - PayPal-iOS-SDK (~> 1.3.5)
+  - PNChart (~> 0.1.8)
   - SDWebImage (~> 3.5)
   - sendgrid (~> 0.1.0)
   - Typhoon (~> 1.5.3)
@@ -48,6 +50,7 @@ SPEC CHECKSUMS:
   MSDynamicsDrawerViewController: ae0dec8b54cf08efdfb3c6e8dfa95fb223218223
   Parse-iOS-SDK: 604907fddc0e299a1b9d79c1c04377d34662dfcd
   PayPal-iOS-SDK: 869131d4ca39d28153de00fe1649378671bb4c44
+  PNChart: 477d34f305db70edc4670ac94841bedbad42f010
   SDWebImage: f1a72472f8a2d54445f1fedafe2090593d9caf7f
   sendgrid: 776837530dbc8e975325bb93cfef8bb21a8d02a8
   Typhoon: 486a9507a0d7d674e3dc023e77603fefd02aedd3
