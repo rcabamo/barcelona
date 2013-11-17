@@ -10,8 +10,13 @@
 
 @interface RURAssembly : TyphoonAssembly
 
-- (NSString *)clientID;
-- (NSString *)secretID;
+- (NSString *)paypalClientID;
+- (NSString *)paypalSecretID;
+
+- (NSString *)backbeamAppName;
+- (NSString *)backbeamShareKey;
+- (NSString *)backbeamSecretKey;
+- (NSString *)backbeamEnvironment;
 
 - (id)user;
 
