@@ -12,6 +12,8 @@
 #import "RURRestManager.h"
 #import "RURcaptureViewController.h"
 
+#import <SVProgressHUD/SVProgressHUD.h>
+
 @interface RURDetailShopVC ()
 
 //@property (nonatomic, strong) PFObject *shop;
@@ -25,6 +27,8 @@
 @property (nonatomic, strong) IBOutlet UIView *holderView;
 
 @property (nonatomic,strong) UIImage *image;
+
+@property (nonatomic, strong) SVProgressHUD *hud;
 
 @end
 
@@ -123,8 +127,11 @@
 
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
+    [SVProgressHUD showWithStatus:@"Recognized product..."];
+    
     _image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
     //save picture
+    
     [[RURRestManager sharedInstance] setDel:self];
     [[RURRestManager sharedInstance] sendImage:_image];
 }
@@ -140,7 +147,6 @@
             //
         }];
     } else {
-        
     }
 }
 
@@ -148,6 +154,8 @@
 
 - (void) weGotAnswer:(NSDictionary *)json
 {
+    [SVProgressHUD dismiss];
+    
     NSLog(@"json");
     if ([json objectForKey:@"results"] && [[json objectForKey:@"results"] count] > 0 ) {
         [self dismissViewControllerAnimated:YES completion:^{
