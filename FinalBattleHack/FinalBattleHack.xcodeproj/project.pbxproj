@@ -52,6 +52,10 @@
 		4AA58D4E183818C300B51AEA /* FinalBattleHackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA58D4D183818C300B51AEA /* FinalBattleHackTests.m */; };
 		9AA316FBBB354E90908299CA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 979064809C8F41ACAB5BFFE3 /* libPods.a */; };
 		BB387C7C1838A42500ADB6FE /* RUR_Shop.m in Sources */ = {isa = PBXBuildFile; fileRef = BB387C7B1838A42500ADB6FE /* RUR_Shop.m */; };
+		BB387C811838B2C800ADB6FE /* LeftRevealIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BB387C7D1838B2C800ADB6FE /* LeftRevealIcon.png */; };
+		BB387C821838B2C800ADB6FE /* LeftRevealIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB387C7E1838B2C800ADB6FE /* LeftRevealIcon@2x.png */; };
+		BB387C831838B2C800ADB6FE /* RightRevealIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BB387C7F1838B2C800ADB6FE /* RightRevealIcon.png */; };
+		BB387C841838B2C800ADB6FE /* RightRevealIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB387C801838B2C800ADB6FE /* RightRevealIcon@2x.png */; };
 		BB4C31D21838774A00E25BF5 /* TestAvatar.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BB4C31D11838774A00E25BF5 /* TestAvatar.jpeg */; };
 		BB4C31D51838776E00E25BF5 /* activityIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BB4C31D31838776E00E25BF5 /* activityIcon.png */; };
 		BB4C31D61838776E00E25BF5 /* payWithPassIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BB4C31D41838776E00E25BF5 /* payWithPassIcon.png */; };
@@ -131,6 +135,10 @@
 		979064809C8F41ACAB5BFFE3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB387C7A1838A42500ADB6FE /* RUR_Shop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUR_Shop.h; sourceTree = "<group>"; };
 		BB387C7B1838A42500ADB6FE /* RUR_Shop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUR_Shop.m; sourceTree = "<group>"; };
+		BB387C7D1838B2C800ADB6FE /* LeftRevealIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeftRevealIcon.png; sourceTree = "<group>"; };
+		BB387C7E1838B2C800ADB6FE /* LeftRevealIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LeftRevealIcon@2x.png"; sourceTree = "<group>"; };
+		BB387C7F1838B2C800ADB6FE /* RightRevealIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RightRevealIcon.png; sourceTree = "<group>"; };
+		BB387C801838B2C800ADB6FE /* RightRevealIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RightRevealIcon@2x.png"; sourceTree = "<group>"; };
 		BB4C31D11838774A00E25BF5 /* TestAvatar.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TestAvatar.jpeg; sourceTree = "<group>"; };
 		BB4C31D31838776E00E25BF5 /* activityIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activityIcon.png; sourceTree = "<group>"; };
 		BB4C31D41838776E00E25BF5 /* payWithPassIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = payWithPassIcon.png; sourceTree = "<group>"; };
@@ -372,6 +380,10 @@
 		BB4C31D01838773E00E25BF5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				BB387C7D1838B2C800ADB6FE /* LeftRevealIcon.png */,
+				BB387C7E1838B2C800ADB6FE /* LeftRevealIcon@2x.png */,
+				BB387C7F1838B2C800ADB6FE /* RightRevealIcon.png */,
+				BB387C801838B2C800ADB6FE /* RightRevealIcon@2x.png */,
 				2D2091041838A4A000B2FCF9 /* deselected.png */,
 				2D2091051838A4A000B2FCF9 /* backgroundSelected.png */,
 				4A78EA69183885B000E7933B /* BackgroundButton.png */,
@@ -501,6 +513,8 @@
 			files = (
 				4A229F9B18384AD00041724D /* RURShopsMapVC.xib in Resources */,
 				2D2091031838947000B2FCF9 /* RURConfirmationSendViewController.xib in Resources */,
+				BB387C811838B2C800ADB6FE /* LeftRevealIcon.png in Resources */,
+				BB387C841838B2C800ADB6FE /* RightRevealIcon@2x.png in Resources */,
 				4A78EA6E183885B000E7933B /* button-blue.png in Resources */,
 				4A229F9518384A9C0041724D /* RURPurchasesVC.xib in Resources */,
 				BB4C31D21838774A00E25BF5 /* TestAvatar.jpeg in Resources */,
@@ -513,12 +527,14 @@
 				4A229F72183833250041724D /* Images.xcassets in Resources */,
 				BB4C31D61838776E00E25BF5 /* payWithPassIcon.png in Resources */,
 				4A229FA018384AEB0041724D /* RURDetalProductVC.xib in Resources */,
+				BB387C821838B2C800ADB6FE /* LeftRevealIcon@2x.png in Resources */,
 				BB4C31D51838776E00E25BF5 /* activityIcon.png in Resources */,
 				2DA49C7218384D7000772064 /* RURProfileVC.xib in Resources */,
 				4AA58D2D183818C300B51AEA /* InfoPlist.strings in Resources */,
 				4A229F701838331C0041724D /* RUR_dev.properties in Resources */,
 				2D2091071838A4A000B2FCF9 /* backgroundSelected.png in Resources */,
 				4A229FAE18384B1A0041724D /* Tienda.jpeg in Resources */,
+				BB387C831838B2C800ADB6FE /* RightRevealIcon.png in Resources */,
 				4A229FAD18384B1A0041724D /* RURProductCatalogVC.xib in Resources */,
 				4A229FB318384B310041724D /* RURDetailShopVC.xib in Resources */,
 			);
