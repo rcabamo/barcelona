@@ -10,29 +10,41 @@
 
 @interface RURDetailShopVC ()
 
+@property (nonatomic, strong) BBObject *shop;
+
+// view
+@property (nonatomic, weak) IBOutlet UIView *titleView;
+@property (nonatomic, weak) IBOutlet UILabel *titleLabel;
+@property (nonatomic, weak) IBOutlet UIImageView *imageView;
+
+@property (nonatomic, weak) IBOutlet UITextView *descriptionTextView;
+
 @end
 
 @implementation RURDetailShopVC
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithShop:(BBObject *)shop
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super init];
     if (self) {
-        // Custom initialization
+        self.shop = shop;
     }
+    
     return self;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    // Setup view
+    self.titleLabel.text = [self.shop stringForField:@"name"];
+    self.descriptionTextView.text = [self.shop stringForField:@"description"];
+    [self.shop imageWithSize:self.imageView.frame.size success:^(UIImage *img) {
+        self.imageView.image = img;
+    }];
+//    [self.imageView setImageWithURL:[NSURL URLWithString:@""] placeholderImage:nil];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end

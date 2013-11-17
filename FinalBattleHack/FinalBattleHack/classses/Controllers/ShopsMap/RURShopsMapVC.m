@@ -8,6 +8,7 @@
 
 #import "RURShopsMapVC.h"
 #import "RURCustomAnnotation.h"
+#import "RURDetailShopVC.h"
 
 #import <MapKit/MapKit.h>
 
@@ -123,4 +124,33 @@
         NSLog(@"error %@", err);
     }];
 }
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id < MKAnnotation >)annotation
+{
+    MKPinAnnotationView *mapPin = nil;
+    if(annotation != self.mapView.userLocation)
+    {
+        static NSString *defaultPinID = @"defaultPin";
+        mapPin = (MKPinAnnotationView *)[self.mapView dequeueReusableAnnotationViewWithIdentifier:defaultPinID];
+            
+        mapPin = [[MKPinAnnotationView alloc] initWithAnnotation:annotation
+                                                  reuseIdentifier:defaultPinID];
+        mapPin.canShowCallout = YES;
+        UIButton *infoButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+        mapPin.rightCalloutAccessoryView = infoButton;
+        
+    }
+    return mapPin;
+}
+
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
+{
+    if([view.annotation isKindOfClass:[RURCustomAnnotation class]]) {
+        RURCustomAnnotation *annotation = view.annotation;
+        RURDetailShopVC *controller = [[RURDetailShopVC alloc] initWithShop:annotation.object];
+        [self.navigationController pushViewController:controller animated:YES];
+    }
+}
+
+
 @end
