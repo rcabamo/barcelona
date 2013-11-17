@@ -27,18 +27,22 @@ NSString *const catchoomUrl = @"https://r.catchoom.com/v1/search";
 
 - (void) sendImage:(UIImage *)image
 {
-    [[UIApplication sharedApplication] beginIgnoringInteractionEvents];
-    
-    NSData *imageData = UIImageJPEGRepresentation(image, 0.5);
+    NSData *imageData = UIImageJPEGRepresentation(image, 0.2);
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     NSDictionary *parameters = @{@"token": @"dbc9b45324694138"};
     //NSURL *filePath = [NSURL fileURLWithPath:@"file://path/to/image.png"];
     [manager POST:catchoomUrl parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
-        [formData appendPartWithFormData:imageData name:@"image"];
+        [formData appendPartWithFileData:imageData name:@"image" fileName:@"camCapture" mimeType:@"image/jpg"];
     } success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        [[UIApplication sharedApplication] endIgnoringInteractionEvents];
         NSLog(@"Success: %@", responseObject);
+        [_del weGotAnswer:responseObject];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+        [[UIApplication sharedApplication] endIgnoringInteractionEvents];
+        [_del weGotAnswer:nil];
         NSLog(@"Error: %@", error);
     }];
 }

@@ -14,6 +14,9 @@
 		2D5253E91838D8310056C7C3 /* RURcaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5253E71838D8310056C7C3 /* RURcaptureViewController.m */; };
 		2D5253EA1838D8310056C7C3 /* RURcaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5253E81838D8310056C7C3 /* RURcaptureViewController.xib */; };
 		2D5253ED1838D9630056C7C3 /* RURRestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5253EC1838D9630056C7C3 /* RURRestManager.m */; };
+		2D5253F0183901420056C7C3 /* RURMatchingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5253EF183901420056C7C3 /* RURMatchingCell.m */; };
+		2D5253F21839014C0056C7C3 /* RURMatchingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5253F11839014C0056C7C3 /* RURMatchingCell.xib */; };
+		2D5253F518390A050056C7C3 /* RURData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5253F418390A050056C7C3 /* RURData.m */; };
 		2D7ED99C1838B3F900EF3328 /* sale30.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D7ED99B1838B3F900EF3328 /* sale30.png */; };
 		2D7ED99E1838B5E500EF3328 /* discount.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D7ED99D1838B5E500EF3328 /* discount.png */; };
 		2D7ED9A01838B6DB00EF3328 /* discount2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D7ED99F1838B6DB00EF3328 /* discount2.png */; };
@@ -97,6 +100,11 @@
 		2D5253E81838D8310056C7C3 /* RURcaptureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RURcaptureViewController.xib; sourceTree = "<group>"; };
 		2D5253EB1838D9630056C7C3 /* RURRestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURRestManager.h; sourceTree = "<group>"; };
 		2D5253EC1838D9630056C7C3 /* RURRestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURRestManager.m; sourceTree = "<group>"; };
+		2D5253EE183901420056C7C3 /* RURMatchingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURMatchingCell.h; sourceTree = "<group>"; };
+		2D5253EF183901420056C7C3 /* RURMatchingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURMatchingCell.m; sourceTree = "<group>"; };
+		2D5253F11839014C0056C7C3 /* RURMatchingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RURMatchingCell.xib; sourceTree = "<group>"; };
+		2D5253F318390A050056C7C3 /* RURData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURData.h; sourceTree = "<group>"; };
+		2D5253F418390A050056C7C3 /* RURData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURData.m; sourceTree = "<group>"; };
 		2D7ED99B1838B3F900EF3328 /* sale30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sale30.png; sourceTree = "<group>"; };
 		2D7ED99D1838B5E500EF3328 /* discount.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discount.png; sourceTree = "<group>"; };
 		2D7ED99F1838B6DB00EF3328 /* discount2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discount2.png; sourceTree = "<group>"; };
@@ -334,6 +342,8 @@
 				4A8DD69518381EDC00E603E5 /* UIViewController+UserAdditions.m */,
 				2D5253EB1838D9630056C7C3 /* RURRestManager.h */,
 				2D5253EC1838D9630056C7C3 /* RURRestManager.m */,
+				2D5253F318390A050056C7C3 /* RURData.h */,
+				2D5253F418390A050056C7C3 /* RURData.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -447,6 +457,9 @@
 				2D5253E61838D8310056C7C3 /* RURcaptureViewController.h */,
 				2D5253E71838D8310056C7C3 /* RURcaptureViewController.m */,
 				2D5253E81838D8310056C7C3 /* RURcaptureViewController.xib */,
+				2D5253EE183901420056C7C3 /* RURMatchingCell.h */,
+				2D5253EF183901420056C7C3 /* RURMatchingCell.m */,
+				2D5253F11839014C0056C7C3 /* RURMatchingCell.xib */,
 			);
 			path = DetailShop;
 			sourceTree = "<group>";
@@ -570,6 +583,7 @@
 			files = (
 				2D7ED99E1838B5E500EF3328 /* discount.png in Resources */,
 				4A229F9B18384AD00041724D /* RURShopsMapVC.xib in Resources */,
+				2D5253F21839014C0056C7C3 /* RURMatchingCell.xib in Resources */,
 				2D2091031838947000B2FCF9 /* RURConfirmationSendViewController.xib in Resources */,
 				BB387C811838B2C800ADB6FE /* LeftRevealIcon.png in Resources */,
 				BB387C841838B2C800ADB6FE /* RightRevealIcon@2x.png in Resources */,
@@ -673,7 +687,9 @@
 				4A8DD68E18381DD000E603E5 /* RURAssembly.m in Sources */,
 				4A78EA661838700800E7933B /* RURCustomAnnotation.m in Sources */,
 				BB387C7C1838A42500ADB6FE /* RUR_Shop.m in Sources */,
+				2D5253F518390A050056C7C3 /* RURData.m in Sources */,
 				4A229FAC18384B1A0041724D /* RURProductCatalogVC.m in Sources */,
+				2D5253F0183901420056C7C3 /* RURMatchingCell.m in Sources */,
 				4A229F9418384A9C0041724D /* RURPurchasesVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

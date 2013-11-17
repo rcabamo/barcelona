@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RURDetailShopVC : UIViewController <UIImagePickerControllerDelegate>
+@interface RURDetailShopVC : UIViewController <UINavigationControllerDelegate,UIImagePickerControllerDelegate,UIAlertViewDelegate>
 
 - (id)initWithShop:(PFObject *)shop;
 
 - (IBAction)takePicture:(id)sender;
+
+- (void) weGotAnswer:(NSDictionary *)json;
+
 @end

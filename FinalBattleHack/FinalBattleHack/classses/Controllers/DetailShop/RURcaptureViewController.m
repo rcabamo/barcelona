@@ -7,8 +7,14 @@
 //
 
 #import "RURcaptureViewController.h"
+#import "RURMatchingCell.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "RURDetalProductVC.h"
+#import "RURData.h"
 
 @interface RURcaptureViewController ()
+
+@property NSArray *elems;
 
 @end
 
@@ -27,6 +33,17 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    UINib *nib = [UINib nibWithNibName:@"RURMatchingCell" bundle:nil];
+    [[self table] registerNib:nib forCellReuseIdentifier:@"RURMatchingCell"];
+    _table.backgroundColor = [UIColor clearColor];
+
+}
+
+- (void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    _background.image = _image;
+    _elems = [_serverInfo objectForKey:@"results"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,5 +51,46 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - tableView Delegates
+
+- (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    RURMatchingCell *cell = (RURMatchingCell *)[tableView dequeueReusableCellWithIdentifier:@"RURMatchingCell"];
+    if (!cell) {
+        cell = (RURMatchingCell *)[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"RURMatchingCell"];
+    }
+    NSDictionary *object = [_elems objectAtIndex:indexPath.row];
+    [cell.image setImageWithURL:[[object objectForKey:@"image"] objectForKey:@"thumb_120"]];
+    cell.name.text = [[object objectForKey:@"item"] objectForKey:@"name"];
+    cell.accuracy.text = [NSString stringWithFormat:@"%@ %%",[object objectForKey:@"score"]];
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSDictionary *object = [_elems objectAtIndex:indexPath.row];
+    RURData *data = [[RURData alloc] initCustom];
+    RURDetalProductVC *detail = [[RURDetalProductVC alloc]initWithDictionary:[data getProductWithKey:[[object objectForKey:@"item"] objectForKey:@"name"]]];
+    [self.navigationController pushViewController:detail animated:YES];
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [_elems count];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60.0;
+}
+
 
 @end
