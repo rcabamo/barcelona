@@ -18,7 +18,7 @@
 // view
 @property (nonatomic, weak) IBOutlet UIView *titleView;
 @property (nonatomic, weak) IBOutlet UILabel *titleLabel;
-@property (nonatomic, weak) IBOutlet UIImageView *logoImage;
+@property (nonatomic, weak) IBOutlet UIImageView *logoImage, *bigImage;
 
 @property (nonatomic, weak) IBOutlet UITextView *descriptionTextView;
 
@@ -35,7 +35,7 @@
         //self.shop = shop;
         RUR_Shop *shopaux = [[RUR_Shop alloc] init];
         [shopaux setName:@"American Eagle"];
-        [shopaux setDesc:@"Opening times:                                             Mon-Fry: 10am - 5pm                                             Sat: 9am - 6pm                                          Sun: Closed"];
+        [shopaux setDesc:@"Opening times:\nMon-Fry: 10am - 5pm\nSat: 9am - 6pm\nSun: Closed"];
         [shopaux setAddress:@"Address Test"];
         [shopaux setLon:122.33];
         [shopaux setLat:37.89];
