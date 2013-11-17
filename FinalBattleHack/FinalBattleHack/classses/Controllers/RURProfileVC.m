@@ -9,6 +9,8 @@
 #import "RURProfileVC.h"
 
 @interface RURProfileVC ()
+@property (nonatomic, strong) IBOutlet UIButton *avatar;
+@property (nonatomic, strong) IBOutlet UITextField *userInfo;
 
 @end
 
@@ -26,6 +28,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Profile";
+    
+    self.avatar.layer.cornerRadius = 62;
+    self.avatar.layer.masksToBounds = YES;
+    self.avatar.backgroundColor = [UIColor lightGrayColor];
     // Do any additional setup after loading the view from its nib.
 }
 
