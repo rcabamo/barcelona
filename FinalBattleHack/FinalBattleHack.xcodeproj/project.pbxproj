@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		2DA49C661838475900772064 /* BackgroundButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DA49C651838475900772064 /* BackgroundButton.png */; };
 		2DA49C681838478600772064 /* button-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DA49C671838478600772064 /* button-blue.png */; };
+		2DA49C7218384D7000772064 /* RURProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DA49C6F18384D7000772064 /* RURProfileVC.xib */; };
+		2DA49C7318384D7000772064 /* RURProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA49C7118384D7000772064 /* RURProfileVC.m */; };
 		4A229F701838331C0041724D /* RUR_dev.properties in Resources */ = {isa = PBXBuildFile; fileRef = 4A229F6F1838331C0041724D /* RUR_dev.properties */; };
 		4A229F72183833250041724D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A229F71183833250041724D /* Images.xcassets */; };
 		4A229F801838432E0041724D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A229F7F1838432E0041724D /* MapKit.framework */; };
-		4A229F8F18384A8A0041724D /* RURProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A229F8D18384A8A0041724D /* RURProfileVC.m */; };
-		4A229F9018384A8A0041724D /* RURProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A229F8E18384A8A0041724D /* RURProfileVC.xib */; };
 		4A229F9418384A9C0041724D /* RURPurchasesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A229F9218384A9C0041724D /* RURPurchasesVC.m */; };
 		4A229F9518384A9C0041724D /* RURPurchasesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A229F9318384A9C0041724D /* RURPurchasesVC.xib */; };
 		4A229F9A18384AD00041724D /* RURShopsMapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A229F9818384AD00041724D /* RURShopsMapVC.m */; };
@@ -58,12 +58,12 @@
 /* Begin PBXFileReference section */
 		2DA49C651838475900772064 /* BackgroundButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackgroundButton.png; sourceTree = "<group>"; };
 		2DA49C671838478600772064 /* button-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-blue.png"; sourceTree = "<group>"; };
+		2DA49C6F18384D7000772064 /* RURProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RURProfileVC.xib; sourceTree = "<group>"; };
+		2DA49C7018384D7000772064 /* RURProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURProfileVC.h; sourceTree = "<group>"; };
+		2DA49C7118384D7000772064 /* RURProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURProfileVC.m; sourceTree = "<group>"; };
 		4A229F6F1838331C0041724D /* RUR_dev.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RUR_dev.properties; sourceTree = "<group>"; };
 		4A229F71183833250041724D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FinalBattleHack/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		4A229F7F1838432E0041724D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		4A229F8C18384A8A0041724D /* RURProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURProfileVC.h; sourceTree = "<group>"; };
-		4A229F8D18384A8A0041724D /* RURProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURProfileVC.m; sourceTree = "<group>"; };
-		4A229F8E18384A8A0041724D /* RURProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RURProfileVC.xib; sourceTree = "<group>"; };
 		4A229F9118384A9C0041724D /* RURPurchasesVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURPurchasesVC.h; sourceTree = "<group>"; };
 		4A229F9218384A9C0041724D /* RURPurchasesVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURPurchasesVC.m; sourceTree = "<group>"; };
 		4A229F9318384A9C0041724D /* RURPurchasesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RURPurchasesVC.xib; sourceTree = "<group>"; };
@@ -144,6 +144,16 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		2DA49C6E18384D5400772064 /* ProfileNew */ = {
+			isa = PBXGroup;
+			children = (
+				2DA49C6F18384D7000772064 /* RURProfileVC.xib */,
+				2DA49C7018384D7000772064 /* RURProfileVC.h */,
+				2DA49C7118384D7000772064 /* RURProfileVC.m */,
+			);
+			name = ProfileNew;
+			sourceTree = "<group>";
+		};
 		4A229F6D183832B60041724D /* resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,16 +179,6 @@
 				4A229F9318384A9C0041724D /* RURPurchasesVC.xib */,
 			);
 			path = Purchases;
-			sourceTree = "<group>";
-		};
-		4A229F74183837850041724D /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				4A229F8C18384A8A0041724D /* RURProfileVC.h */,
-				4A229F8D18384A8A0041724D /* RURProfileVC.m */,
-				4A229F8E18384A8A0041724D /* RURProfileVC.xib */,
-			);
-			path = Profile;
 			sourceTree = "<group>";
 		};
 		4A229F9618384ABD0041724D /* ShopMap */ = {
@@ -207,8 +207,8 @@
 		4A8DD68518381D7100E603E5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2DA49C6E18384D5400772064 /* ProfileNew */,
 				4A229F9618384ABD0041724D /* ShopMap */,
-				4A229F74183837850041724D /* Profile */,
 				4A229F73183837790041724D /* Purchases */,
 				BB6F4DE018382AA100CF2FB8 /* DetailProduct */,
 				BB6F4DDF18382A8D00CF2FB8 /* CatalogCollectionView */,
@@ -456,7 +456,7 @@
 				4A229F72183833250041724D /* Images.xcassets in Resources */,
 				2DA49C681838478600772064 /* button-blue.png in Resources */,
 				4A229FA018384AEB0041724D /* RURDetalProductVC.xib in Resources */,
-				4A229F9018384A8A0041724D /* RURProfileVC.xib in Resources */,
+				2DA49C7218384D7000772064 /* RURProfileVC.xib in Resources */,
 				4AA58D2D183818C300B51AEA /* InfoPlist.strings in Resources */,
 				4A229F701838331C0041724D /* RUR_dev.properties in Resources */,
 				4A229FAE18384B1A0041724D /* Tienda.jpeg in Resources */,
@@ -513,7 +513,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A229F8F18384A8A0041724D /* RURProfileVC.m in Sources */,
+				2DA49C7318384D7000772064 /* RURProfileVC.m in Sources */,
 				4A8DD69218381E9100E603E5 /* RURUser.m in Sources */,
 				4A229F9F18384AEB0041724D /* RURDetalProductVC.m in Sources */,
 				4A229FB218384B310041724D /* RURDetailShopVC.m in Sources */,
