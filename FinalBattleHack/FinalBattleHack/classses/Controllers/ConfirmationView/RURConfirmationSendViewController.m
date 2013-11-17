@@ -69,7 +69,7 @@
     [_sendButton setSelected:NO];
     NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
     NSMutableArray *ar = [NSMutableArray arrayWithArray:[def objectForKey:@"purchasesarray"]];
-    [ar addObject:[self.item objectForKey:@"name"]];
+    [ar addObject: [NSString stringWithFormat:@"%@ (%@)", [self.item objectForKey:@"name"], [self.item objectForKey:@"prize"]]];
     [def setObject:ar forKey:@"purchasesarray"];
     [def synchronize];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congrats!" message:[NSString stringWithFormat:@"You have buyed an awesome %@\nYou will recieve an email from Sendgrid ASAP!", [self.item objectForKey:@"name"]] delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
