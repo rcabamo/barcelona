@@ -25,7 +25,7 @@
 {
     [super viewDidLoad];
 
-    self.navigationItem.title = @"RURShopsMapVC";
+    self.navigationItem.title = @"Shops";
     
     UIImageView *rightView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"RightRevealIcon.png"]];
     UIImageView *leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"LeftRevealIcon.png"]];

@@ -10,6 +10,7 @@
 #import "RUR_Shop.h"
 #import "RURProductCatalogVC.h"
 #import "RURRestManager.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface RURDetailShopVC ()
 
@@ -21,6 +22,7 @@
 @property (nonatomic, weak) IBOutlet UIImageView *logoImage, *bigImage;
 
 @property (nonatomic, weak) IBOutlet UITextView *descriptionTextView;
+@property (nonatomic, strong) IBOutlet UIView *holderView;
 
 @property UIImage *image;
 
@@ -39,8 +41,26 @@
         [shopaux setAddress:@"Address Test"];
         [shopaux setLon:122.33];
         [shopaux setLat:37.89];
-        NSArray *pr = [[NSArray alloc] initWithObjects:@{@"name":@"Magic Mouse!", @"desc":@"It began with iPhone. Then came iPod touch. Then MacBook Pro. Intuitive, smart, dynamic. Multi-Touch technology introduced a remarkably better way to interact with your portable devices — all using gestures. Now we’ve reached another milestone by bringing gestures to the desktop with a mouse that’s unlike anything ever before. It's called Magic Mouse. It's the world's first Multi-Touch mouse",  @"image":@"gestures_2x.jpg", @"price":@"60.0"}, @{@"name":@"Magic Mug!", @"desc":@"Magic mug it's unique in it's design. When you drop hot liquid on it, the legs begin to run in circles of about 30cm of radius. Be carefull where you place it, even being magic it breaks",  @"image":@"WhiteMugFront.jpg", @"price":@"23.0"}, nil];
-        [shopaux setProducts:pr];
+        if ([[shop objectForKey:@"name"] isEqualToString:@"Tienda 1"]) {
+            NSArray *pr = [[NSArray alloc] initWithObjects:
+                           @{@"name":@"Magic Mouse!", @"desc":@"It began with iPhone. Then came iPod touch. Then MacBook Pro. Intuitive, smart, dynamic. Multi-Touch technology introduced a remarkably better way to interact with your portable devices — all using gestures. Now we’ve reached another milestone by bringing gestures to the desktop with a mouse that’s unlike anything ever before. It's called Magic Mouse. It's the world's first Multi-Touch mouse",  @"image":@"gestures_2x.jpg", @"price":@"60.0"},
+                           @{@"name":@"Magic Mug!", @"desc":@"Magic mug it's unique in it's design. When you drop hot liquid on it, the legs begin to run in circles of about 30cm of radius. Be carefull where you place it, even being magic it breaks",  @"image":@"WhiteMugFront.jpg", @"price":@"23.0"},
+                           @{@"name":@"Magic Mouse! 2", @"desc":@"It began with iPhone. Then came iPod touch. Then MacBook Pro. Intuitive, smart, dynamic. Multi-Touch technology introduced a remarkably better way to interact with your portable devices — all using gestures. Now we’ve reached another milestone by bringing gestures to the desktop with a mouse that’s unlike anything ever before. It's called Magic Mouse. It's the world's first Multi-Touch mouse",  @"image":@"gestures_2x.jpg", @"price":@"60.0"},
+                           @{@"name":@"Magic Mug! 2", @"desc":@"Magic mug it's unique in it's design. When you drop hot liquid on it, the legs begin to run in circles of about 30cm of radius. Be carefull where you place it, even being magic it breaks",  @"image":@"WhiteMugFront.jpg", @"price":@"23.0"},
+                           @{@"name":@"Magic Mouse! 3", @"desc":@"It began with iPhone. Then came iPod touch. Then MacBook Pro. Intuitive, smart, dynamic. Multi-Touch technology introduced a remarkably better way to interact with your portable devices — all using gestures. Now we’ve reached another milestone by bringing gestures to the desktop with a mouse that’s unlike anything ever before. It's called Magic Mouse. It's the world's first Multi-Touch mouse",  @"image":@"gestures_2x.jpg", @"price":@"60.0"},
+                           @{@"name":@"Magic Mug! 3", @"desc":@"Magic mug it's unique in it's design. When you drop hot liquid on it, the legs begin to run in circles of about 30cm of radius. Be carefull where you place it, even being magic it breaks",  @"image":@"WhiteMugFront.jpg", @"price":@"23.0"}, nil];
+            [shopaux setProducts:pr];
+        } else {
+            NSArray *pr = [[NSArray alloc] initWithObjects:
+                           @{@"name":@"Magic Mouse!", @"desc":@"It began with iPhone. Then came iPod touch. Then MacBook Pro. Intuitive, smart, dynamic. Multi-Touch technology introduced a remarkably better way to interact with your portable devices — all using gestures. Now we’ve reached another milestone by bringing gestures to the desktop with a mouse that’s unlike anything ever before. It's called Magic Mouse. It's the world's first Multi-Touch mouse",  @"image":@"gestures_2x.jpg", @"price":@"60.0"},
+                           @{@"name":@"Magic Mug!", @"desc":@"Magic mug it's unique in it's design. When you drop hot liquid on it, the legs begin to run in circles of about 30cm of radius. Be carefull where you place it, even being magic it breaks",  @"image":@"WhiteMugFront.jpg", @"price":@"23.0"},
+                           @{@"name":@"Magic Mouse! 2", @"desc":@"It began with iPhone. Then came iPod touch. Then MacBook Pro. Intuitive, smart, dynamic. Multi-Touch technology introduced a remarkably better way to interact with your portable devices — all using gestures. Now we’ve reached another milestone by bringing gestures to the desktop with a mouse that’s unlike anything ever before. It's called Magic Mouse. It's the world's first Multi-Touch mouse",  @"image":@"gestures_2x.jpg", @"price":@"60.0"},
+                           @{@"name":@"Magic Mug! 2", @"desc":@"Magic mug it's unique in it's design. When you drop hot liquid on it, the legs begin to run in circles of about 30cm of radius. Be carefull where you place it, even being magic it breaks",  @"image":@"WhiteMugFront.jpg", @"price":@"23.0"},
+                           @{@"name":@"Magic Mouse! 3", @"desc":@"It began with iPhone. Then came iPod touch. Then MacBook Pro. Intuitive, smart, dynamic. Multi-Touch technology introduced a remarkably better way to interact with your portable devices — all using gestures. Now we’ve reached another milestone by bringing gestures to the desktop with a mouse that’s unlike anything ever before. It's called Magic Mouse. It's the world's first Multi-Touch mouse",  @"image":@"gestures_2x.jpg", @"price":@"60.0"},
+                           @{@"name":@"Magic Mug! 3", @"desc":@"Magic mug it's unique in it's design. When you drop hot liquid on it, the legs begin to run in circles of about 30cm of radius. Be carefull where you place it, even being magic it breaks",  @"image":@"WhiteMugFront.jpg", @"price":@"23.0"}, nil];
+            [shopaux setProducts:pr];
+        }
+        
         self.shop = shopaux;
     }
     
@@ -56,6 +76,17 @@
     
     // Setup view
     // title
+    self.holderView.layer.cornerRadius = 15;
+    self.holderView.layer.shadowColor = [[UIColor blackColor]CGColor];
+    self.holderView.layer.shadowOpacity = 1;
+    self.holderView.layer.shadowOffset = CGSizeMake(0, 0);
+    self.holderView.layer.shadowRadius = 10.0f;
+    UIView *header = [self.view viewWithTag:100];
+    header.layer.cornerRadius = 15;
+    header.layer.shadowColor = [[UIColor blackColor]CGColor];
+    header.layer.shadowOpacity = 1;
+    header.layer.shadowOffset = CGSizeMake(0, 0);
+    header.layer.shadowRadius = 10.0f;
     //self.titleLabel.text = [self.shop objectForKey:@"name"];
     self.descriptionTextView.text = @"Opening times:            Mon-Fry: 10am - 5pm             Sat: 9am - 6pm               Sun: Closed";
     self.titleLabel.text = [self.shop name];

@@ -13,6 +13,7 @@
 
 @property PFObject *product;
 @property NSDictionary *prod;
+@property (nonatomic, strong) IBOutlet UILabel *descriptionLbl;
 @end
 
 @implementation RURDetalProductVC
@@ -58,8 +59,9 @@
     
     [self.navigationItem setTitle:[_prod objectForKey:@"name"]];
     _productDescription.text = [_prod objectForKey:@"description"];
-    _productPrice.text = [NSString stringWithFormat:@"%@ $",[_prod objectForKey:@"price"]];
+    _productPrice.text = [NSString stringWithFormat:@"$%@",[_prod objectForKey:@"price"]];
     [_productImage setImage:[UIImage imageNamed:[_prod objectForKey:@"image"]]];
+    [_descriptionLbl setText:[_prod objectForKey:@"desc"]];
 }
 
 - (IBAction)payWithPP:(id)sender {

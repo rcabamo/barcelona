@@ -51,7 +51,7 @@
     NSLog(@"clientID: %@", [[TyphoonComponentFactory defaultFactory] paypalClientID]);
     NSLog(@"secretID: %@", [[TyphoonComponentFactory defaultFactory] paypalSecretID]);
     
-    NSMutableArray *purchases = [NSMutableArray arrayWithObjects:@"Ferrrari (100.000$)", @"Boat (30.000$)", @"iPad Air (700$)", nil];
+    NSMutableArray *purchases = [NSMutableArray arrayWithObjects:@"Ferrrari ($100.000)", @"Boat ($30.000)", @"iPad Air ($700)", nil];
     NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
     [def setObject:purchases forKey:@"purchasesarray"];
     [def synchronize];
