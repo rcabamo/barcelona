@@ -8,6 +8,8 @@
 
 #import "RURDetailShopVC.h"
 
+#import "RURProductCatalogVC.h"
+
 @interface RURDetailShopVC ()
 
 @property (nonatomic, strong) BBObject *shop;
@@ -44,8 +46,11 @@
     [self.shop imageWithSize:self.imageView.frame.size success:^(UIImage *img) {
         self.imageView.image = img;
     }];
-    
-//    [self.imageView setImageWithURL:[NSURL URLWithString:@""] placeholderImage:nil];
+}
+
+- (IBAction)openProductsVC:(id)sender
+{
+    RURProductCatalogVC *controller = [[RURProductCatalogVC alloc] initWithItems:[[self.shop joinResultForField:@"products"] objects]];
 }
 
 
