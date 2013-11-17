@@ -71,6 +71,10 @@
 		BB4C31D21838774A00E25BF5 /* TestAvatar.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BB4C31D11838774A00E25BF5 /* TestAvatar.jpeg */; };
 		BB4C31D51838776E00E25BF5 /* activityIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BB4C31D31838776E00E25BF5 /* activityIcon.png */; };
 		BB4C31D61838776E00E25BF5 /* payWithPassIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BB4C31D41838776E00E25BF5 /* payWithPassIcon.png */; };
+		BB5108E4183938D0002C8902 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BB5108E3183938D0002C8902 /* icon.png */; };
+		BB5108E61839391D002C8902 /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = BB5108E51839391D002C8902 /* icon120.png */; };
+		BB5108E818393B24002C8902 /* splashNoRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = BB5108E718393B24002C8902 /* splashNoRetina.png */; };
+		BB5108EA18393B51002C8902 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = BB5108E918393B51002C8902 /* splash.png */; };
 		BBCCF35A1839051600DE0FD5 /* AppleLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCF3541839051600DE0FD5 /* AppleLogo.png */; };
 		BBCCF35B1839051600DE0FD5 /* Bolso1.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCF3551839051600DE0FD5 /* Bolso1.png */; };
 		BBCCF35C1839051600DE0FD5 /* Bolso2.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCF3561839051600DE0FD5 /* Bolso2.png */; };
@@ -176,6 +180,10 @@
 		BB4C31D11838774A00E25BF5 /* TestAvatar.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TestAvatar.jpeg; sourceTree = "<group>"; };
 		BB4C31D31838776E00E25BF5 /* activityIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activityIcon.png; sourceTree = "<group>"; };
 		BB4C31D41838776E00E25BF5 /* payWithPassIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = payWithPassIcon.png; sourceTree = "<group>"; };
+		BB5108E3183938D0002C8902 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		BB5108E51839391D002C8902 /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120.png; sourceTree = "<group>"; };
+		BB5108E718393B24002C8902 /* splashNoRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashNoRetina.png; sourceTree = "<group>"; };
+		BB5108E918393B51002C8902 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		BBCCF3541839051600DE0FD5 /* AppleLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppleLogo.png; sourceTree = "<group>"; };
 		BBCCF3551839051600DE0FD5 /* Bolso1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bolso1.png; sourceTree = "<group>"; };
 		BBCCF3561839051600DE0FD5 /* Bolso2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bolso2.png; sourceTree = "<group>"; };
@@ -424,6 +432,10 @@
 		BB4C31D01838773E00E25BF5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				BB5108E918393B51002C8902 /* splash.png */,
+				BB5108E718393B24002C8902 /* splashNoRetina.png */,
+				BB5108E51839391D002C8902 /* icon120.png */,
+				BB5108E3183938D0002C8902 /* icon.png */,
 				BBCCF3531839051600DE0FD5 /* Assets */,
 				2D7ED9A51838BAFE00EF3328 /* WhiteMugFront.jpg */,
 				2D7ED9A31838B86000EF3328 /* gestures_2x.jpg */,
@@ -581,12 +593,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB5108E4183938D0002C8902 /* icon.png in Resources */,
 				2D7ED99E1838B5E500EF3328 /* discount.png in Resources */,
 				4A229F9B18384AD00041724D /* RURShopsMapVC.xib in Resources */,
 				2D5253F21839014C0056C7C3 /* RURMatchingCell.xib in Resources */,
 				2D2091031838947000B2FCF9 /* RURConfirmationSendViewController.xib in Resources */,
+				BB5108E818393B24002C8902 /* splashNoRetina.png in Resources */,
 				BB387C811838B2C800ADB6FE /* LeftRevealIcon.png in Resources */,
 				BB387C841838B2C800ADB6FE /* RightRevealIcon@2x.png in Resources */,
+				BB5108EA18393B51002C8902 /* splash.png in Resources */,
 				4A78EA6E183885B000E7933B /* button-blue.png in Resources */,
 				4A229F9518384A9C0041724D /* RURPurchasesVC.xib in Resources */,
 				2D7ED99C1838B3F900EF3328 /* sale30.png in Resources */,
@@ -618,6 +633,7 @@
 				2D7ED9A01838B6DB00EF3328 /* discount2.png in Resources */,
 				4A229FAE18384B1A0041724D /* Tienda.jpeg in Resources */,
 				BB387C831838B2C800ADB6FE /* RightRevealIcon.png in Resources */,
+				BB5108E61839391D002C8902 /* icon120.png in Resources */,
 				4A229FAD18384B1A0041724D /* RURProductCatalogVC.xib in Resources */,
 				2D7ED9A41838B86000EF3328 /* gestures_2x.jpg in Resources */,
 				4A229FB318384B310041724D /* RURDetailShopVC.xib in Resources */,
