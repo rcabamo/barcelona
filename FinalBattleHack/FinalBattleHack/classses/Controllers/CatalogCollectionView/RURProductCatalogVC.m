@@ -76,12 +76,18 @@
 }
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
-    UICollectionReusableView *header = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"header" forIndexPath:indexPath];
-    [header setBackgroundColor:[UIColor grayColor]];
-    UILabel *lbl = [[UILabel alloc] initWithFrame:header.frame];
-    [lbl setFont:[UIFont systemFontOfSize:14.0]];
-    [lbl setText:@"Text header"];
-    [header addSubview:lbl];
+    RURHeaderView *header = nil;
+    if (kind == UICollectionElementKindSectionHeader) {
+        header = (RURHeaderView*)[collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"header" forIndexPath:indexPath];
+        [header setBackgroundColor:[UIColor grayColor]];
+        UILabel *lbl = [[UILabel alloc] initWithFrame:header.frame];
+        [lbl setFont:[UIFont systemFontOfSize:14.0]];
+        [lbl setTag:1];
+        [lbl setText:[NSString stringWithFormat:@"Section %d", indexPath.section]];
+        [header addSubview:lbl];
+    }
+    
+    
     return header;
 }
 
