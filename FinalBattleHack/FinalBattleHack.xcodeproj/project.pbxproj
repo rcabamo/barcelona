@@ -17,6 +17,8 @@
 		2D5253F0183901420056C7C3 /* RURMatchingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5253EF183901420056C7C3 /* RURMatchingCell.m */; };
 		2D5253F21839014C0056C7C3 /* RURMatchingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5253F11839014C0056C7C3 /* RURMatchingCell.xib */; };
 		2D5253F518390A050056C7C3 /* RURData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5253F418390A050056C7C3 /* RURData.m */; };
+		2D5253F71839617B0056C7C3 /* flag.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 2D5253F61839617B0056C7C3 /* flag.JPG */; };
+		2D5253F9183964540056C7C3 /* mac.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 2D5253F8183964540056C7C3 /* mac.JPG */; };
 		2D7ED99C1838B3F900EF3328 /* sale30.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D7ED99B1838B3F900EF3328 /* sale30.png */; };
 		2D7ED99E1838B5E500EF3328 /* discount.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D7ED99D1838B5E500EF3328 /* discount.png */; };
 		2D7ED9A01838B6DB00EF3328 /* discount2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D7ED99F1838B6DB00EF3328 /* discount2.png */; };
@@ -113,6 +115,8 @@
 		2D5253F11839014C0056C7C3 /* RURMatchingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RURMatchingCell.xib; sourceTree = "<group>"; };
 		2D5253F318390A050056C7C3 /* RURData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURData.h; sourceTree = "<group>"; };
 		2D5253F418390A050056C7C3 /* RURData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURData.m; sourceTree = "<group>"; };
+		2D5253F61839617B0056C7C3 /* flag.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flag.JPG; sourceTree = "<group>"; };
+		2D5253F8183964540056C7C3 /* mac.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mac.JPG; sourceTree = "<group>"; };
 		2D7ED99B1838B3F900EF3328 /* sale30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sale30.png; sourceTree = "<group>"; };
 		2D7ED99D1838B5E500EF3328 /* discount.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discount.png; sourceTree = "<group>"; };
 		2D7ED99F1838B6DB00EF3328 /* discount2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discount2.png; sourceTree = "<group>"; };
@@ -440,6 +444,8 @@
 		BB4C31D01838773E00E25BF5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2D5253F8183964540056C7C3 /* mac.JPG */,
+				2D5253F61839617B0056C7C3 /* flag.JPG */,
 				BB8950B4183959CE007646CD /* icon3-120.png */,
 				BB8950B5183959CE007646CD /* icon3.png */,
 				BB8950B6183959CE007646CD /* splash3-noretina.png */,
@@ -620,6 +626,7 @@
 				BB8950BB183959CE007646CD /* splash3.png in Resources */,
 				BBCCF35B1839051600DE0FD5 /* Bolso1.png in Resources */,
 				BB4C31D21838774A00E25BF5 /* TestAvatar.jpeg in Resources */,
+				2D5253F71839617B0056C7C3 /* flag.JPG in Resources */,
 				BBCCF35D1839051600DE0FD5 /* Bolso3.png in Resources */,
 				2D7ED9A61838BAFE00EF3328 /* WhiteMugFront.jpg in Resources */,
 				4A78EA6D183885B000E7933B /* BackgroundButton.png in Resources */,
@@ -651,6 +658,7 @@
 				4A229FAD18384B1A0041724D /* RURProductCatalogVC.xib in Resources */,
 				BBB18E10183956BA00E19D68 /* icona2.png in Resources */,
 				2D7ED9A41838B86000EF3328 /* gestures_2x.jpg in Resources */,
+				2D5253F9183964540056C7C3 /* mac.JPG in Resources */,
 				BB8950B8183959CE007646CD /* icon3-120.png in Resources */,
 				4A229FB318384B310041724D /* RURDetailShopVC.xib in Resources */,
 			);
