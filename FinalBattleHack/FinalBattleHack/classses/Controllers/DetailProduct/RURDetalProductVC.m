@@ -12,7 +12,7 @@
 @interface RURDetalProductVC ()
 
 @property PFObject *product;
-
+@property NSDictionary *prod;
 @end
 
 @implementation RURDetalProductVC
@@ -35,6 +35,15 @@
     return self;
 }
 
+
+- (id) initWithDictionary:(NSDictionary*)info {
+    self = [super init];
+    if (self) {
+        _prod = info;
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -47,15 +56,15 @@
     
     [PayPalPaymentViewController setEnvironment:PayPalEnvironmentNoNetwork];
     
-    [self.navigationItem setTitle:[_product objectForKey:@"name"]];
-    _productDescription.text = [_product objectForKey:@"description"];
-    _productPrice.text = [_product objectForKey:@"price"];
+    [self.navigationItem setTitle:[_prod objectForKey:@"name"]];
+    _productDescription.text = [_prod objectForKey:@"description"];
+    _productPrice.text = [_prod objectForKey:@"price"];
 }
 
 - (IBAction)payWithPP:(id)sender {
     PayPalPayment *payment = [[PayPalPayment alloc]init];
     payment.currencyCode = @"USD";
-    payment.amount = (NSDecimalNumber *) @60;
+    payment.amount = (NSDecimalNumber *) [NSNumber numberWithInteger:[[_prod objectForKey:@"price"] intValue]];
     payment.shortDescription = @"Nice Apple magic mouse!";
     
     if (payment.processable) {
