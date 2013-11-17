@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface RURDetalProductVC : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *productName;
+@property (weak, nonatomic) IBOutlet UILabel *productDescription;
 
+- (IBAction)payWithPP:(id)sender;
 @end
