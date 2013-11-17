@@ -32,7 +32,7 @@
                     </connections>
                 </collectionView>
             </subviews>
-            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="cFh-Jo-Eae" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="15" id="jXw-ex-7lR"/>
                 <constraint firstAttribute="bottom" secondItem="cFh-Jo-Eae" secondAttribute="bottom" id="jxb-rx-l3P"/>
