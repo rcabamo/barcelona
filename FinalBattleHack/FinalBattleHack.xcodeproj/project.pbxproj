@@ -13,7 +13,6 @@
 		2DA49C7318384D7000772064 /* RURProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA49C7118384D7000772064 /* RURProfileVC.m */; };
 		2DA49C751838716300772064 /* button-plain@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DA49C741838716300772064 /* button-plain@2x.png */; };
 		2DA49C77183871DF00772064 /* button-empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DA49C76183871DF00772064 /* button-empty.png */; };
-		2DA49C7A1838764000772064 /* RURConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA49C791838764000772064 /* RURConstants.m */; };
 		4A229F701838331C0041724D /* RUR_dev.properties in Resources */ = {isa = PBXBuildFile; fileRef = 4A229F6F1838331C0041724D /* RUR_dev.properties */; };
 		4A229F72183833250041724D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A229F71183833250041724D /* Images.xcassets */; };
 		4A229F801838432E0041724D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A229F7F1838432E0041724D /* MapKit.framework */; };
@@ -68,8 +67,6 @@
 		2DA49C7118384D7000772064 /* RURProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURProfileVC.m; sourceTree = "<group>"; };
 		2DA49C741838716300772064 /* button-plain@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-plain@2x.png"; sourceTree = "<group>"; };
 		2DA49C76183871DF00772064 /* button-empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-empty.png"; sourceTree = "<group>"; };
-		2DA49C781838764000772064 /* RURConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURConstants.h; sourceTree = "<group>"; };
-		2DA49C791838764000772064 /* RURConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURConstants.m; sourceTree = "<group>"; };
 		4A229F6F1838331C0041724D /* RUR_dev.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RUR_dev.properties; sourceTree = "<group>"; };
 		4A229F71183833250041724D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FinalBattleHack/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		4A229F7F1838432E0041724D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -274,8 +271,6 @@
 			children = (
 				4A8DD69418381EDC00E603E5 /* UIViewController+UserAdditions.h */,
 				4A8DD69518381EDC00E603E5 /* UIViewController+UserAdditions.m */,
-				2DA49C781838764000772064 /* RURConstants.h */,
-				2DA49C791838764000772064 /* RURConstants.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -544,7 +539,6 @@
 				4A229F9A18384AD00041724D /* RURShopsMapVC.m in Sources */,
 				4AA58D2F183818C300B51AEA /* main.m in Sources */,
 				4A8DD69618381EDC00E603E5 /* UIViewController+UserAdditions.m in Sources */,
-				2DA49C7A1838764000772064 /* RURConstants.m in Sources */,
 				4A8DD68E18381DD000E603E5 /* RURAssembly.m in Sources */,
 				4A78EA661838700800E7933B /* RURCustomAnnotation.m in Sources */,
 				4A229FAC18384B1A0041724D /* RURProductCatalogVC.m in Sources */,

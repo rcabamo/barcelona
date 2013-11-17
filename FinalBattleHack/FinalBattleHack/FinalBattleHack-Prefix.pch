@@ -15,5 +15,6 @@
     #import <Foundation/Foundation.h>
     #import <Backbeam/Backbeam.h>
     #import <SDWebImage/UIImageView+WebCache.h>
-    #import "RURConstants.h"
+    #import <Typhoon/Typhoon.h>
+    #import "RURAssembly.h"
 #endif

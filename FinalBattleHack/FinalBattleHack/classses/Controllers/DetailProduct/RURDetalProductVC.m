@@ -38,7 +38,7 @@
     payment.shortDescription = @"Nice Apple magic mouse!";
     
     if (payment.processable) {
-        PayPalPaymentViewController *paymentScreen = [[PayPalPaymentViewController alloc]initWithClientId:clientId receiverEmail:@"r.lapuente-facilitator@gmail.com" payerId:@"PLAYEDID" payment:payment delegate:self];
+        PayPalPaymentViewController *paymentScreen = [[PayPalPaymentViewController alloc]initWithClientId:[[TyphoonComponentFactory defaultFactory] paypalClientID] receiverEmail:@"r.lapuente-facilitator@gmail.com" payerId:@"PLAYEDID" payment:payment delegate:self];
         [self presentViewController:paymentScreen animated:YES completion:nil];
     } else {
         NSLog(@"something went wrong");

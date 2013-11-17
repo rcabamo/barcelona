@@ -8,14 +8,11 @@
 
 #import "RURAppDelegate.h"
 
-#import "RURAssembly.h"
-
 #import "RURShopsMapVC.h"
 #import "RURPurchasesVC.h"
 #import "RURProfileVC.h"
 
 #import <MSDynamicsDrawerViewController/MSDynamicsDrawerViewController.h>
-#import <Typhoon/Typhoon.h>
 
 @implementation RURAppDelegate
 
