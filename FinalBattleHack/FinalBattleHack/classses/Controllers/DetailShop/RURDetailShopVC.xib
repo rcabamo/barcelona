@@ -65,6 +65,9 @@
                     <state key="normal" title="products">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="openProductsVC:" destination="-1" eventType="touchUpInside" id="roI-9j-N8E"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

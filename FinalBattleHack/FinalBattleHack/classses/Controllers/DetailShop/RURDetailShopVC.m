@@ -51,6 +51,8 @@
 - (IBAction)openProductsVC:(id)sender
 {
     RURProductCatalogVC *controller = [[RURProductCatalogVC alloc] initWithItems:[[self.shop joinResultForField:@"products"] objects]];
+    
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 
