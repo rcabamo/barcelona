@@ -7,9 +7,10 @@
 //
 
 #import "RURProductCatalogVC.h"
-
+#import "RURHeaderView.h"
+#import "RURDetalProductVC.h"
 @interface RURProductCatalogVC ()
-
+@property (nonatomic, strong) IBOutlet UICollectionView *catalogItems;
 @end
 
 @implementation RURProductCatalogVC
@@ -27,12 +28,70 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    UINib *cellNib = [UINib nibWithNibName:@"CollectionViewCell" bundle:nil];
+    [self.catalogItems registerNib:cellNib forCellWithReuseIdentifier:@"Cell"];
+//    [self.catalogItems registerClass:[RURHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header"];
+//    [self.catalogItems registerNib:[UINib nibWithNibName:@"HeaderView" bundle:nil] forCellWithReuseIdentifier:@"header"];
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    [flowLayout setItemSize:CGSizeMake(140, 100)];
+    [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
+    flowLayout.sectionInset = UIEdgeInsetsMake(0, 0, 20, 0);
+    [self.catalogItems setCollectionViewLayout:flowLayout];
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UICollectionViewDataSource
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 10;
+    
+}
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 3;
+}
+
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
+                  cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    UILabel *lbl = (UILabel*)[cell viewWithTag:102];
+    [lbl setText:[NSString stringWithFormat:@"Label %ld", (long)indexPath.row]];
+    return cell;
+    
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
+    
+    return CGSizeMake(0, 20);
+}
+
+//- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+//    if(kind == UICollectionElementKindSectionHeader)
+//    {
+////        UICollectionReusableView *header = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"header" forIndexPath:indexPath];
+////        [header setBackgroundColor:[UIColor yellowColor]];
+////        //[header.backgroundImage setImage:[UIImage imageNamed:@"Tienda.jpeg"]];
+////        //[header.title setText:@"HEADER"];
+////        return header;
+//    }
+//    return nil;
+//}
+
+#pragma mark - UICollectionViewDelegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    RURDetalProductVC *detail = [[RURDetalProductVC alloc] initWithNibName:@"RURDetalProductVC" bundle:nil];
+    //Set Details attibuttes
+    [self.navigationController pushViewController:detail animated:YES];
 }
 
 @end

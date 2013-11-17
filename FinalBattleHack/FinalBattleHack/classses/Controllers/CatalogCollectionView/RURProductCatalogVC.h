@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RURProductCatalogVC : UIViewController
-
+@interface RURProductCatalogVC : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
+@property (nonatomic, strong) NSArray *items;
 @end
