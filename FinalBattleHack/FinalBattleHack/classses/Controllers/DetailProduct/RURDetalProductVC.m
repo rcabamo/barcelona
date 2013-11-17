@@ -7,6 +7,7 @@
 //
 
 #import "RURDetalProductVC.h"
+#import "PayPalPaymentViewController.h"
 
 @interface RURDetalProductVC ()
 
@@ -27,6 +28,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [PayPalPaymentViewController setEnvironment:PayPalEnvironmentNoNetwork];
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,5 +38,24 @@
 }
 
 - (IBAction)payWithPP:(id)sender {
+    PayPalPayment *payment = [[PayPalPayment alloc]init];
+    payment.currencyCode = @"USD";
+    payment.amount = (NSDecimalNumber *) @60;
+    payment.shortDescription = @"Nice Apple magic mouse!";
 }
+
+#pragma mark - PayPal Delegate
+
+- (void)payPalPaymentDidComplete:(PayPalPayment *)completedPayment
+{
+    NSLog(@"payment was completed with info %@",completedPayment);
+}
+
+- (void)payPalPaymentDidCancel
+{
+    [self dismissViewControllerAnimated:YES completion:^{
+        NSLog(@"PayPal was cancelled");
+    }];
+}
+
 @end
