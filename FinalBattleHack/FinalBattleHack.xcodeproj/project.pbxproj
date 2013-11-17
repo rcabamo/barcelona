@@ -11,11 +11,23 @@
 		2DA49C681838478600772064 /* button-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DA49C671838478600772064 /* button-blue.png */; };
 		4A229F701838331C0041724D /* RUR_dev.properties in Resources */ = {isa = PBXBuildFile; fileRef = 4A229F6F1838331C0041724D /* RUR_dev.properties */; };
 		4A229F72183833250041724D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A229F71183833250041724D /* Images.xcassets */; };
-		4A229F78183837A60041724D /* RURProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A229F76183837A60041724D /* RURProfileVC.m */; };
-		4A229F79183837A60041724D /* RURProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A229F77183837A60041724D /* RURProfileVC.xib */; };
-		4A229F7D183837BB0041724D /* RURPurchasesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A229F7B183837BB0041724D /* RURPurchasesVC.m */; };
-		4A229F7E183837BB0041724D /* RURPurchasesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A229F7C183837BB0041724D /* RURPurchasesVC.xib */; };
 		4A229F801838432E0041724D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A229F7F1838432E0041724D /* MapKit.framework */; };
+		4A229F8F18384A8A0041724D /* RURProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A229F8D18384A8A0041724D /* RURProfileVC.m */; };
+		4A229F9018384A8A0041724D /* RURProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A229F8E18384A8A0041724D /* RURProfileVC.xib */; };
+		4A229F9418384A9C0041724D /* RURPurchasesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A229F9218384A9C0041724D /* RURPurchasesVC.m */; };
+		4A229F9518384A9C0041724D /* RURPurchasesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A229F9318384A9C0041724D /* RURPurchasesVC.xib */; };
+		4A229F9A18384AD00041724D /* RURShopsMapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A229F9818384AD00041724D /* RURShopsMapVC.m */; };
+		4A229F9B18384AD00041724D /* RURShopsMapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A229F9918384AD00041724D /* RURShopsMapVC.xib */; };
+		4A229F9F18384AEB0041724D /* RURDetalProductVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A229F9D18384AEB0041724D /* RURDetalProductVC.m */; };
+		4A229FA018384AEB0041724D /* RURDetalProductVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A229F9E18384AEB0041724D /* RURDetalProductVC.xib */; };
+		4A229FA918384B1A0041724D /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A229FA118384B1A0041724D /* CollectionViewCell.xib */; };
+		4A229FAA18384B1A0041724D /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A229FA218384B1A0041724D /* HeaderView.xib */; };
+		4A229FAB18384B1A0041724D /* RURHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A229FA418384B1A0041724D /* RURHeaderView.m */; };
+		4A229FAC18384B1A0041724D /* RURProductCatalogVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A229FA618384B1A0041724D /* RURProductCatalogVC.m */; };
+		4A229FAD18384B1A0041724D /* RURProductCatalogVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A229FA718384B1A0041724D /* RURProductCatalogVC.xib */; };
+		4A229FAE18384B1A0041724D /* Tienda.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4A229FA818384B1A0041724D /* Tienda.jpeg */; };
+		4A229FB218384B310041724D /* RURDetailShopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A229FB018384B310041724D /* RURDetailShopVC.m */; };
+		4A229FB318384B310041724D /* RURDetailShopVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A229FB118384B310041724D /* RURDetailShopVC.xib */; };
 		4A8DD68A18381D7100E603E5 /* RURAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8DD68818381D7100E603E5 /* RURAppDelegate.m */; };
 		4A8DD68E18381DD000E603E5 /* RURAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8DD68D18381DD000E603E5 /* RURAssembly.m */; };
 		4A8DD69218381E9100E603E5 /* RURUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8DD69118381E9100E603E5 /* RURUser.m */; };
@@ -31,18 +43,6 @@
 		4AA58D4C183818C300B51AEA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AA58D4A183818C300B51AEA /* InfoPlist.strings */; };
 		4AA58D4E183818C300B51AEA /* FinalBattleHackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA58D4D183818C300B51AEA /* FinalBattleHackTests.m */; };
 		9AA316FBBB354E90908299CA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 979064809C8F41ACAB5BFFE3 /* libPods.a */; };
-		BB4C31BE183832F400E25BF5 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB4C31BD183832F400E25BF5 /* CollectionViewCell.xib */; };
-		BB4C31C0183834ED00E25BF5 /* Tienda.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BB4C31BF183834ED00E25BF5 /* Tienda.jpeg */; };
-		BB4C31C518383F4900E25BF5 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB4C31C418383F4900E25BF5 /* HeaderView.xib */; };
-		BB4C31CD183843C700E25BF5 /* RURHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4C31CC183843C700E25BF5 /* RURHeaderView.m */; };
-		BB6F4DE418382B6800CF2FB8 /* RURShopsMapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6F4DE218382B6800CF2FB8 /* RURShopsMapVC.m */; };
-		BB6F4DE518382B6800CF2FB8 /* RURShopsMapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6F4DE318382B6800CF2FB8 /* RURShopsMapVC.xib */; };
-		BB6F4DE918382BAB00CF2FB8 /* RURDetalProductVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6F4DE718382BAB00CF2FB8 /* RURDetalProductVC.m */; };
-		BB6F4DEA18382BAB00CF2FB8 /* RURDetalProductVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6F4DE818382BAB00CF2FB8 /* RURDetalProductVC.xib */; };
-		BB6F4DEE18382BE400CF2FB8 /* RURProductCatalogVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6F4DEC18382BE400CF2FB8 /* RURProductCatalogVC.m */; };
-		BB6F4DEF18382BE400CF2FB8 /* RURProductCatalogVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6F4DED18382BE400CF2FB8 /* RURProductCatalogVC.xib */; };
-		BB6F4DF318382C1700CF2FB8 /* RURDetailShopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6F4DF118382C1700CF2FB8 /* RURDetailShopVC.m */; };
-		BB6F4DF418382C1700CF2FB8 /* RURDetailShopVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6F4DF218382C1700CF2FB8 /* RURDetailShopVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,13 +60,30 @@
 		2DA49C671838478600772064 /* button-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-blue.png"; sourceTree = "<group>"; };
 		4A229F6F1838331C0041724D /* RUR_dev.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RUR_dev.properties; sourceTree = "<group>"; };
 		4A229F71183833250041724D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FinalBattleHack/Images.xcassets; sourceTree = SOURCE_ROOT; };
-		4A229F75183837A60041724D /* RURProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RURProfileVC.h; path = Profile/RURProfileVC.h; sourceTree = "<group>"; };
-		4A229F76183837A60041724D /* RURProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RURProfileVC.m; path = Profile/RURProfileVC.m; sourceTree = "<group>"; };
-		4A229F77183837A60041724D /* RURProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RURProfileVC.xib; path = Profile/RURProfileVC.xib; sourceTree = "<group>"; };
-		4A229F7A183837BB0041724D /* RURPurchasesVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RURPurchasesVC.h; path = Purchases/RURPurchasesVC.h; sourceTree = "<group>"; };
-		4A229F7B183837BB0041724D /* RURPurchasesVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RURPurchasesVC.m; path = Purchases/RURPurchasesVC.m; sourceTree = "<group>"; };
-		4A229F7C183837BB0041724D /* RURPurchasesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RURPurchasesVC.xib; path = Purchases/RURPurchasesVC.xib; sourceTree = "<group>"; };
 		4A229F7F1838432E0041724D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4A229F8C18384A8A0041724D /* RURProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURProfileVC.h; sourceTree = "<group>"; };
+		4A229F8D18384A8A0041724D /* RURProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURProfileVC.m; sourceTree = "<group>"; };
+		4A229F8E18384A8A0041724D /* RURProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RURProfileVC.xib; sourceTree = "<group>"; };
+		4A229F9118384A9C0041724D /* RURPurchasesVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURPurchasesVC.h; sourceTree = "<group>"; };
+		4A229F9218384A9C0041724D /* RURPurchasesVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURPurchasesVC.m; sourceTree = "<group>"; };
+		4A229F9318384A9C0041724D /* RURPurchasesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RURPurchasesVC.xib; sourceTree = "<group>"; };
+		4A229F9718384AD00041724D /* RURShopsMapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURShopsMapVC.h; sourceTree = "<group>"; };
+		4A229F9818384AD00041724D /* RURShopsMapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURShopsMapVC.m; sourceTree = "<group>"; };
+		4A229F9918384AD00041724D /* RURShopsMapVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RURShopsMapVC.xib; sourceTree = "<group>"; };
+		4A229F9C18384AEB0041724D /* RURDetalProductVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURDetalProductVC.h; sourceTree = "<group>"; };
+		4A229F9D18384AEB0041724D /* RURDetalProductVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURDetalProductVC.m; sourceTree = "<group>"; };
+		4A229F9E18384AEB0041724D /* RURDetalProductVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RURDetalProductVC.xib; sourceTree = "<group>"; };
+		4A229FA118384B1A0041724D /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		4A229FA218384B1A0041724D /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		4A229FA318384B1A0041724D /* RURHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURHeaderView.h; sourceTree = "<group>"; };
+		4A229FA418384B1A0041724D /* RURHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURHeaderView.m; sourceTree = "<group>"; };
+		4A229FA518384B1A0041724D /* RURProductCatalogVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURProductCatalogVC.h; sourceTree = "<group>"; };
+		4A229FA618384B1A0041724D /* RURProductCatalogVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURProductCatalogVC.m; sourceTree = "<group>"; };
+		4A229FA718384B1A0041724D /* RURProductCatalogVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RURProductCatalogVC.xib; sourceTree = "<group>"; };
+		4A229FA818384B1A0041724D /* Tienda.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tienda.jpeg; sourceTree = "<group>"; };
+		4A229FAF18384B310041724D /* RURDetailShopVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURDetailShopVC.h; sourceTree = "<group>"; };
+		4A229FB018384B310041724D /* RURDetailShopVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURDetailShopVC.m; sourceTree = "<group>"; };
+		4A229FB118384B310041724D /* RURDetailShopVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RURDetailShopVC.xib; sourceTree = "<group>"; };
 		4A8DD68718381D7100E603E5 /* RURAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURAppDelegate.h; sourceTree = "<group>"; };
 		4A8DD68818381D7100E603E5 /* RURAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURAppDelegate.m; sourceTree = "<group>"; };
 		4A8DD68C18381DD000E603E5 /* RURAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURAssembly.h; sourceTree = "<group>"; };
@@ -90,23 +107,6 @@
 		4AA58D4D183818C300B51AEA /* FinalBattleHackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinalBattleHackTests.m; sourceTree = "<group>"; };
 		8A274BCFBFD94335944B02E8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		979064809C8F41ACAB5BFFE3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB4C31BD183832F400E25BF5 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollectionViewCell.xib; path = Controllers/CatalogCollectionView/CollectionViewCell.xib; sourceTree = "<group>"; };
-		BB4C31BF183834ED00E25BF5 /* Tienda.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tienda.jpeg; sourceTree = "<group>"; };
-		BB4C31C418383F4900E25BF5 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeaderView.xib; path = Controllers/CatalogCollectionView/HeaderView.xib; sourceTree = "<group>"; };
-		BB4C31CB183843C700E25BF5 /* RURHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RURHeaderView.h; path = Controllers/CatalogCollectionView/RURHeaderView.h; sourceTree = "<group>"; };
-		BB4C31CC183843C700E25BF5 /* RURHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RURHeaderView.m; path = Controllers/CatalogCollectionView/RURHeaderView.m; sourceTree = "<group>"; };
-		BB6F4DE118382B6800CF2FB8 /* RURShopsMapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RURShopsMapVC.h; path = Controllers/MapaTiendas/RURShopsMapVC.h; sourceTree = "<group>"; };
-		BB6F4DE218382B6800CF2FB8 /* RURShopsMapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RURShopsMapVC.m; path = Controllers/MapaTiendas/RURShopsMapVC.m; sourceTree = "<group>"; };
-		BB6F4DE318382B6800CF2FB8 /* RURShopsMapVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RURShopsMapVC.xib; path = Controllers/MapaTiendas/RURShopsMapVC.xib; sourceTree = "<group>"; };
-		BB6F4DE618382BAB00CF2FB8 /* RURDetalProductVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RURDetalProductVC.h; path = Controllers/DetailProduct/RURDetalProductVC.h; sourceTree = "<group>"; };
-		BB6F4DE718382BAB00CF2FB8 /* RURDetalProductVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RURDetalProductVC.m; path = Controllers/DetailProduct/RURDetalProductVC.m; sourceTree = "<group>"; };
-		BB6F4DE818382BAB00CF2FB8 /* RURDetalProductVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RURDetalProductVC.xib; path = Controllers/DetailProduct/RURDetalProductVC.xib; sourceTree = "<group>"; };
-		BB6F4DEB18382BE400CF2FB8 /* RURProductCatalogVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RURProductCatalogVC.h; path = Controllers/CatalogCollectionView/RURProductCatalogVC.h; sourceTree = "<group>"; };
-		BB6F4DEC18382BE400CF2FB8 /* RURProductCatalogVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RURProductCatalogVC.m; path = Controllers/CatalogCollectionView/RURProductCatalogVC.m; sourceTree = "<group>"; };
-		BB6F4DED18382BE400CF2FB8 /* RURProductCatalogVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RURProductCatalogVC.xib; path = Controllers/CatalogCollectionView/RURProductCatalogVC.xib; sourceTree = "<group>"; };
-		BB6F4DF018382C1700CF2FB8 /* RURDetailShopVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RURDetailShopVC.h; path = Controllers/DetailShop/RURDetailShopVC.h; sourceTree = "<group>"; };
-		BB6F4DF118382C1700CF2FB8 /* RURDetailShopVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RURDetailShopVC.m; path = Controllers/DetailShop/RURDetailShopVC.m; sourceTree = "<group>"; };
-		BB6F4DF218382C1700CF2FB8 /* RURDetailShopVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RURDetailShopVC.xib; path = Controllers/DetailShop/RURDetailShopVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,21 +164,32 @@
 		4A229F73183837790041724D /* Purchases */ = {
 			isa = PBXGroup;
 			children = (
-				4A229F7A183837BB0041724D /* RURPurchasesVC.h */,
-				4A229F7B183837BB0041724D /* RURPurchasesVC.m */,
-				4A229F7C183837BB0041724D /* RURPurchasesVC.xib */,
+				4A229F9118384A9C0041724D /* RURPurchasesVC.h */,
+				4A229F9218384A9C0041724D /* RURPurchasesVC.m */,
+				4A229F9318384A9C0041724D /* RURPurchasesVC.xib */,
 			);
-			name = Purchases;
+			path = Purchases;
 			sourceTree = "<group>";
 		};
 		4A229F74183837850041724D /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				4A229F75183837A60041724D /* RURProfileVC.h */,
-				4A229F76183837A60041724D /* RURProfileVC.m */,
-				4A229F77183837A60041724D /* RURProfileVC.xib */,
+				4A229F8C18384A8A0041724D /* RURProfileVC.h */,
+				4A229F8D18384A8A0041724D /* RURProfileVC.m */,
+				4A229F8E18384A8A0041724D /* RURProfileVC.xib */,
 			);
-			name = Profile;
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		4A229F9618384ABD0041724D /* ShopMap */ = {
+			isa = PBXGroup;
+			children = (
+				4A229F9718384AD00041724D /* RURShopsMapVC.h */,
+				4A229F9818384AD00041724D /* RURShopsMapVC.m */,
+				4A229F9918384AD00041724D /* RURShopsMapVC.xib */,
+			);
+			name = ShopMap;
+			path = ShopsMap;
 			sourceTree = "<group>";
 		};
 		4A8DD68418381D7100E603E5 /* classses */ = {
@@ -196,9 +207,9 @@
 		4A8DD68518381D7100E603E5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4A229F9618384ABD0041724D /* ShopMap */,
 				4A229F74183837850041724D /* Profile */,
 				4A229F73183837790041724D /* Purchases */,
-				BB6F4DDD18382A6D00CF2FB8 /* ShopsMap */,
 				BB6F4DE018382AA100CF2FB8 /* DetailProduct */,
 				BB6F4DDF18382A8D00CF2FB8 /* CatalogCollectionView */,
 				BB6F4DDE18382A7800CF2FB8 /* DetailShop */,
@@ -323,53 +334,39 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BB6F4DDD18382A6D00CF2FB8 /* ShopsMap */ = {
-			isa = PBXGroup;
-			children = (
-				BB6F4DE118382B6800CF2FB8 /* RURShopsMapVC.h */,
-				BB6F4DE218382B6800CF2FB8 /* RURShopsMapVC.m */,
-				BB6F4DE318382B6800CF2FB8 /* RURShopsMapVC.xib */,
-			);
-			name = ShopsMap;
-			path = ..;
-			sourceTree = "<group>";
-		};
 		BB6F4DDE18382A7800CF2FB8 /* DetailShop */ = {
 			isa = PBXGroup;
 			children = (
-				BB6F4DF018382C1700CF2FB8 /* RURDetailShopVC.h */,
-				BB6F4DF118382C1700CF2FB8 /* RURDetailShopVC.m */,
-				BB6F4DF218382C1700CF2FB8 /* RURDetailShopVC.xib */,
+				4A229FAF18384B310041724D /* RURDetailShopVC.h */,
+				4A229FB018384B310041724D /* RURDetailShopVC.m */,
+				4A229FB118384B310041724D /* RURDetailShopVC.xib */,
 			);
-			name = DetailShop;
-			path = ..;
+			path = DetailShop;
 			sourceTree = "<group>";
 		};
 		BB6F4DDF18382A8D00CF2FB8 /* CatalogCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				BB4C31BF183834ED00E25BF5 /* Tienda.jpeg */,
-				BB6F4DEB18382BE400CF2FB8 /* RURProductCatalogVC.h */,
-				BB6F4DEC18382BE400CF2FB8 /* RURProductCatalogVC.m */,
-				BB6F4DED18382BE400CF2FB8 /* RURProductCatalogVC.xib */,
-				BB4C31BD183832F400E25BF5 /* CollectionViewCell.xib */,
-				BB4C31CB183843C700E25BF5 /* RURHeaderView.h */,
-				BB4C31CC183843C700E25BF5 /* RURHeaderView.m */,
-				BB4C31C418383F4900E25BF5 /* HeaderView.xib */,
+				4A229FA118384B1A0041724D /* CollectionViewCell.xib */,
+				4A229FA218384B1A0041724D /* HeaderView.xib */,
+				4A229FA318384B1A0041724D /* RURHeaderView.h */,
+				4A229FA418384B1A0041724D /* RURHeaderView.m */,
+				4A229FA518384B1A0041724D /* RURProductCatalogVC.h */,
+				4A229FA618384B1A0041724D /* RURProductCatalogVC.m */,
+				4A229FA718384B1A0041724D /* RURProductCatalogVC.xib */,
+				4A229FA818384B1A0041724D /* Tienda.jpeg */,
 			);
-			name = CatalogCollectionView;
-			path = ..;
+			path = CatalogCollectionView;
 			sourceTree = "<group>";
 		};
 		BB6F4DE018382AA100CF2FB8 /* DetailProduct */ = {
 			isa = PBXGroup;
 			children = (
-				BB6F4DE618382BAB00CF2FB8 /* RURDetalProductVC.h */,
-				BB6F4DE718382BAB00CF2FB8 /* RURDetalProductVC.m */,
-				BB6F4DE818382BAB00CF2FB8 /* RURDetalProductVC.xib */,
+				4A229F9C18384AEB0041724D /* RURDetalProductVC.h */,
+				4A229F9D18384AEB0041724D /* RURDetalProductVC.m */,
+				4A229F9E18384AEB0041724D /* RURDetalProductVC.xib */,
 			);
-			name = DetailProduct;
-			path = ..;
+			path = DetailProduct;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,20 +448,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB6F4DEF18382BE400CF2FB8 /* RURProductCatalogVC.xib in Resources */,
+				4A229F9B18384AD00041724D /* RURShopsMapVC.xib in Resources */,
+				4A229F9518384A9C0041724D /* RURPurchasesVC.xib in Resources */,
+				4A229FA918384B1A0041724D /* CollectionViewCell.xib in Resources */,
+				4A229FAA18384B1A0041724D /* HeaderView.xib in Resources */,
 				2DA49C661838475900772064 /* BackgroundButton.png in Resources */,
-				BB4C31C518383F4900E25BF5 /* HeaderView.xib in Resources */,
-				BB4C31BE183832F400E25BF5 /* CollectionViewCell.xib in Resources */,
-				BB6F4DE518382B6800CF2FB8 /* RURShopsMapVC.xib in Resources */,
 				4A229F72183833250041724D /* Images.xcassets in Resources */,
 				2DA49C681838478600772064 /* button-blue.png in Resources */,
-				BB4C31C0183834ED00E25BF5 /* Tienda.jpeg in Resources */,
-				BB6F4DF418382C1700CF2FB8 /* RURDetailShopVC.xib in Resources */,
-				4A229F7E183837BB0041724D /* RURPurchasesVC.xib in Resources */,
-				4A229F79183837A60041724D /* RURProfileVC.xib in Resources */,
+				4A229FA018384AEB0041724D /* RURDetalProductVC.xib in Resources */,
+				4A229F9018384A8A0041724D /* RURProfileVC.xib in Resources */,
 				4AA58D2D183818C300B51AEA /* InfoPlist.strings in Resources */,
 				4A229F701838331C0041724D /* RUR_dev.properties in Resources */,
-				BB6F4DEA18382BAB00CF2FB8 /* RURDetalProductVC.xib in Resources */,
+				4A229FAE18384B1A0041724D /* Tienda.jpeg in Resources */,
+				4A229FAD18384B1A0041724D /* RURProductCatalogVC.xib in Resources */,
+				4A229FB318384B310041724D /* RURDetailShopVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,18 +513,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A229F78183837A60041724D /* RURProfileVC.m in Sources */,
+				4A229F8F18384A8A0041724D /* RURProfileVC.m in Sources */,
 				4A8DD69218381E9100E603E5 /* RURUser.m in Sources */,
-				BB6F4DEE18382BE400CF2FB8 /* RURProductCatalogVC.m in Sources */,
-				BB6F4DE418382B6800CF2FB8 /* RURShopsMapVC.m in Sources */,
-				BB4C31CD183843C700E25BF5 /* RURHeaderView.m in Sources */,
+				4A229F9F18384AEB0041724D /* RURDetalProductVC.m in Sources */,
+				4A229FB218384B310041724D /* RURDetailShopVC.m in Sources */,
+				4A229FAB18384B1A0041724D /* RURHeaderView.m in Sources */,
 				4A8DD68A18381D7100E603E5 /* RURAppDelegate.m in Sources */,
-				BB6F4DE918382BAB00CF2FB8 /* RURDetalProductVC.m in Sources */,
-				BB6F4DF318382C1700CF2FB8 /* RURDetailShopVC.m in Sources */,
-				4A229F7D183837BB0041724D /* RURPurchasesVC.m in Sources */,
+				4A229F9A18384AD00041724D /* RURShopsMapVC.m in Sources */,
 				4AA58D2F183818C300B51AEA /* main.m in Sources */,
 				4A8DD69618381EDC00E603E5 /* UIViewController+UserAdditions.m in Sources */,
 				4A8DD68E18381DD000E603E5 /* RURAssembly.m in Sources */,
+				4A229FAC18384B1A0041724D /* RURProductCatalogVC.m in Sources */,
+				4A229F9418384A9C0041724D /* RURPurchasesVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
