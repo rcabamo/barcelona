@@ -77,8 +77,8 @@
 {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     UILabel *lbl = (UILabel*)[cell viewWithTag:102];
-    BBObject *obj = [self.items objectAtIndex:indexPath.row];
-    [lbl setText:[obj stringForField:@"name"]];
+    /*BBObject *obj = [self.items objectAtIndex:indexPath.row];
+    [lbl setText:[obj stringForField:@"name"]];*/
     return cell;
     
 }

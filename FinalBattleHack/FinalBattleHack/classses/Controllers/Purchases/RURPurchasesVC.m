@@ -34,13 +34,20 @@
 
 - (void)reloadPurchases
 {
-    BBQuery *query = [Backbeam queryForEntity:@"purchase"];
-    [query setQuery:@"join product"];
-    [query fetch:100 offset:0 success:^(NSArray *objects, NSInteger totalCount, BOOL fromCache) {
-        self.itemsPurchased = objects;
-        [self.purchases reloadData];
-    } failure:^(NSError *err) {
-        NSLog(@"Query error: %@", err);
+    PFQuery *query = [PFQuery queryWithClassName:@"Purchase"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            // The find succeeded.
+            NSLog(@"Successfully retrieved %d scores.", objects.count);
+            // Do something with the found objects
+            for (PFObject *object in objects) {
+                NSLog(@"%@", object.objectId);
+            }
+            self.purchases = objects;
+        } else {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
     }];
 }
 
@@ -66,8 +73,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CellPurchases"];
     }
     
-    BBObject *purchase = self.itemsPurchased[indexPath.row];
-    cell.textLabel.text = [[purchase objectForField:@"product"] stringForField:@"name"];
+    PFObject *purchase = self.itemsPurchased[indexPath.row];
+    cell.textLabel.text = [[purchase objectForKey:@"product"] objectForKey:@"name"];
     return cell;
 }
 

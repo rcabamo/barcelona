@@ -41,20 +41,19 @@
     
     // Setup view
     // title
-    self.titleLabel.text = [self.shop stringForField:@"name"];
-    self.descriptionTextView.text = [self.shop stringForField:@"description"];
-    [self.shop imageWithSize:self.imageView.frame.size success:^(UIImage *img) {
-        self.imageView.image = img;
-    }];
+    self.titleLabel.text = [self.shop objectForKey:@"name"];
+    self.descriptionTextView.text = [self.shop objectForKey:@"description"];
+    //Image
 }
 
 - (IBAction)openProductsVC:(id)sender
 {
-    NSArray *array = [[self.shop joinResultForField:@"products"] objects];
+    /*NSArray *array = [[self.shop joinResultForField:@"products"] objects];
     
     RURProductCatalogVC *controller = [[RURProductCatalogVC alloc] initWithItems:[[self.shop joinResultForField:@"products"] objects]];
     
-    [self.navigationController pushViewController:controller animated:YES];
+    [self.navigationController pushViewController:controller animated:YES];*/
+    //Get array products & create catalog controller
 }
 
 

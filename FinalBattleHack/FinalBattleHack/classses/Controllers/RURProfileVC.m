@@ -10,7 +10,7 @@
 
 @interface RURProfileVC ()
 
-@property (nonatomic, strong) BBObject *user;
+@property (nonatomic, strong) PFObject *user;
 
 @property (nonatomic, strong) IBOutlet UIButton *avatar;
 @property (nonatomic, strong) IBOutlet UITextField *userInfo;
@@ -42,12 +42,20 @@
 
 - (void)reloadProfile
 {
-    BBQuery *query = [Backbeam queryForEntity:@"user"];
-    [query setQuery:@"join avatar"];
-    [query fetch:1 offset:0 success:^(NSArray *objects, NSInteger totalCount, BOOL fromCache) {
-        self.user = [objects firstObject];
-    } failure:^(NSError *err) {
-        NSLog(@"Query error: %@", err);
+    PFQuery *query = [PFQuery queryWithClassName:@"User"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            // The find succeeded.
+            NSLog(@"Successfully retrieved %d scores.", objects.count);
+            // Do something with the found objects
+            for (PFObject *object in objects) {
+                NSLog(@"%@", object.objectId);
+            }
+            self.user = [objects firstObject];
+        } else {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
     }];
 }
 
