@@ -26,8 +26,8 @@
     // Init VC's
     RURProfileVC *profileVC = [[RURProfileVC alloc] init];
     RURPurchasesVC *purchasesVC = [[RURPurchasesVC alloc] init];
-    //UINavigationController *shopsVC = [[UINavigationController alloc] initWithRootViewController:[[RURShopsMapVC alloc] init]];
-    UINavigationController *shopsVC = [[UINavigationController alloc] initWithRootViewController:[[RURDetailShopVC alloc] initWithShop:nil]];
+    UINavigationController *shopsVC = [[UINavigationController alloc] initWithRootViewController:[[RURShopsMapVC alloc] init]];
+//    UINavigationController *shopsVC = [[UINavigationController alloc] initWithRootViewController:[[RURDetailShopVC alloc] initWithShop:nil]];
     shopsVC.navigationBar.translucent = NO;
     
     self.dynamicsDrawerViewController = [MSDynamicsDrawerViewController new];
@@ -47,9 +47,6 @@
     UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"windowBackground"]];
     [self.window addSubview:backgroundView];
     [self.window sendSubviewToBack:backgroundView];
-    
-    NSLog(@"clientID: %@", [[TyphoonComponentFactory defaultFactory] paypalClientID]);
-    NSLog(@"secretID: %@", [[TyphoonComponentFactory defaultFactory] paypalSecretID]);
 
     [self.window makeKeyAndVisible];
     return YES;
