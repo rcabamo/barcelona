@@ -38,11 +38,13 @@
     [super viewDidLoad];
     
     // Setup view
+    // title
     self.titleLabel.text = [self.shop stringForField:@"name"];
     self.descriptionTextView.text = [self.shop stringForField:@"description"];
     [self.shop imageWithSize:self.imageView.frame.size success:^(UIImage *img) {
         self.imageView.image = img;
     }];
+    
 //    [self.imageView setImageWithURL:[NSURL URLWithString:@""] placeholderImage:nil];
 }
 

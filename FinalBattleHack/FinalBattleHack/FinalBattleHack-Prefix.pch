@@ -17,4 +17,5 @@
     #import <SDWebImage/UIImageView+WebCache.h>
     #import <Typhoon/Typhoon.h>
     #import "RURAssembly.h"
+    #import <FXBlurView/FXBlurView.h>
 #endif
