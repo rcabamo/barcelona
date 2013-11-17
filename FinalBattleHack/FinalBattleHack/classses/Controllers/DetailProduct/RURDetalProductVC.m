@@ -11,6 +11,8 @@
 
 @interface RURDetalProductVC ()
 
+@property BBObject *product;
+
 @end
 
 @implementation RURDetalProductVC
@@ -24,11 +26,24 @@
     return self;
 }
 
+- (id) initWithProduct:(BBObject *)info
+{
+    self = [super init];
+    if (self) {
+        _product = info;
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [PayPalPaymentViewController setEnvironment:PayPalEnvironmentNoNetwork];
+    
+    [self.navigationItem setTitle:[_product stringForField:@"name"]];
+    _productDescription.text = [_product stringForField:@"description"];
+    _productPrice.text = [_product stringForField:@"price"];
 }
 
 - (IBAction)payWithPP:(id)sender {

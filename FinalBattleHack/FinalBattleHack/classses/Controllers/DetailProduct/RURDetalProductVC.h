@@ -10,9 +10,12 @@
 #import "PayPalPaymentViewController.h"
 
 @interface RURDetalProductVC : UIViewController <PayPalPaymentDelegate>
-@property (weak, nonatomic) IBOutlet UILabel *productName;
+@property (weak, nonatomic) IBOutlet UILabel *productPrice;
 @property (weak, nonatomic) IBOutlet UILabel *productDescription;
+@property (weak, nonatomic) IBOutlet UIImageView *productImage;
 
 - (IBAction)payWithPP:(id)sender;
 - (IBAction)addToChart:(id)sender;
+
+- (id) initWithProduct:(BBObject *)info;
 @end

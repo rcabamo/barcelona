@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D2091021838947000B2FCF9 /* RURConfirmationSendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2091001838947000B2FCF9 /* RURConfirmationSendViewController.m */; };
+		2D2091031838947000B2FCF9 /* RURConfirmationSendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D2091011838947000B2FCF9 /* RURConfirmationSendViewController.xib */; };
+		2D2091061838A4A000B2FCF9 /* deselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2091041838A4A000B2FCF9 /* deselected.png */; };
+		2D2091071838A4A000B2FCF9 /* backgroundSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2091051838A4A000B2FCF9 /* backgroundSelected.png */; };
 		2DA49C7218384D7000772064 /* RURProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DA49C6F18384D7000772064 /* RURProfileVC.xib */; };
 		2DA49C7318384D7000772064 /* RURProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA49C7118384D7000772064 /* RURProfileVC.m */; };
 		4A229F701838331C0041724D /* RUR_dev.properties in Resources */ = {isa = PBXBuildFile; fileRef = 4A229F6F1838331C0041724D /* RUR_dev.properties */; };
@@ -63,6 +67,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D2090FF1838947000B2FCF9 /* RURConfirmationSendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RURConfirmationSendViewController.h; path = ConfirmationView/RURConfirmationSendViewController.h; sourceTree = "<group>"; };
+		2D2091001838947000B2FCF9 /* RURConfirmationSendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RURConfirmationSendViewController.m; path = ConfirmationView/RURConfirmationSendViewController.m; sourceTree = "<group>"; };
+		2D2091011838947000B2FCF9 /* RURConfirmationSendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RURConfirmationSendViewController.xib; path = ConfirmationView/RURConfirmationSendViewController.xib; sourceTree = "<group>"; };
+		2D2091041838A4A000B2FCF9 /* deselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deselected.png; sourceTree = "<group>"; };
+		2D2091051838A4A000B2FCF9 /* backgroundSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundSelected.png; sourceTree = "<group>"; };
 		2DA49C6F18384D7000772064 /* RURProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RURProfileVC.xib; sourceTree = "<group>"; };
 		2DA49C7018384D7000772064 /* RURProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURProfileVC.h; sourceTree = "<group>"; };
 		2DA49C7118384D7000772064 /* RURProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURProfileVC.m; sourceTree = "<group>"; };
@@ -151,6 +160,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D2090FB1838941000B2FCF9 /* ConfirmationAndSending */ = {
+			isa = PBXGroup;
+			children = (
+				2D2090FF1838947000B2FCF9 /* RURConfirmationSendViewController.h */,
+				2D2091001838947000B2FCF9 /* RURConfirmationSendViewController.m */,
+				2D2091011838947000B2FCF9 /* RURConfirmationSendViewController.xib */,
+			);
+			name = ConfirmationAndSending;
+			sourceTree = "<group>";
+		};
 		2DA49C6E18384D5400772064 /* ProfileNew */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +236,7 @@
 		4A8DD68518381D7100E603E5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2D2090FB1838941000B2FCF9 /* ConfirmationAndSending */,
 				2DA49C6E18384D5400772064 /* ProfileNew */,
 				4A229F9618384ABD0041724D /* ShopMap */,
 				4A229F73183837790041724D /* Purchases */,
@@ -347,6 +367,8 @@
 		BB4C31D01838773E00E25BF5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2D2091041838A4A000B2FCF9 /* deselected.png */,
+				2D2091051838A4A000B2FCF9 /* backgroundSelected.png */,
 				4A78EA69183885B000E7933B /* BackgroundButton.png */,
 				4A78EA6A183885B000E7933B /* button-blue.png */,
 				4A78EA6B183885B000E7933B /* button-empty.png */,
@@ -473,12 +495,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A229F9B18384AD00041724D /* RURShopsMapVC.xib in Resources */,
+				2D2091031838947000B2FCF9 /* RURConfirmationSendViewController.xib in Resources */,
 				4A78EA6E183885B000E7933B /* button-blue.png in Resources */,
 				4A229F9518384A9C0041724D /* RURPurchasesVC.xib in Resources */,
 				BB4C31D21838774A00E25BF5 /* TestAvatar.jpeg in Resources */,
 				4A78EA6D183885B000E7933B /* BackgroundButton.png in Resources */,
 				4A78EA6F183885B000E7933B /* button-empty.png in Resources */,
 				4A229FA918384B1A0041724D /* CollectionViewCell.xib in Resources */,
+				2D2091061838A4A000B2FCF9 /* deselected.png in Resources */,
 				4A78EA70183885B000E7933B /* button-plain@2x.png in Resources */,
 				4A229FAA18384B1A0041724D /* HeaderView.xib in Resources */,
 				4A229F72183833250041724D /* Images.xcassets in Resources */,
@@ -488,6 +512,7 @@
 				2DA49C7218384D7000772064 /* RURProfileVC.xib in Resources */,
 				4AA58D2D183818C300B51AEA /* InfoPlist.strings in Resources */,
 				4A229F701838331C0041724D /* RUR_dev.properties in Resources */,
+				2D2091071838A4A000B2FCF9 /* backgroundSelected.png in Resources */,
 				4A229FAE18384B1A0041724D /* Tienda.jpeg in Resources */,
 				4A229FAD18384B1A0041724D /* RURProductCatalogVC.xib in Resources */,
 				4A229FB318384B310041724D /* RURDetailShopVC.xib in Resources */,
@@ -549,6 +574,7 @@
 				4A229FAB18384B1A0041724D /* RURHeaderView.m in Sources */,
 				4A8DD68A18381D7100E603E5 /* RURAppDelegate.m in Sources */,
 				4A229F9A18384AD00041724D /* RURShopsMapVC.m in Sources */,
+				2D2091021838947000B2FCF9 /* RURConfirmationSendViewController.m in Sources */,
 				4AA58D2F183818C300B51AEA /* main.m in Sources */,
 				4A8DD69618381EDC00E603E5 /* UIViewController+UserAdditions.m in Sources */,
 				4A8DD68E18381DD000E603E5 /* RURAssembly.m in Sources */,

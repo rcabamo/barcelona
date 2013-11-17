@@ -11,6 +11,7 @@
 #import "RURShopsMapVC.h"
 #import "RURPurchasesVC.h"
 #import "RURProfileVC.h"
+#import "RURProductCatalogVC.h"
 
 #import <MSDynamicsDrawerViewController/MSDynamicsDrawerViewController.h>
 
@@ -38,8 +39,9 @@
     [self.dynamicsDrawerViewController setDrawerViewController:purchasesVC forDirection:MSDynamicsDrawerDirectionLeft];
     [self.dynamicsDrawerViewController setDrawerViewController:profileVC forDirection:MSDynamicsDrawerDirectionRight];
 
+    RURProductCatalogVC *product = [[RURProductCatalogVC alloc] init];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = self.dynamicsDrawerViewController;
+    self.window.rootViewController = product;
     UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"windowBackground"]];
     [self.window addSubview:backgroundView];
     [self.window sendSubviewToBack:backgroundView];
