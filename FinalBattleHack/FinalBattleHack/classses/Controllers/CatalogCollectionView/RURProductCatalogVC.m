@@ -32,7 +32,7 @@
     UINib *cellNib = [UINib nibWithNibName:@"CollectionViewCell" bundle:nil];
     [self.catalogItems registerNib:cellNib forCellWithReuseIdentifier:@"Cell"];
     [self.catalogItems registerClass:[RURHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header"];
-//    [self.catalogItems registerNib:[UINib nibWithNibName:@"HeaderView" bundle:nil] forCellWithReuseIdentifier:@"header"];
+    
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     [flowLayout setItemSize:CGSizeMake(140, 100)];
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
@@ -76,15 +76,6 @@
 }
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
-//    if(kind == UICollectionElementKindSectionHeader)
-//    {
-////        UICollectionReusableView *header = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"header" forIndexPath:indexPath];
-////        [header setBackgroundColor:[UIColor yellowColor]];
-////        //[header.backgroundImage setImage:[UIImage imageNamed:@"Tienda.jpeg"]];
-////        //[header.title setText:@"HEADER"];
-////        return header;
-//    }
-//    return nil;
     UICollectionReusableView *header = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"header" forIndexPath:indexPath];
     [header setBackgroundColor:[UIColor grayColor]];
     UILabel *lbl = [[UILabel alloc] initWithFrame:header.frame];

@@ -43,6 +43,9 @@
 		4AA58D4C183818C300B51AEA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AA58D4A183818C300B51AEA /* InfoPlist.strings */; };
 		4AA58D4E183818C300B51AEA /* FinalBattleHackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA58D4D183818C300B51AEA /* FinalBattleHackTests.m */; };
 		9AA316FBBB354E90908299CA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 979064809C8F41ACAB5BFFE3 /* libPods.a */; };
+		BB4C31D21838774A00E25BF5 /* TestAvatar.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BB4C31D11838774A00E25BF5 /* TestAvatar.jpeg */; };
+		BB4C31D51838776E00E25BF5 /* activityIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BB4C31D31838776E00E25BF5 /* activityIcon.png */; };
+		BB4C31D61838776E00E25BF5 /* payWithPassIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BB4C31D41838776E00E25BF5 /* payWithPassIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +110,9 @@
 		4AA58D4D183818C300B51AEA /* FinalBattleHackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinalBattleHackTests.m; sourceTree = "<group>"; };
 		8A274BCFBFD94335944B02E8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		979064809C8F41ACAB5BFFE3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4C31D11838774A00E25BF5 /* TestAvatar.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TestAvatar.jpeg; sourceTree = "<group>"; };
+		BB4C31D31838776E00E25BF5 /* activityIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activityIcon.png; sourceTree = "<group>"; };
+		BB4C31D41838776E00E25BF5 /* payWithPassIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = payWithPassIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +163,7 @@
 		4A229F6D183832B60041724D /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				BB4C31D01838773E00E25BF5 /* Images */,
 				4A229F71183833250041724D /* Images.xcassets */,
 				4A229F6E183832C80041724D /* configurations */,
 			);
@@ -334,6 +341,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BB4C31D01838773E00E25BF5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BB4C31D31838776E00E25BF5 /* activityIcon.png */,
+				BB4C31D41838776E00E25BF5 /* payWithPassIcon.png */,
+				BB4C31D11838774A00E25BF5 /* TestAvatar.jpeg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		BB6F4DDE18382A7800CF2FB8 /* DetailShop */ = {
 			isa = PBXGroup;
 			children = (
@@ -450,12 +467,15 @@
 			files = (
 				4A229F9B18384AD00041724D /* RURShopsMapVC.xib in Resources */,
 				4A229F9518384A9C0041724D /* RURPurchasesVC.xib in Resources */,
+				BB4C31D21838774A00E25BF5 /* TestAvatar.jpeg in Resources */,
 				4A229FA918384B1A0041724D /* CollectionViewCell.xib in Resources */,
 				4A229FAA18384B1A0041724D /* HeaderView.xib in Resources */,
 				2DA49C661838475900772064 /* BackgroundButton.png in Resources */,
 				4A229F72183833250041724D /* Images.xcassets in Resources */,
+				BB4C31D61838776E00E25BF5 /* payWithPassIcon.png in Resources */,
 				2DA49C681838478600772064 /* button-blue.png in Resources */,
 				4A229FA018384AEB0041724D /* RURDetalProductVC.xib in Resources */,
+				BB4C31D51838776E00E25BF5 /* activityIcon.png in Resources */,
 				2DA49C7218384D7000772064 /* RURProfileVC.xib in Resources */,
 				4AA58D2D183818C300B51AEA /* InfoPlist.strings in Resources */,
 				4A229F701838331C0041724D /* RUR_dev.properties in Resources */,

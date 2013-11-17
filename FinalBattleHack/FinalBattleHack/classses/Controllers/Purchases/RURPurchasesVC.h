@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RURPurchasesVC : UIViewController
+@interface RURPurchasesVC : UIViewController <UITabBarControllerDelegate, UITableViewDataSource>
 
 @end
