@@ -16,6 +16,7 @@
 		2D5253ED1838D9630056C7C3 /* RURRestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5253EC1838D9630056C7C3 /* RURRestManager.m */; };
 		2D5253F0183901420056C7C3 /* RURMatchingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5253EF183901420056C7C3 /* RURMatchingCell.m */; };
 		2D5253F21839014C0056C7C3 /* RURMatchingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5253F11839014C0056C7C3 /* RURMatchingCell.xib */; };
+		2D5253F518390A050056C7C3 /* RURData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5253F418390A050056C7C3 /* RURData.m */; };
 		2D7ED99C1838B3F900EF3328 /* sale30.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D7ED99B1838B3F900EF3328 /* sale30.png */; };
 		2D7ED99E1838B5E500EF3328 /* discount.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D7ED99D1838B5E500EF3328 /* discount.png */; };
 		2D7ED9A01838B6DB00EF3328 /* discount2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D7ED99F1838B6DB00EF3328 /* discount2.png */; };
@@ -96,6 +97,8 @@
 		2D5253EE183901420056C7C3 /* RURMatchingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURMatchingCell.h; sourceTree = "<group>"; };
 		2D5253EF183901420056C7C3 /* RURMatchingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURMatchingCell.m; sourceTree = "<group>"; };
 		2D5253F11839014C0056C7C3 /* RURMatchingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RURMatchingCell.xib; sourceTree = "<group>"; };
+		2D5253F318390A050056C7C3 /* RURData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURData.h; sourceTree = "<group>"; };
+		2D5253F418390A050056C7C3 /* RURData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURData.m; sourceTree = "<group>"; };
 		2D7ED99B1838B3F900EF3328 /* sale30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sale30.png; sourceTree = "<group>"; };
 		2D7ED99D1838B5E500EF3328 /* discount.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discount.png; sourceTree = "<group>"; };
 		2D7ED99F1838B6DB00EF3328 /* discount2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discount2.png; sourceTree = "<group>"; };
@@ -327,6 +330,8 @@
 				4A8DD69518381EDC00E603E5 /* UIViewController+UserAdditions.m */,
 				2D5253EB1838D9630056C7C3 /* RURRestManager.h */,
 				2D5253EC1838D9630056C7C3 /* RURRestManager.m */,
+				2D5253F318390A050056C7C3 /* RURData.h */,
+				2D5253F418390A050056C7C3 /* RURData.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -650,6 +655,7 @@
 				4A8DD68E18381DD000E603E5 /* RURAssembly.m in Sources */,
 				4A78EA661838700800E7933B /* RURCustomAnnotation.m in Sources */,
 				BB387C7C1838A42500ADB6FE /* RUR_Shop.m in Sources */,
+				2D5253F518390A050056C7C3 /* RURData.m in Sources */,
 				4A229FAC18384B1A0041724D /* RURProductCatalogVC.m in Sources */,
 				2D5253F0183901420056C7C3 /* RURMatchingCell.m in Sources */,
 				4A229F9418384A9C0041724D /* RURPurchasesVC.m in Sources */,

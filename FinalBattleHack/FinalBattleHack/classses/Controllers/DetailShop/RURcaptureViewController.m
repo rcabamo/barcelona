@@ -9,6 +9,8 @@
 #import "RURcaptureViewController.h"
 #import "RURMatchingCell.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "RURDetalProductVC.h"
+#import "RURData.h"
 
 @interface RURcaptureViewController ()
 
@@ -33,6 +35,7 @@
     // Do any additional setup after loading the view from its nib.
     UINib *nib = [UINib nibWithNibName:@"RURMatchingCell" bundle:nil];
     [[self table] registerNib:nib forCellReuseIdentifier:@"RURMatchingCell"];
+    _table.backgroundColor = [UIColor clearColor];
 
 }
 
@@ -69,7 +72,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSDictionary *object = [_elems objectAtIndex:indexPath.row];
-    
+    RURData *data = [[RURData alloc] initCustom];
+    RURDetalProductVC *detail = [[RURDetalProductVC alloc]initWithDictionary:[data getProductWithKey:[[object objectForKey:@"item"] objectForKey:@"name"]]];
+    [self.navigationController pushViewController:detail animated:YES];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
