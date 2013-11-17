@@ -77,6 +77,9 @@
 {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     UILabel *lbl = (UILabel*)[cell viewWithTag:102];
+    UIImageView *imageView = (UIImageView*)[cell viewWithTag:103];
+
+    [imageView setImageWithURL:[NSURL URLWithString:[self.items[indexPath.row] objectForKey:@"image"]] placeholderImage:nil];
     /*BBObject *obj = [self.items objectAtIndex:indexPath.row];
     [lbl setText:[obj stringForField:@"name"]];*/
     return cell;
@@ -88,21 +91,21 @@
     return CGSizeMake(0, 20);
 }
 
-- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
-    RURHeaderView *header = nil;
-    if (kind == UICollectionElementKindSectionHeader) {
-        header = (RURHeaderView*)[collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"header" forIndexPath:indexPath];
-        [header setBackgroundColor:[UIColor grayColor]];
-        UILabel *lbl = [[UILabel alloc] initWithFrame:header.frame];
-        [lbl setFont:[UIFont systemFontOfSize:14.0]];
-        [lbl setTag:1];
-        [lbl setText:[NSString stringWithFormat:@"Section %d", indexPath.section]];
-        [header addSubview:lbl];
-    }
-        
-    
-    return header;
-}
+//- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+//    RURHeaderView *header = nil;
+//    if (kind == UICollectionElementKindSectionHeader) {
+//        header = (RURHeaderView*)[collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"header" forIndexPath:indexPath];
+//        [header setBackgroundColor:[UIColor grayColor]];
+//        UILabel *lbl = [[UILabel alloc] initWithFrame:header.frame];
+//        [lbl setFont:[UIFont systemFontOfSize:14.0]];
+//        [lbl setTag:1];
+//        [lbl setText:[NSString stringWithFormat:@"Section %d", indexPath.section]];
+//        [header addSubview:lbl];
+//    }
+//        
+//    
+//    return header;
+//}
 
 #pragma mark - UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
