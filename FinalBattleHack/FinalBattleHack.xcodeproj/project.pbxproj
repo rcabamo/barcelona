@@ -71,6 +71,14 @@
 		BB4C31D21838774A00E25BF5 /* TestAvatar.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BB4C31D11838774A00E25BF5 /* TestAvatar.jpeg */; };
 		BB4C31D51838776E00E25BF5 /* activityIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BB4C31D31838776E00E25BF5 /* activityIcon.png */; };
 		BB4C31D61838776E00E25BF5 /* payWithPassIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BB4C31D41838776E00E25BF5 /* payWithPassIcon.png */; };
+		BB8950B8183959CE007646CD /* icon3-120.png in Resources */ = {isa = PBXBuildFile; fileRef = BB8950B4183959CE007646CD /* icon3-120.png */; };
+		BB8950B9183959CE007646CD /* icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = BB8950B5183959CE007646CD /* icon3.png */; };
+		BB8950BA183959CE007646CD /* splash3-noretina.png in Resources */ = {isa = PBXBuildFile; fileRef = BB8950B6183959CE007646CD /* splash3-noretina.png */; };
+		BB8950BB183959CE007646CD /* splash3.png in Resources */ = {isa = PBXBuildFile; fileRef = BB8950B7183959CE007646CD /* splash3.png */; };
+		BBB18E0F183956BA00E19D68 /* icona2-120.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB18E0C183956BA00E19D68 /* icona2-120.png */; };
+		BBB18E10183956BA00E19D68 /* icona2.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB18E0D183956BA00E19D68 /* icona2.png */; };
+		BBB18E11183956BA00E19D68 /* splash2.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB18E0E183956BA00E19D68 /* splash2.png */; };
+		BBB18E131839571100E19D68 /* splash2NOretina.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB18E121839571100E19D68 /* splash2NOretina.png */; };
 		BBCCF35A1839051600DE0FD5 /* AppleLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCF3541839051600DE0FD5 /* AppleLogo.png */; };
 		BBCCF35B1839051600DE0FD5 /* Bolso1.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCF3551839051600DE0FD5 /* Bolso1.png */; };
 		BBCCF35C1839051600DE0FD5 /* Bolso2.png in Resources */ = {isa = PBXBuildFile; fileRef = BBCCF3561839051600DE0FD5 /* Bolso2.png */; };
@@ -176,6 +184,14 @@
 		BB4C31D11838774A00E25BF5 /* TestAvatar.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TestAvatar.jpeg; sourceTree = "<group>"; };
 		BB4C31D31838776E00E25BF5 /* activityIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activityIcon.png; sourceTree = "<group>"; };
 		BB4C31D41838776E00E25BF5 /* payWithPassIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = payWithPassIcon.png; sourceTree = "<group>"; };
+		BB8950B4183959CE007646CD /* icon3-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon3-120.png"; sourceTree = "<group>"; };
+		BB8950B5183959CE007646CD /* icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon3.png; sourceTree = "<group>"; };
+		BB8950B6183959CE007646CD /* splash3-noretina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash3-noretina.png"; sourceTree = "<group>"; };
+		BB8950B7183959CE007646CD /* splash3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash3.png; sourceTree = "<group>"; };
+		BBB18E0C183956BA00E19D68 /* icona2-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icona2-120.png"; sourceTree = "<group>"; };
+		BBB18E0D183956BA00E19D68 /* icona2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icona2.png; sourceTree = "<group>"; };
+		BBB18E0E183956BA00E19D68 /* splash2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash2.png; sourceTree = "<group>"; };
+		BBB18E121839571100E19D68 /* splash2NOretina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash2NOretina.png; sourceTree = "<group>"; };
 		BBCCF3541839051600DE0FD5 /* AppleLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppleLogo.png; sourceTree = "<group>"; };
 		BBCCF3551839051600DE0FD5 /* Bolso1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bolso1.png; sourceTree = "<group>"; };
 		BBCCF3561839051600DE0FD5 /* Bolso2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bolso2.png; sourceTree = "<group>"; };
@@ -424,6 +440,14 @@
 		BB4C31D01838773E00E25BF5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				BB8950B4183959CE007646CD /* icon3-120.png */,
+				BB8950B5183959CE007646CD /* icon3.png */,
+				BB8950B6183959CE007646CD /* splash3-noretina.png */,
+				BB8950B7183959CE007646CD /* splash3.png */,
+				BBB18E121839571100E19D68 /* splash2NOretina.png */,
+				BBB18E0C183956BA00E19D68 /* icona2-120.png */,
+				BBB18E0D183956BA00E19D68 /* icona2.png */,
+				BBB18E0E183956BA00E19D68 /* splash2.png */,
 				BBCCF3531839051600DE0FD5 /* Assets */,
 				2D7ED9A51838BAFE00EF3328 /* WhiteMugFront.jpg */,
 				2D7ED9A31838B86000EF3328 /* gestures_2x.jpg */,
@@ -583,13 +607,17 @@
 			files = (
 				2D7ED99E1838B5E500EF3328 /* discount.png in Resources */,
 				4A229F9B18384AD00041724D /* RURShopsMapVC.xib in Resources */,
+				BBB18E0F183956BA00E19D68 /* icona2-120.png in Resources */,
 				2D5253F21839014C0056C7C3 /* RURMatchingCell.xib in Resources */,
 				2D2091031838947000B2FCF9 /* RURConfirmationSendViewController.xib in Resources */,
 				BB387C811838B2C800ADB6FE /* LeftRevealIcon.png in Resources */,
+				BB8950BA183959CE007646CD /* splash3-noretina.png in Resources */,
+				BB8950B9183959CE007646CD /* icon3.png in Resources */,
 				BB387C841838B2C800ADB6FE /* RightRevealIcon@2x.png in Resources */,
 				4A78EA6E183885B000E7933B /* button-blue.png in Resources */,
 				4A229F9518384A9C0041724D /* RURPurchasesVC.xib in Resources */,
 				2D7ED99C1838B3F900EF3328 /* sale30.png in Resources */,
+				BB8950BB183959CE007646CD /* splash3.png in Resources */,
 				BBCCF35B1839051600DE0FD5 /* Bolso1.png in Resources */,
 				BB4C31D21838774A00E25BF5 /* TestAvatar.jpeg in Resources */,
 				BBCCF35D1839051600DE0FD5 /* Bolso3.png in Resources */,
@@ -611,15 +639,19 @@
 				4A229FA018384AEB0041724D /* RURDetalProductVC.xib in Resources */,
 				BB387C821838B2C800ADB6FE /* LeftRevealIcon@2x.png in Resources */,
 				BB4C31D51838776E00E25BF5 /* activityIcon.png in Resources */,
+				BBB18E11183956BA00E19D68 /* splash2.png in Resources */,
 				2DA49C7218384D7000772064 /* RURProfileVC.xib in Resources */,
 				4AA58D2D183818C300B51AEA /* InfoPlist.strings in Resources */,
 				4A229F701838331C0041724D /* RUR_dev.properties in Resources */,
+				BBB18E131839571100E19D68 /* splash2NOretina.png in Resources */,
 				2D2091071838A4A000B2FCF9 /* backgroundSelected.png in Resources */,
 				2D7ED9A01838B6DB00EF3328 /* discount2.png in Resources */,
 				4A229FAE18384B1A0041724D /* Tienda.jpeg in Resources */,
 				BB387C831838B2C800ADB6FE /* RightRevealIcon.png in Resources */,
 				4A229FAD18384B1A0041724D /* RURProductCatalogVC.xib in Resources */,
+				BBB18E10183956BA00E19D68 /* icona2.png in Resources */,
 				2D7ED9A41838B86000EF3328 /* gestures_2x.jpg in Resources */,
+				BB8950B8183959CE007646CD /* icon3-120.png in Resources */,
 				4A229FB318384B310041724D /* RURDetailShopVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -808,8 +840,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8A274BCFBFD94335944B02E8 /* Pods.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon2;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/raimonlapuente/barcelona/FinalBattleHack,
@@ -883,8 +915,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8A274BCFBFD94335944B02E8 /* Pods.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon2;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/raimonlapuente/barcelona/FinalBattleHack,

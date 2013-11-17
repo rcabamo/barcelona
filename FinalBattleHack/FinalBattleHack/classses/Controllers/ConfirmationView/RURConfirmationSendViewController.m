@@ -56,7 +56,7 @@
     [self.view sendSubviewToBack:backgroundView];
     
     [self.infoPurchase setText:[NSString stringWithFormat:@"Item Buyed: %@\nPrice: $%@\nOn Date: %@", [self.item objectForKey:@"name"], [self.item objectForKey:@"price"], [[[self.payment objectForKey:@"proof_of_payment"] objectForKey:@"adaptive_payment"] objectForKey:@"timestamp"]]];
-    [self sendShopEmail:@"shop@gmail.com" userEmail:@"rcabamo@gmail.com" body:@"TEST" subject:@"TEST"];
+    [self sendShopEmail:@"shop@gmail.com" userEmail:@"rcabamo@gmail.com" body:@"" subject:@"Invoice"];
 }
 
 #pragma mark - Sendgrid
@@ -69,7 +69,9 @@
     msg.subject = subject;
     msg.from = shopEmail;
     msg.text = body;
-    msg.html = @"<h1> HELLO WORLD! </h1>";
+    msg.html = [NSString stringWithFormat:@"<h1> Hello Ricardo!</h1>\n \
+    <p>You buy a %@. You can pick up the item in the store or send you at home.</p>\
+                <p>Thanks for your trust.</p>", [self.item objectForKey:@"name"]];
     [msg sendWithWeb];
 }
 

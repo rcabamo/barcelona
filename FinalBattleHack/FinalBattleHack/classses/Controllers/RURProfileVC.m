@@ -64,7 +64,7 @@
     
     //Add BarChart
 	UILabel * barChartLabel = [[UILabel alloc] initWithFrame:CGRectMake(248, 0, 248, 30)];
-	barChartLabel.text = @"Bar Chart";
+	barChartLabel.text = @"Monthly grouped";
 	barChartLabel.textColor = PNFreshGreen;
 	barChartLabel.font = [UIFont fontWithName:@"Avenir-Medium" size:23.0];
 	barChartLabel.textAlignment = NSTextAlignmentCenter;
@@ -72,8 +72,8 @@
 	PNChart * barChart = [[PNChart alloc] initWithFrame:CGRectMake(248, 35, 248, CGRectGetHeight(self.chartView.frame) - 30)];
 	barChart.backgroundColor = [UIColor clearColor];
 	barChart.type = PNBarType;
-	[barChart setXLabels:@[@"SEP 3",@"SEP 4",@"SEP 5",@"SEP 6",@"SEP 7"]];
-	[barChart setYValues:@[@1,@24,@12,@18,@30]];
+	[barChart setXLabels:@[@"NOV 3",@"NOV 4",@"NOV 5",@"NOV 6",@"NOV 7"]];
+	[barChart setYValues:@[@10,@240,@120,@180,@300]];
 	[barChart strokeChart];
 	[self.chartView addSubview:barChartLabel];
 	[self.chartView addSubview:barChart];
@@ -88,7 +88,7 @@
 	PNChart * lineChart = [[PNChart alloc] initWithFrame:CGRectMake(0, 45, 248, CGRectGetHeight(self.chartView.frame) - 30)];
 	lineChart.backgroundColor = [UIColor clearColor];
 	[lineChart setXLabels:@[@"SEP",@"OCT",@"NOV",@"DEC",@"JAN",@"FEB",@"MAR"]];
-	[lineChart setYValues:@[@1,@24,@12,@18,@30,@10,@21]];
+	[lineChart setYValues:@[@10,@240,@120,@180,@300,@100,@210]];
 	[lineChart strokeChart];
 	[self.chartView addSubview:lineChartLabel];
 	[self.chartView addSubview:lineChart];
