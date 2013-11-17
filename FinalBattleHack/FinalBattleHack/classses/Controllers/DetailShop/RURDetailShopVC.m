@@ -28,8 +28,6 @@
 
 @property (nonatomic,strong) UIImage *image;
 
-@property (nonatomic, strong) SVProgressHUD *hud;
-
 @end
 
 @implementation RURDetailShopVC
