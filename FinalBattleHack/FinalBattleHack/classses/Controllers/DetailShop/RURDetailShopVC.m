@@ -54,6 +54,9 @@
     //self.descriptionTextView.text = [self.shop objectForKey:@"description"];
     self.titleLabel.text = [self.shop name];
     self.descriptionTextView.text = [self.shop desc];
+    UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"windowBackground"]];
+    [self.view addSubview:backgroundView];
+    [self.view sendSubviewToBack:backgroundView];
     
     UIImageView *rightView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"RightRevealIcon.png"]];
     UIImageView *leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"LeftRevealIcon.png"]];

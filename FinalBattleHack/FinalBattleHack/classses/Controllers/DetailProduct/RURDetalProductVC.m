@@ -8,7 +8,7 @@
 
 #import "RURDetalProductVC.h"
 #import "PayPalPaymentViewController.h"
-
+#import "RURConfirmationSendViewController.h"
 @interface RURDetalProductVC ()
 
 @property PFObject *product;
@@ -39,6 +39,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    
+    UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"windowBackground"]];
+    [self.view addSubview:backgroundView];
+    [self.view sendSubviewToBack:backgroundView];
+    
     [PayPalPaymentViewController setEnvironment:PayPalEnvironmentNoNetwork];
     
     [self.navigationItem setTitle:[_product objectForKey:@"name"]];
@@ -71,7 +77,11 @@
     //payment dictionary payment{amount,currency_code,short_description
     //payment dictionary proof_of_payment{adaptative_payment{app_id,pay_key,payment:exec_status,timestamp}}
     NSDictionary *payment = completedPayment.confirmation;
-    
+    NSLog(@"Payment completed %@", payment);
+    [self dismissViewControllerAnimated:YES completion:^{
+        RURConfirmationSendViewController *confirm = [[RURConfirmationSendViewController alloc] initWithNibName:@"RURConfirmationSendViewController" bundle:nil];
+        [self.navigationController pushViewController:confirm animated:YES];
+    }];
     //dismiss screen to show confirmation paye + sending home/pick-up at shop
 }
 
