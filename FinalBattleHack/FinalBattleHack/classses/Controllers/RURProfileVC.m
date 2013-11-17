@@ -64,7 +64,7 @@
     
     //Add BarChart
 	UILabel * barChartLabel = [[UILabel alloc] initWithFrame:CGRectMake(248, 0, 248, 30)];
-	barChartLabel.text = @"Bar Chart";
+	barChartLabel.text = @"Monthly grouped";
 	barChartLabel.textColor = PNFreshGreen;
 	barChartLabel.font = [UIFont fontWithName:@"Avenir-Medium" size:23.0];
 	barChartLabel.textAlignment = NSTextAlignmentCenter;
