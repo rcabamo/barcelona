@@ -31,12 +31,6 @@
     [PayPalPaymentViewController setEnvironment:PayPalEnvironmentNoNetwork];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (IBAction)payWithPP:(id)sender {
     PayPalPayment *payment = [[PayPalPayment alloc]init];
     payment.currencyCode = @"USD";
