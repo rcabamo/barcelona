@@ -13,10 +13,8 @@
 - (NSString *)paypalClientID;
 - (NSString *)paypalSecretID;
 
-- (NSString *)backbeamAppName;
-- (NSString *)backbeamShareKey;
-- (NSString *)backbeamSecretKey;
-- (NSString *)backbeamEnvironment;
+- (NSString *)parseAppID;
+- (NSString *)parseClientKey;
 
 - (id)user;
 

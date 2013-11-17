@@ -56,7 +56,7 @@
 - (void)setupApp
 {
     [self setupTyphoon];
-    [self setupBackbeam];
+    [self setupParse];
 }
 
 - (void)setupTyphoon
@@ -72,9 +72,10 @@
     [factory makeDefault];
 }
 
-- (void)setupBackbeam
+- (void)setupParse
 {
-    [Backbeam setProject:[[TyphoonComponentFactory defaultFactory] backbeamAppName] sharedKey:[[TyphoonComponentFactory defaultFactory] backbeamShareKey] secretKey:[[TyphoonComponentFactory defaultFactory] backbeamSecretKey] environment:[[TyphoonComponentFactory defaultFactory] backbeamEnvironment]];
+    [Parse setApplicationId:[[TyphoonComponentFactory defaultFactory] parseAppID]
+                  clientKey:[[TyphoonComponentFactory defaultFactory] parseClientKey]];
 }
 
 @end

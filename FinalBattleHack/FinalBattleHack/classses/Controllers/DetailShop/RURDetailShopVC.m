@@ -12,7 +12,7 @@
 
 @interface RURDetailShopVC ()
 
-@property (nonatomic, strong) BBObject *shop;
+@property (nonatomic, strong) PFObject *shop;
 
 // view
 @property (nonatomic, weak) IBOutlet UIView *titleView;
@@ -25,7 +25,7 @@
 
 @implementation RURDetailShopVC
 
-- (id)initWithShop:(BBObject *)shop
+- (id)initWithShop:(PFObject *)shop
 {
     self = [super init];
     if (self) {
@@ -50,6 +50,8 @@
 
 - (IBAction)openProductsVC:(id)sender
 {
+    NSArray *array = [[self.shop joinResultForField:@"products"] objects];
+    
     RURProductCatalogVC *controller = [[RURProductCatalogVC alloc] initWithItems:[[self.shop joinResultForField:@"products"] objects]];
     
     [self.navigationController pushViewController:controller animated:YES];

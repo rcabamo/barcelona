@@ -26,36 +26,21 @@
     }];
 }
 
-- (id)backbeamAppName {
+- (id)parseAppID {
     return [TyphoonDefinition withClass:[NSString class] initialization:^(TyphoonInitializer *initializer) {
         initializer.selector = @selector(stringWithString:);
-        [initializer injectParameterAtIndex:0 withValueAsText:@"${backbeam.appName}" requiredTypeOrNil:[NSString class]];
+        [initializer injectParameterAtIndex:0 withValueAsText:@"${parse.AppID}" requiredTypeOrNil:[NSString class]];
     }];
 }
 
 
-- (id)backbeamShareKey {
+- (id)parseClientKey {
     return [TyphoonDefinition withClass:[NSString class] initialization:^(TyphoonInitializer *initializer) {
         initializer.selector = @selector(stringWithString:);
-        [initializer injectParameterAtIndex:0 withValueAsText:@"${backbeam.shareKey}" requiredTypeOrNil:[NSString class]];
+        [initializer injectParameterAtIndex:0 withValueAsText:@"${parse.clientKey}" requiredTypeOrNil:[NSString class]];
     }];
 }
 
-
-- (id)backbeamSecretKey {
-    return [TyphoonDefinition withClass:[NSString class] initialization:^(TyphoonInitializer *initializer) {
-        initializer.selector = @selector(stringWithString:);
-        [initializer injectParameterAtIndex:0 withValueAsText:@"${backbeam.secretKey}" requiredTypeOrNil:[NSString class]];
-    }];
-}
-
-
-- (id)backbeamEnvironment {
-    return [TyphoonDefinition withClass:[NSString class] initialization:^(TyphoonInitializer *initializer) {
-        initializer.selector = @selector(stringWithString:);
-        [initializer injectParameterAtIndex:0 withValueAsText:@"${backbeam.environment}" requiredTypeOrNil:[NSString class]];
-    }];
-}
 
 
 - (id)user
