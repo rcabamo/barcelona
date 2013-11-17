@@ -1,18 +1,18 @@
 //
-//  RURDetalProductVC.m
+//  RURPurchasesVC.m
 //  FinalBattleHack
 //
-//  Created by Oriol Capdevila on 16/11/13.
+//  Created by Ricardo Caballero on 17/11/13.
 //  Copyright (c) 2013 The Synthesizers. All rights reserved.
 //
 
-#import "RURDetalProductVC.h"
+#import "RURPurchasesVC.h"
 
-@interface RURDetalProductVC ()
+@interface RURPurchasesVC ()
 
 @end
 
-@implementation RURDetalProductVC
+@implementation RURPurchasesVC
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,6 +35,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)payWithPP:(id)sender {
-}
 @end
