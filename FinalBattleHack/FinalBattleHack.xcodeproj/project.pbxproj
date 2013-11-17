@@ -28,6 +28,8 @@
 		4A229FAE18384B1A0041724D /* Tienda.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4A229FA818384B1A0041724D /* Tienda.jpeg */; };
 		4A229FB218384B310041724D /* RURDetailShopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A229FB018384B310041724D /* RURDetailShopVC.m */; };
 		4A229FB318384B310041724D /* RURDetailShopVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A229FB118384B310041724D /* RURDetailShopVC.xib */; };
+		4A78EA661838700800E7933B /* RURCustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A78EA651838700800E7933B /* RURCustomAnnotation.m */; };
+		4A78EA681838703000E7933B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A78EA671838703000E7933B /* CoreLocation.framework */; };
 		4A8DD68A18381D7100E603E5 /* RURAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8DD68818381D7100E603E5 /* RURAppDelegate.m */; };
 		4A8DD68E18381DD000E603E5 /* RURAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8DD68D18381DD000E603E5 /* RURAssembly.m */; };
 		4A8DD69218381E9100E603E5 /* RURUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8DD69118381E9100E603E5 /* RURUser.m */; };
@@ -84,6 +86,9 @@
 		4A229FAF18384B310041724D /* RURDetailShopVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURDetailShopVC.h; sourceTree = "<group>"; };
 		4A229FB018384B310041724D /* RURDetailShopVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURDetailShopVC.m; sourceTree = "<group>"; };
 		4A229FB118384B310041724D /* RURDetailShopVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RURDetailShopVC.xib; sourceTree = "<group>"; };
+		4A78EA641838700800E7933B /* RURCustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURCustomAnnotation.h; sourceTree = "<group>"; };
+		4A78EA651838700800E7933B /* RURCustomAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURCustomAnnotation.m; sourceTree = "<group>"; };
+		4A78EA671838703000E7933B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		4A8DD68718381D7100E603E5 /* RURAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURAppDelegate.h; sourceTree = "<group>"; };
 		4A8DD68818381D7100E603E5 /* RURAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURAppDelegate.m; sourceTree = "<group>"; };
 		4A8DD68C18381DD000E603E5 /* RURAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURAssembly.h; sourceTree = "<group>"; };
@@ -114,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A78EA681838703000E7933B /* CoreLocation.framework in Frameworks */,
 				4A229F801838432E0041724D /* MapKit.framework in Frameworks */,
 				4AA58D25183818C300B51AEA /* CoreGraphics.framework in Frameworks */,
 				4AA58D27183818C300B51AEA /* UIKit.framework in Frameworks */,
@@ -187,6 +193,8 @@
 				4A229F9718384AD00041724D /* RURShopsMapVC.h */,
 				4A229F9818384AD00041724D /* RURShopsMapVC.m */,
 				4A229F9918384AD00041724D /* RURShopsMapVC.xib */,
+				4A78EA641838700800E7933B /* RURCustomAnnotation.h */,
+				4A78EA651838700800E7933B /* RURCustomAnnotation.m */,
 			);
 			name = ShopMap;
 			path = ShopsMap;
@@ -284,6 +292,7 @@
 		4AA58D21183818C300B51AEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4A78EA671838703000E7933B /* CoreLocation.framework */,
 				4A229F7F1838432E0041724D /* MapKit.framework */,
 				4AA58D22183818C300B51AEA /* Foundation.framework */,
 				4AA58D24183818C300B51AEA /* CoreGraphics.framework */,
@@ -523,6 +532,7 @@
 				4AA58D2F183818C300B51AEA /* main.m in Sources */,
 				4A8DD69618381EDC00E603E5 /* UIViewController+UserAdditions.m in Sources */,
 				4A8DD68E18381DD000E603E5 /* RURAssembly.m in Sources */,
+				4A78EA661838700800E7933B /* RURCustomAnnotation.m in Sources */,
 				4A229FAC18384B1A0041724D /* RURProductCatalogVC.m in Sources */,
 				4A229F9418384A9C0041724D /* RURPurchasesVC.m in Sources */,
 			);
