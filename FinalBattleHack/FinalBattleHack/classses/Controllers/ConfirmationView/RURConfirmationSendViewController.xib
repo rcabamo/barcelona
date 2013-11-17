@@ -54,6 +54,8 @@
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <state key="selected" backgroundImage="BackgroundSelected.png"/>
+                    <state key="highlighted" backgroundImage="backgroundSelected.png"/>
                     <connections>
                         <action selector="pickUpClick:" destination="-1" eventType="touchUpInside" id="viC-8B-md5"/>
                     </connections>
@@ -66,6 +68,8 @@
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <state key="selected" backgroundImage="BackgroundSelected.png"/>
+                    <state key="highlighted" backgroundImage="BackgroundSelected.png"/>
                     <connections>
                         <action selector="sendClick:" destination="-1" eventType="touchUpInside" id="nKj-jc-MJ6"/>
                     </connections>
@@ -78,6 +82,8 @@
         </view>
     </objects>
     <resources>
+        <image name="BackgroundSelected.png" width="243" height="243"/>
+        <image name="backgroundSelected.png" width="243" height="243"/>
         <image name="deselected.png" width="243" height="243"/>
     </resources>
 </document>
