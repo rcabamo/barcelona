@@ -125,7 +125,7 @@
 
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    [SVProgressHUD showWithStatus:@"Recognized product..."];
+    [SVProgressHUD showWithStatus:@"Recognizing product..."];
     
     _image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
     //save picture
@@ -145,6 +145,9 @@
             //
         }];
     } else {
+        [self dismissViewControllerAnimated:NO completion:nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Wrong device" message:@"Sorry your device can't take pictures, we need the camera." delegate:self cancelButtonTitle:@"I'll check the list!" otherButtonTitles:nil];
+        [alert show];
     }
 }
 
@@ -173,7 +176,9 @@
 #pragma mark - alert delegates
 - (void) alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
-    [self takeCamPicture];
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        [self takeCamPicture];
+    }
 }
 
 @end
