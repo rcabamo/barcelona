@@ -6,6 +6,9 @@ PODS:
   - FXBlurView (HEAD based on 1.4.4)
   - MSDynamicsDrawerViewController (1.0.0)
   - PayPal-iOS-SDK (1.3.5)
+  - SDWebImage (3.5):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.5)
   - socket.IO (0.4.0.1):
     - SocketRocket (~> 0.2)
   - SocketRocket (0.3.1-beta2)
@@ -16,6 +19,7 @@ DEPENDENCIES:
   - FXBlurView (HEAD)
   - MSDynamicsDrawerViewController (~> 1.0.0)
   - PayPal-iOS-SDK (~> 1.3.5)
+  - SDWebImage (~> 3.5)
   - Typhoon (~> 1.5.3)
 
 SPEC CHECKSUMS:
@@ -24,6 +28,7 @@ SPEC CHECKSUMS:
   FXBlurView: bd4c9209f4415ec41138acabaa18cd0f87ecd49e
   MSDynamicsDrawerViewController: ae0dec8b54cf08efdfb3c6e8dfa95fb223218223
   PayPal-iOS-SDK: 869131d4ca39d28153de00fe1649378671bb4c44
+  SDWebImage: f1a72472f8a2d54445f1fedafe2090593d9caf7f
   socket.IO: 88132f82db2700840686a8b0de68875eadca2009
   SocketRocket: 7ac946bcce46287a791dfff3c1f8daa692821dae
   Typhoon: 486a9507a0d7d674e3dc023e77603fefd02aedd3
