@@ -24,6 +24,15 @@
     return self;
 }
 
+-(id) initWithItems:(NSArray*)objects {
+    self = [super init];
+    if (self) {
+        self.items = objects;
+    }
+    return self;
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -34,7 +43,7 @@
     [self.catalogItems registerClass:[RURHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header"];
     
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    [flowLayout setItemSize:CGSizeMake(140, 100)];
+    [flowLayout setItemSize:CGSizeMake(280, 200)];
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
     flowLayout.sectionInset = UIEdgeInsetsMake(0, 0, 20, 0);
     [self.catalogItems setCollectionViewLayout:flowLayout];
