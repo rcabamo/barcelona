@@ -71,9 +71,13 @@
     CLLocationCoordinate2D neCoord = [self.mapView convertPoint:nePoint toCoordinateFromView:self.mapView];
     CLLocationCoordinate2D swCoord = [self.mapView convertPoint:swPoint toCoordinateFromView:self.mapView];
     
-    // Make the query
+    double swlat = swCoord.latitude;
+    double swlon = swCoord.longitude;
+    double nelat = neCoord.latitude;
+    double nelon = neCoord.longitude;
     
-    static NSInteger MAX_LOCATIONS = 300;
+    PFGeoPoint *geoPoointSouth = [PFGeoPoint geoPointWithLatitude:swlat longitude:swlon];
+    PFGeoPoint *geoPoointNorth = [PFGeoPoint geoPointWithLatitude:nelat longitude:nelon];
     
     NSMutableArray *annotationsToAdd = [NSMutableArray new];
     

@@ -29,7 +29,7 @@
 - (id)parseAppID {
     return [TyphoonDefinition withClass:[NSString class] initialization:^(TyphoonInitializer *initializer) {
         initializer.selector = @selector(stringWithString:);
-        [initializer injectParameterAtIndex:0 withValueAsText:@"${parse.AppID}" requiredTypeOrNil:[NSString class]];
+        [initializer injectParameterAtIndex:0 withValueAsText:@"${parse.appID}" requiredTypeOrNil:[NSString class]];
     }];
 }
 
