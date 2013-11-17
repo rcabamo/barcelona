@@ -8,6 +8,8 @@
 
 #import "RURConfirmationSendViewController.h"
 
+#import <sendgrid/sendgrid.h>
+
 @interface RURConfirmationSendViewController ()
 
 @property NSDictionary *info;
@@ -46,10 +48,18 @@
     [self.view sendSubviewToBack:backgroundView];
 }
 
-- (void)didReceiveMemoryWarning
+#pragma mark - Sendgrid
+
+- (void)sendShopEmail:(NSString *)shopEmail userEmail:(NSString *)userEmail body:(NSString *)body subject:(NSString *)subject
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    sendgrid *msg = [sendgrid user:@"rcabamo" andPass:@"pepito"];
+    
+    msg.to = userEmail;
+    msg.subject = subject;
+    msg.from = shopEmail;
+    msg.text = body;
+    
+    [msg sendWithWeb];
 }
 
 - (IBAction)pickUpClick:(id)sender {

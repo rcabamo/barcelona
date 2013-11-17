@@ -58,7 +58,8 @@
     
     [self.navigationItem setTitle:[_prod objectForKey:@"name"]];
     _productDescription.text = [_prod objectForKey:@"description"];
-    _productPrice.text = [_prod objectForKey:@"price"];
+    _productPrice.text = [NSString stringWithFormat:@"%@ $",[_prod objectForKey:@"price"]];
+    [_productImage setImage:[UIImage imageNamed:[_prod objectForKey:@"image"]]];
 }
 
 - (IBAction)payWithPP:(id)sender {
