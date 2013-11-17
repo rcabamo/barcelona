@@ -54,6 +54,12 @@
     //self.descriptionTextView.text = [self.shop objectForKey:@"description"];
     self.titleLabel.text = [self.shop name];
     self.descriptionTextView.text = [self.shop desc];
+    
+    UIImageView *rightView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"RightRevealIcon.png"]];
+    UIImageView *leftView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"LeftRevealIcon.png"]];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightView];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftView];
+    self.navigationItem.leftItemsSupplementBackButton = YES;
     //Image
 }
 

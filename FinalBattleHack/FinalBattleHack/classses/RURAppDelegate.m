@@ -42,6 +42,7 @@
     [self.dynamicsDrawerViewController setDrawerViewController:profileVC forDirection:MSDynamicsDrawerDirectionRight];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.tintColor = [UIColor blackColor];
     self.window.rootViewController = self.dynamicsDrawerViewController;
     UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"windowBackground"]];
     [self.window addSubview:backgroundView];
