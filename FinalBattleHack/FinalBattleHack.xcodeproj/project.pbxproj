@@ -11,6 +11,12 @@
 		2D2091031838947000B2FCF9 /* RURConfirmationSendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D2091011838947000B2FCF9 /* RURConfirmationSendViewController.xib */; };
 		2D2091061838A4A000B2FCF9 /* deselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2091041838A4A000B2FCF9 /* deselected.png */; };
 		2D2091071838A4A000B2FCF9 /* backgroundSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D2091051838A4A000B2FCF9 /* backgroundSelected.png */; };
+		2D7ED99C1838B3F900EF3328 /* sale30.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D7ED99B1838B3F900EF3328 /* sale30.png */; };
+		2D7ED99E1838B5E500EF3328 /* discount.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D7ED99D1838B5E500EF3328 /* discount.png */; };
+		2D7ED9A01838B6DB00EF3328 /* discount2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D7ED99F1838B6DB00EF3328 /* discount2.png */; };
+		2D7ED9A21838B78300EF3328 /* bth_american_eagle_directory_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D7ED9A11838B78300EF3328 /* bth_american_eagle_directory_logo.jpg */; };
+		2D7ED9A41838B86000EF3328 /* gestures_2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D7ED9A31838B86000EF3328 /* gestures_2x.jpg */; };
+		2D7ED9A61838BAFE00EF3328 /* WhiteMugFront.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D7ED9A51838BAFE00EF3328 /* WhiteMugFront.jpg */; };
 		2DA49C7218384D7000772064 /* RURProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DA49C6F18384D7000772064 /* RURProfileVC.xib */; };
 		2DA49C7318384D7000772064 /* RURProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA49C7118384D7000772064 /* RURProfileVC.m */; };
 		4A229F701838331C0041724D /* RUR_dev.properties in Resources */ = {isa = PBXBuildFile; fileRef = 4A229F6F1838331C0041724D /* RUR_dev.properties */; };
@@ -73,6 +79,12 @@
 		2D2091011838947000B2FCF9 /* RURConfirmationSendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RURConfirmationSendViewController.xib; path = ConfirmationView/RURConfirmationSendViewController.xib; sourceTree = "<group>"; };
 		2D2091041838A4A000B2FCF9 /* deselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deselected.png; sourceTree = "<group>"; };
 		2D2091051838A4A000B2FCF9 /* backgroundSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundSelected.png; sourceTree = "<group>"; };
+		2D7ED99B1838B3F900EF3328 /* sale30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sale30.png; sourceTree = "<group>"; };
+		2D7ED99D1838B5E500EF3328 /* discount.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discount.png; sourceTree = "<group>"; };
+		2D7ED99F1838B6DB00EF3328 /* discount2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discount2.png; sourceTree = "<group>"; };
+		2D7ED9A11838B78300EF3328 /* bth_american_eagle_directory_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bth_american_eagle_directory_logo.jpg; sourceTree = "<group>"; };
+		2D7ED9A31838B86000EF3328 /* gestures_2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gestures_2x.jpg; sourceTree = "<group>"; };
+		2D7ED9A51838BAFE00EF3328 /* WhiteMugFront.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhiteMugFront.jpg; sourceTree = "<group>"; };
 		2DA49C6F18384D7000772064 /* RURProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RURProfileVC.xib; sourceTree = "<group>"; };
 		2DA49C7018384D7000772064 /* RURProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURProfileVC.h; sourceTree = "<group>"; };
 		2DA49C7118384D7000772064 /* RURProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURProfileVC.m; sourceTree = "<group>"; };
@@ -372,6 +384,12 @@
 		BB4C31D01838773E00E25BF5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2D7ED9A51838BAFE00EF3328 /* WhiteMugFront.jpg */,
+				2D7ED9A31838B86000EF3328 /* gestures_2x.jpg */,
+				2D7ED9A11838B78300EF3328 /* bth_american_eagle_directory_logo.jpg */,
+				2D7ED99F1838B6DB00EF3328 /* discount2.png */,
+				2D7ED99D1838B5E500EF3328 /* discount.png */,
+				2D7ED99B1838B3F900EF3328 /* sale30.png */,
 				2D2091041838A4A000B2FCF9 /* deselected.png */,
 				2D2091051838A4A000B2FCF9 /* backgroundSelected.png */,
 				4A78EA69183885B000E7933B /* BackgroundButton.png */,
@@ -499,11 +517,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D7ED99E1838B5E500EF3328 /* discount.png in Resources */,
 				4A229F9B18384AD00041724D /* RURShopsMapVC.xib in Resources */,
 				2D2091031838947000B2FCF9 /* RURConfirmationSendViewController.xib in Resources */,
 				4A78EA6E183885B000E7933B /* button-blue.png in Resources */,
 				4A229F9518384A9C0041724D /* RURPurchasesVC.xib in Resources */,
+				2D7ED99C1838B3F900EF3328 /* sale30.png in Resources */,
 				BB4C31D21838774A00E25BF5 /* TestAvatar.jpeg in Resources */,
+				2D7ED9A61838BAFE00EF3328 /* WhiteMugFront.jpg in Resources */,
 				4A78EA6D183885B000E7933B /* BackgroundButton.png in Resources */,
 				4A78EA6F183885B000E7933B /* button-empty.png in Resources */,
 				4A229FA918384B1A0041724D /* CollectionViewCell.xib in Resources */,
@@ -511,6 +532,7 @@
 				4A78EA70183885B000E7933B /* button-plain@2x.png in Resources */,
 				4A229FAA18384B1A0041724D /* HeaderView.xib in Resources */,
 				4A229F72183833250041724D /* Images.xcassets in Resources */,
+				2D7ED9A21838B78300EF3328 /* bth_american_eagle_directory_logo.jpg in Resources */,
 				BB4C31D61838776E00E25BF5 /* payWithPassIcon.png in Resources */,
 				4A229FA018384AEB0041724D /* RURDetalProductVC.xib in Resources */,
 				BB4C31D51838776E00E25BF5 /* activityIcon.png in Resources */,
@@ -518,8 +540,10 @@
 				4AA58D2D183818C300B51AEA /* InfoPlist.strings in Resources */,
 				4A229F701838331C0041724D /* RUR_dev.properties in Resources */,
 				2D2091071838A4A000B2FCF9 /* backgroundSelected.png in Resources */,
+				2D7ED9A01838B6DB00EF3328 /* discount2.png in Resources */,
 				4A229FAE18384B1A0041724D /* Tienda.jpeg in Resources */,
 				4A229FAD18384B1A0041724D /* RURProductCatalogVC.xib in Resources */,
+				2D7ED9A41838B86000EF3328 /* gestures_2x.jpg in Resources */,
 				4A229FB318384B310041724D /* RURDetailShopVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

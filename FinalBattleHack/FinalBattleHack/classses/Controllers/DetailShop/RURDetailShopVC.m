@@ -17,7 +17,7 @@
 // view
 @property (nonatomic, weak) IBOutlet UIView *titleView;
 @property (nonatomic, weak) IBOutlet UILabel *titleLabel;
-@property (nonatomic, weak) IBOutlet UIImageView *imageView;
+@property (nonatomic, weak) IBOutlet UIImageView *logoImage;
 
 @property (nonatomic, weak) IBOutlet UITextView *descriptionTextView;
 
@@ -36,7 +36,7 @@
         [shopaux setAddress:@"Address Test"];
         [shopaux setLon:122.33];
         [shopaux setLat:37.89];
-        NSArray *pr = [[NSArray alloc] initWithObjects:@{@"name":@"Name product", @"desc":@"desc product",  @"image":@"http://www.albertdaviddesign.com/wp-content/uploads/2013/09/test.gif", @"price":@"112"}, @{@"name":@"Name product", @"desc":@"desc product",  @"image":@"http://www.albertdaviddesign.com/wp-content/uploads/2013/09/test.gif", @"price":@"112"}, nil];
+        NSArray *pr = [[NSArray alloc] initWithObjects:@{@"name":@"Magic Mouse!", @"desc":@"It began with iPhone. Then came iPod touch. Then MacBook Pro. Intuitive, smart, dynamic. Multi-Touch technology introduced a remarkably better way to interact with your portable devices — all using gestures. Now we’ve reached another milestone by bringing gestures to the desktop with a mouse that’s unlike anything ever before. It's called Magic Mouse. It's the world's first Multi-Touch mouse",  @"image":@"gestures_2x", @"price":@"60.0"}, @{@"name":@"Magic Mug!", @"desc":@"Magic mug it's unique in it's design. When you drop hot liquid on it, the legs begin to run in circles of about 30cm of radius. Be carefull where you place it, even being magic it breaks",  @"image":@"WhiteMugFront", @"price":@"23.0"}, nil];
         [shopaux setProducts:pr];
         self.shop = shopaux;
     }
