@@ -47,7 +47,14 @@
     UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"windowBackground"]];
     [self.window addSubview:backgroundView];
     [self.window sendSubviewToBack:backgroundView];
-
+    
+    NSLog(@"clientID: %@", [[TyphoonComponentFactory defaultFactory] paypalClientID]);
+    NSLog(@"secretID: %@", [[TyphoonComponentFactory defaultFactory] paypalSecretID]);
+    
+    NSMutableArray *purchases = [NSMutableArray arrayWithObjects:@"Object 1", @"Object 2", @"Object 3", nil];
+    NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+    [def setObject:purchases forKey:@"purchasesarray"];
+    [def synchronize];
     [self.window makeKeyAndVisible];
     return YES;
 }

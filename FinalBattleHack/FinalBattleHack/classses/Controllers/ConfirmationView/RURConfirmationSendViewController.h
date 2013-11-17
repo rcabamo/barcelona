@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RURConfirmationSendViewController : UIViewController
+@interface RURConfirmationSendViewController : UIViewController <UIAlertViewDelegate>
 - (IBAction)pickUpClick:(id)sender;
 - (IBAction)sendClick:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UIButton *pickUpButton;
 @property (weak, nonatomic) IBOutlet UIButton *sendButton;
-
+@property (nonatomic, strong) NSDictionary *item, *payment;
 @end

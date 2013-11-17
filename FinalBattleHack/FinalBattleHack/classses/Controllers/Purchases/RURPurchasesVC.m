@@ -11,6 +11,7 @@
 @interface RURPurchasesVC ()
 @property (nonatomic,strong)IBOutlet UITableView *purchases;
 @property (nonatomic, strong) NSArray *itemsPurchased;
+@property (nonatomic, strong) NSMutableArray *purchasesArray;
 @end
 
 @implementation RURPurchasesVC
@@ -48,12 +49,15 @@
             for (PFObject *object in objects) {
                 NSLog(@"%@", object.objectId);
             }
-            self.purchases = objects;
+            //self.purchases = objects;
         } else {
             // Log details of the failure
             NSLog(@"Error: %@ %@", error, [error userInfo]);
         }
     }];
+    NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+    self.purchasesArray = [def objectForKey:@"purchasesarray"];
+    [self.purchases reloadData];
 }
 
 
@@ -62,7 +66,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 //    return [self.itemsPurchased count];
-    return 5;
+    return [self.purchasesArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -77,7 +81,7 @@
     
 //    PFObject *purchase = self.itemsPurchased[indexPath.row];
 //    cell.textLabel.text = [[purchase objectForKey:@"product"] objectForKey:@"name"];
-    cell.textLabel.text = @"testing";
+    cell.textLabel.text = [self.purchasesArray objectAtIndex:indexPath.row];
     cell.textLabel.textColor = [UIColor whiteColor];
     return cell;
 }

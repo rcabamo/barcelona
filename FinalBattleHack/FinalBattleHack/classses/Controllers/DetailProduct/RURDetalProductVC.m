@@ -90,6 +90,8 @@
     NSLog(@"Payment completed %@", payment);
     [self dismissViewControllerAnimated:YES completion:^{
         RURConfirmationSendViewController *confirm = [[RURConfirmationSendViewController alloc] initWithNibName:@"RURConfirmationSendViewController" bundle:nil];
+        [confirm setItem:_prod];
+        [confirm setPayment:payment];
         [self.navigationController pushViewController:confirm animated:YES];
     }];
     //dismiss screen to show confirmation paye + sending home/pick-up at shop

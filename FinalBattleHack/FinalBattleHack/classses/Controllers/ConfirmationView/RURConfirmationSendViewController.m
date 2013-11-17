@@ -46,6 +46,8 @@
     UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"windowBackground"]];
     [self.view addSubview:backgroundView];
     [self.view sendSubviewToBack:backgroundView];
+    
+    //[self sendShopEmail:@"shop@gmail.com" userEmail:@"rcabamo@gmail.com" body:@"" subject:@""];
 }
 
 #pragma mark - Sendgrid
@@ -65,10 +67,28 @@
 - (IBAction)pickUpClick:(id)sender {
     [_pickUpButton setSelected:YES];
     [_sendButton setSelected:NO];
+    NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+    NSMutableArray *ar = [NSMutableArray arrayWithArray:[def objectForKey:@"purchasesarray"]];
+    [ar addObject:[self.item objectForKey:@"name"]];
+    [def setObject:ar forKey:@"purchasesarray"];
+    [def synchronize];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congrats!" message:[NSString stringWithFormat:@"You have buyed an awesome %@\nYou will recieve an email from Sendgrid ASAP!", [self.item objectForKey:@"name"]] delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+    [alert show];
 }
 
 - (IBAction)sendClick:(id)sender {
     [_pickUpButton setSelected:NO];
     [_sendButton setSelected:YES];
+    NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+    NSMutableArray *ar = [NSMutableArray arrayWithArray:[def objectForKey:@"purchasesarray"]];
+    [ar addObject:[self.item objectForKey:@"name"]];
+    [def setObject:ar forKey:@"purchasesarray"];
+    [def synchronize];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congrats!" message:[NSString stringWithFormat:@"You have buyed an awesome %@\nYou will recieve an email from Sendgrid ASAP!", [self.item objectForKey:@"name"]] delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+    [alert show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    [self.navigationController popToRootViewControllerAnimated:FALSE];
 }
 @end
