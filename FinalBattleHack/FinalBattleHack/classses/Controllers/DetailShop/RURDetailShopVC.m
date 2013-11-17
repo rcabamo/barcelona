@@ -31,8 +31,8 @@
     if (self) {
         //self.shop = shop;
         RUR_Shop *shopaux = [[RUR_Shop alloc] init];
-        [shopaux setName:@"Test names"];
-        [shopaux setDesc:@"Test desc"];
+        [shopaux setName:@"American Eagle"];
+        [shopaux setDesc:@"Opening times:                                             Mon-Fry: 10am - 5pm                                             Sat: 9am - 6pm                                          Sun: Closed"];
         [shopaux setAddress:@"Address Test"];
         [shopaux setLon:122.33];
         [shopaux setLat:37.89];
@@ -51,7 +51,7 @@
     // Setup view
     // title
     //self.titleLabel.text = [self.shop objectForKey:@"name"];
-    //self.descriptionTextView.text = [self.shop objectForKey:@"description"];
+    self.descriptionTextView.text = @"Opening times:            Mon-Fry: 10am - 5pm             Sat: 9am - 6pm               Sun: Closed";
     self.titleLabel.text = [self.shop name];
     self.descriptionTextView.text = [self.shop desc];
     
