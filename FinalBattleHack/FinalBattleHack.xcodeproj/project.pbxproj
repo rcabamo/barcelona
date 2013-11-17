@@ -11,6 +11,8 @@
 		2DA49C681838478600772064 /* button-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DA49C671838478600772064 /* button-blue.png */; };
 		2DA49C7218384D7000772064 /* RURProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DA49C6F18384D7000772064 /* RURProfileVC.xib */; };
 		2DA49C7318384D7000772064 /* RURProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA49C7118384D7000772064 /* RURProfileVC.m */; };
+		2DA49C751838716300772064 /* button-plain@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DA49C741838716300772064 /* button-plain@2x.png */; };
+		2DA49C77183871DF00772064 /* button-empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DA49C76183871DF00772064 /* button-empty.png */; };
 		4A229F701838331C0041724D /* RUR_dev.properties in Resources */ = {isa = PBXBuildFile; fileRef = 4A229F6F1838331C0041724D /* RUR_dev.properties */; };
 		4A229F72183833250041724D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A229F71183833250041724D /* Images.xcassets */; };
 		4A229F801838432E0041724D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A229F7F1838432E0041724D /* MapKit.framework */; };
@@ -61,6 +63,8 @@
 		2DA49C6F18384D7000772064 /* RURProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RURProfileVC.xib; sourceTree = "<group>"; };
 		2DA49C7018384D7000772064 /* RURProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RURProfileVC.h; sourceTree = "<group>"; };
 		2DA49C7118384D7000772064 /* RURProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RURProfileVC.m; sourceTree = "<group>"; };
+		2DA49C741838716300772064 /* button-plain@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-plain@2x.png"; sourceTree = "<group>"; };
+		2DA49C76183871DF00772064 /* button-empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-empty.png"; sourceTree = "<group>"; };
 		4A229F6F1838331C0041724D /* RUR_dev.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RUR_dev.properties; sourceTree = "<group>"; };
 		4A229F71183833250041724D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FinalBattleHack/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		4A229F7F1838432E0041724D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -138,7 +142,9 @@
 		2DA49C641838474D00772064 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2DA49C741838716300772064 /* button-plain@2x.png */,
 				2DA49C671838478600772064 /* button-blue.png */,
+				2DA49C76183871DF00772064 /* button-empty.png */,
 				2DA49C651838475900772064 /* BackgroundButton.png */,
 			);
 			name = Images;
@@ -459,6 +465,8 @@
 				2DA49C7218384D7000772064 /* RURProfileVC.xib in Resources */,
 				4AA58D2D183818C300B51AEA /* InfoPlist.strings in Resources */,
 				4A229F701838331C0041724D /* RUR_dev.properties in Resources */,
+				2DA49C77183871DF00772064 /* button-empty.png in Resources */,
+				2DA49C751838716300772064 /* button-plain@2x.png in Resources */,
 				4A229FAE18384B1A0041724D /* Tienda.jpeg in Resources */,
 				4A229FAD18384B1A0041724D /* RURProductCatalogVC.xib in Resources */,
 				4A229FB318384B310041724D /* RURDetailShopVC.xib in Resources */,
