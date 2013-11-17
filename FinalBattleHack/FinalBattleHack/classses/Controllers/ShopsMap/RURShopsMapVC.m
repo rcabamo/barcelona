@@ -39,8 +39,8 @@
 {
     MKCoordinateRegion region;
     MKCoordinateSpan span;
-    span.latitudeDelta = 0.005;
-    span.longitudeDelta = 0.005;
+    span.latitudeDelta = 0.05;
+    span.longitudeDelta = 0.05;
     CLLocationCoordinate2D location;
     location.latitude = self.mapView.userLocation.coordinate.latitude;
     location.longitude = self.mapView.userLocation.coordinate.longitude;
